@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Lab for Creative Computation</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Space+Mono">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="css/stylesheet-animations.css" />
+		<link rel="stylesheet" type="text/css" href="css/stylesheet-images.css" />
+		<link rel="stylesheet" type="text/css" href="css/stylesheet-responsive.css" />
+<!--
+________________________________________________________________________________________________________________________________________________________________________________
+___________________________________________________________________________________&&&_&_______&__&&&___________________________________________________________________________
+_________________________________________________________________________________&&&&&&&&&&&&_&&_&&&&&&&&_______________________________________________________________________
+___________________________________________________________________&&_&&&&&&&&__&&&_&_&_&&&&&&&&&&&_&&&&&&&__&&_________________________________________________________________
+_________________________________________________________________&&&&&_&&__&&_&___&&&_&_&&&&&&&&&&&_&&&&&_&_&&&&_&&_&___________________________________________________________
+_________________________________________________________________&&&&_&&_&&_&_&&_&&&&__&&&&&&_&&&&&&&&&&&&&_&_&&&_&_____________________________________________________________
+_________________________________________________________&&&&&__&&&&&&&_&&&_&&_&&&&&&&&&&&&&&_&&&&&&&&&&&&&&&_&&&&&&&&&_________________________________________________________
+________________________________________________________&&&&&&&&&&__&&&_&&&&&&&&&&&&&__&___&_&&&&&_&_&&&&&&&&&__&_&&&&&&&&______________________________________________________
+_______________________________________________________&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&_&_&_&&&&&&&&_&&&__&&&_&__&&&_&&&__&&____________________________________________________
+__________________________________________________&&&_&&&&&&_&&&&&_&&_&&_&&_&__&&_&&_&_&&_&&&&_&&_&&&&&&&&&&&&_&&&&&_&&&&&&&&&_&________________________________________________
+_________________________________________________&&&&&&&_&&&&&&&&&&&&_&_&&&&_&&&_&&&&&&_&_&_&&_&&_&__&&&&&&&&&&&&&&&&&&&&&&_&&&&&_______________________________________________
+______________________________________________&&&_&&&&&_&&&&&&&&_&&_&&&&&&&&&&&&&&&_&&&&&&&&&_&_&&&_&&&&&&&&&&&&&&&&&&&&&&&&__&&&&_&&___________________________________________
+_____________________________________________&&&&&&&&&&&&&&&&&_&___&&&&_&&&_&_&&&&_&&&&_&&&&&&&&&&_&&&&&&_&&_&&_&&&&_&&&_&&&&&&&&&&&&&&&________________________________________
+_____________________________________________&&&__&&&&&&&&_&&&&&&&&&&&&&&&&_&&&&_&_&&&&&_&&&_&&_&&_&&&&_&_&&&__&&&&&&&&&&&&__&&&&&&_&_&_&_______________________________________
+_____________________________________________&__&&&&&&&&&&&&&___&&&&_&&&&_&&&__&&&&&&&&&&&&__&_&&&&&&&&&&&&&&&&&&_&&&&_&&&_&____&&&&_&&&&_______________________________________
+_______________________________________________&&_&&&&_&&&&&_&&&&&__&&&&&&_&&&&&&&_&&&&&__&&_&_&&&&_&_&&&&_&_&&&&&&&&&&_&_&&&_&_&_&&&&&&&&______________________________________
+____________________________________________&&&&&&&&_&&_&&&&&&&&&&&&&&&&&&&_&_&_&&&_&_&&&&&&&&_&&_&&&&__&_&_&&&&&&&&&&&&&_&_&___________________________________________________
+_____________________________________________&&&_&&&&&&&&&&&&&&&&&__&&&&&&&&&&&&__&_&__&_&&_&&&&&&&&&&&&&&&&&_&_&&&&&&&&&&&&&_&&________________________________________________
+_______________________________________________&&&&&&&&&&&&&&&&__&&&_&&&&&_&&_&&__&&_&_&&_&_&_&&_&&&_&&__&&&&_&&&&&&_&&&&&&_&&&&________________________________________________
+______________________________________&&&_&&___&&&&&_&&&__&__&&_&&&__&&&&&&&_&_&&__&&_&&&_&&&_&&__&&&__&&&&_&&&&&&_&&&&&_&&&&__&&_______________________________________________
+_____________________________________&_&&&&&&&__&&&_&&&__&&__&&&&&&&&&&&_&_&&&&&&&&&&_&&_&&&&_&&&___&____&&&&_&&&&__&__&_________&&&____________________________________________
+___________________________________&&&&_&_&&_&&_&&&&&&&&&&&&&&&&&&&_&&&&&_&&_&&&&&_&&&&&&&&&_&&&___&__&&&&&&&&&&&&&____&____&&&&_&&&__&&&_______________________________________
+_________________________________&_&&_&&_______&_&&&&&&&&&_&_&&___&_&_&&&_&_&&&&&&&&&&&_&&&&&&&___&&_&___&&&_&&&&&&__&&_&&&&_&&&__&&&_&&&&&&&___________________________________
+________________________________&&&&&_&&__&&&_&_&&&_&___&&&&_&&_&&&&&&__&&&&&&&&&&__&&_&&&&&&&&&&&&&_&_&&_&&&&&&&&&&&&&&&&_&&&&&&&&&&&&&&&&&____________________________________
+________________________________&&&&_&_&&&_&&&_&&&&&&_&&&&&&&&_&&&&&&&&&&&&&___&&&_&&&_&_&&&___&&&&&&&&&&&&_&&_&&_&&&&&&&&_&&&&&&&_&&&__&_&&&&__________________________________
+_____________________________________&_&&&_&&_&_&___&_&&&&_&_&&&&&&&&&&&________&&_&_&&_&&&&_&&&&&_&&&&&&&&&&_&&&_&_&_&&_&&&&&&&&&&&__&&&&&__&&_________________________________
+____________________________________&&&___&__&&&&&__&&&&&__&&&&&&&&&&_&_&_&&&&&___&&_&&&&&&_&&_&&_&&&&&&&_&&&&&&&&&&______&&_&&&&&&&&&&&&&&&__&_________________________________
+________________________________________&_&__&&&&__&&&&&&&_&_&&&&&&_&&&&&&&&_&&&&_&&___&&&&&__&_&&&&__&&&&_&&&&&_&&&&_______&&&&&&&_&&&_&&&&&&__________________________________
+________________________________________&&&&&&_&_&__&&&&&&&&&&&&&_&&&&&&&&__&&&&&&&&___&&&&&_&&&&&&&&_&&&&&&_&&&___&&_&&&_&&_&&_&&_&&_&&&&_&&_&_________________________________
+_______________________________________&&&&&_&&&&&&&___&&&&&&___&&&&&&&&&&___&&&&&&&&__&&&&&&__&&&&&&&&&&&&&_&_&_&&&_&____&&&__&_&&&_&_&____&&__________________________________
+_________________________________________&&_&&&&&_&&_&&&_&_&&_&&_&&&&&&&&&&&&_&&&&_&&&_&&&&&_&&_&&&&_&_&&&&_&&&&&&__&_____&_&&&&_&&&&&_&________________________________________
+__________________________________________&&&&&&_&&_&&&_&&__&&_____&_&&_&_&&&_&&&&&_&&&&&&&&&&&&&&_&&&_&___&&&&&&_&&&&_&&&&&__&___&&__&&&_______________________________________
+____________________________________________&&&___&&__&____&&_______&________&&&&&_&&&&&&&&_&&&_&_&&_&&&&&&&&_&&&_&&&&___&&&_&__________________________________________________
+_____________________________________________&___________________________________&&__&&&&&___&&&____&__&&&_&&&___&&_____&&&&&&&&________________________________________________
+___________________________________________________________________________________&&_&&&&_&&_______&__&____&&____&_______&&_&_&________________________________________________
+_____________________________________________________________________________________&&&&&&&________________________________&&&_________________________________________________
+_____________________________________________________________________________________&&&&&&_____________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+_____________________________________________________________________________________&&&&&______________________________________________________________________________________
+____________________________________________________________________________________&&&&&&&_____________________________________________________________________________________
+___________________________________________________________________________________&&&&&&&&&____________________________________________________________________________________
+__________________________________________________THIS WEBSITE DESIGNED AND BUILT ENTIRELY BY HAND AND JUST FOR YOU IN BUCOLIC__________________________________________________
+___________________________________________________HOPEWELL, NEW JERSEY, BY BESLER & SONS, LLC HTTPS://WWW.BESLERANDSONS.COM/___________________________________________________
+-->
+	<link rel="canonical" href="https://www.crclcrclcrcl.org/" />
+	<meta name="author" content="Besler & Sons, LLC" />
+	<meta name="description" content="Design | Research | Fabrication. Prof. Dr. Stefana Parascho" />
+	<meta name="keywords" content="architecture,crcl,design,epfl,fabrication,research,robots,robotics,stefana parascho" />
+	<meta name="last-modified" content="2022-11-17" />
+<!--
+_________________________________
+______ OPEN GRAPH PROTOCOL ______
+_________________________________
+-->
+	<meta property="og:title" content="Lab for Creative Computation (CRCL)" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Design | Research | Fabrication. Prof. Dr. Stefana Parascho" />
+	<meta property="og:url" content="https://www.crclcrclcrcl.org/" />
+	<meta property="og:image" content="https://www.crclcrclcrcl.org/img/crcl-carousel-lightvault-01.jpg" />
+<!--
+_____________________
+______ FAVICON ______
+_____________________
+-->
+</head>
+<body>
+<!--
+__________________
+______ GRID ______
+__________________
+-->
+		<style type="text/css">
+			div#vertical,div#horizontal {
+			width: 100%;
+			height: 100vh;
+			position: fixed;
+			z-index: 100;
+			top: 0;
+			left: 0;
+		}
+
+			div#vertical div {
+				width: 3.03%;
+				height: 100%;
+				display: inline-block;
+			}
+
+				.border-right-width-one-pixel {
+					border-right: 1px solid #0ff;
+				}
+
+				.border-right-width-two-pixels {
+					border-right: 2px solid #0ff;
+				}
+
+			div#horizontal div {
+				width: 100%;
+				height: 5.44vh;
+			}
+
+				.border-bottom-width-one-pixel {
+					border-bottom: 1px solid #0ff;
+				}
+
+				.border-bottom-width-two-pixels {
+					border-bottom: 2px solid #0ff;
+				}
+
+					.border-color-magenta {
+						border-color: #f0f;
+					}
+		</style>
+		<!-- <div id="vertical">
+			<div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels border-color-magenta"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div><div class="border-right-width-two-pixels"></div><div class="border-right-width-one-pixel"></div>
+		</div>
+		<div id="horizontal">
+			<div class="border-bottom-width-two-pixels"></div>
+			<div class="border-bottom-width-one-pixel"></div>
+			<div class="border-bottom-width-two-pixels"></div>
+			<div class="border-bottom-width-one-pixel"></div>
+			<div class="border-bottom-width-two-pixels"></div>
+			<div class="border-bottom-width-one-pixel"></div>
+			<div class="border-bottom-width-two-pixels"></div>
+			<div class="border-bottom-width-one-pixel"></div>
+			<div class="border-bottom-width-two-pixels border-color-magenta"></div>
+			<div class="border-bottom-width-one-pixel"></div>
+			<div class="border-bottom-width-two-pixels"></div>
+			<div class="border-bottom-width-one-pixel"></div>
+			<div class="border-bottom-width-two-pixels"></div>
+			<div class="border-bottom-width-one-pixel"></div>
+			<div class="border-bottom-width-two-pixels"></div>
+			<div class="border-bottom-width-one-pixel"></div>
+			<div class="border-bottom-width-two-pixels"></div>
+		</div> -->
+<!-- HEADER -->
+	<header class="hotpink">
+		<div class="header-icon flashing"><?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 224 196" style="enable-background:new 0 0 224 196;" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><path class="st0" d="M99.9,7c5.4-9.3,18.9-9.3,24.2,0l97,168c5.4,9.3-1.3,21-12.1,21H15c-10.8,0-17.5-11.7-12.1-21L99.9,7z M114.6,22.5c-1.2-2-4-2-5.2,0l-88.3,153c-1.2,2,0.3,4.5,2.6,4.5h176.7c2.3,0,3.8-2.5,2.6-4.5L114.6,22.5z"/><path class="st0" d="M105,129c-1.7,0-3-1.3-3-3V70c0-1.7,1.3-3,3-3h14c1.7,0,3,1.3,3,3v56c0,1.7-1.3,3-3,3H105z"/><path d="M126,153c0,7.7-6.3,14-14,14s-14-6.3-14-14s6.3-14,14-14S126,145.3,126,153z"/></svg></div><div class="header-titles">
+			<h1>CRCL<br /><span class="headline-font-size-small">Lab for Creative Computation</span></h1>
+			<h2>Prof. Dr. Stefana Parascho <a href="mailto:stefana.parascho@epfl.ch"><img class="header-icons" src="img/email-icon-black.svg" alt="Email logo" onmouseover="this.src='img/email-icon-white.svg'" onmouseout="this.src='img/email-icon-black.svg'"></a> <a href="https://twitter.com/crcl_epfl"><img class="header-icons" src="img/twitter-logo-black.svg" alt="Twitter logo" onmouseover="this.src='img/twitter-logo-white.svg'" onmouseout="this.src='img/twitter-logo-black.svg'"></a> <a href="https://www.instagram.com/crcl_epfl/"><img class="header-icons" src="img/instagram-logo-black.svg" alt="Instagram logo" onmouseover="this.src='img/instagram-logo-white.svg'" onmouseout="this.src='img/instagram-logo-black.svg'"></a>
+			</h2>
+		</div><div class="header-icon flashing"><?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 224 196" style="enable-background:new 0 0 224 196;" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><path class="st0" d="M99.9,7c5.4-9.3,18.9-9.3,24.2,0l97,168c5.4,9.3-1.3,21-12.1,21H15c-10.8,0-17.5-11.7-12.1-21L99.9,7z M114.6,22.5c-1.2-2-4-2-5.2,0l-88.3,153c-1.2,2,0.3,4.5,2.6,4.5h176.7c2.3,0,3.8-2.5,2.6-4.5L114.6,22.5z"/><path class="st0" d="M105,129c-1.7,0-3-1.3-3-3V70c0-1.7,1.3-3,3-3h14c1.7,0,3,1.3,3,3v56c0,1.7-1.3,3-3,3H105z"/><path d="M126,153c0,7.7-6.3,14-14,14s-14-6.3-14-14s6.3-14,14-14S126,145.3,126,153z"/></svg></div>
+	</header>
+
+<!-- NAV -->
+	<nav class="hotpink">
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#team">Team</a></li>
+		</ul>
+	</nav>
+
+
+<!-- MAIN -->
+	<main>
+<!-- VIDEO GALLERY -->
+		<section id="video">
+			<h3 class="off-screen">Video Gallery</h3>
+			<video src="video/create-lab-ambika-teaser.mp4" autoplay controls muted poster="video/create-lab-ambika-poster.jpg"></video>
+			<script>
+				var myvid = document.getElementById('myvideo');
+				var myvids = [
+					"video/create-lab-ambika-teaser.mp4", 
+					"video/create-lab-arc596-mahsa-malek-katherine-leung.mp4",
+					"video/create-lab-arc596-chase-galis-chis-myefski.mp4"
+				];
+				var activeVideo = 0;
+
+				myvid.addEventListener('ended', function(e) {
+				// update the active video index
+				activeVideo = (++activeVideo) % myvids.length;
+
+				// update the video source and play
+				myvid.src = myvids[activeVideo];
+					myvid.play();
+				});
+			</script>
+<!-- PHOTO GALLERY -->
+		</section><section id="gallery">
+			<h3 class="off-screen">Photo Gallery</h3>
+			<div id="gallery-frame">
+				<div id="gallery-container">
+					<figure id="photo-one" class="photo-gallery" role="img" aria-label="Four color spotlights shining onto where people are standing">
+						<figcaption><strong>Social Signals</strong> - an interactive media installation that guides pedestrians through public space. Image credit: Mathias Bernhard</figcaption>
+					</figure>
+					<figure id="photo-two" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Shenhan Zhu</figcaption>
+					</figure>
+					<figure id="photo-three" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>BamX</strong> – project in collaboration with GCM, ITKE University of Stuttgart, and Alison Martin. Image credit: Ying Chen</figcaption>
+					</figure>
+					<figure id="photo-four" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>ARC574 Student Project</strong> – Catherine Ahn, Piao Liu, and Lisa Ramsburg.</figcaption>
+					</figure>
+					<figure id="photo-five" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>Social Signals</strong> - an interactive media installation that guides pedestrians through public space. Image credit: Mathias Bernhard</figcaption>
+					</figure>
+					<figure id="photo-six" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Shenhan Zhu</figcaption>
+					</figure>
+					<figure id="photo-seven" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>ARC574 Student Project</strong> – Catherine Ahn, Piao Liu, and Lisa Ramsburg.</figcaption>
+					</figure>
+					<figure id="photo-eight" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Shenhan Zhu</figcaption>
+					</figure>
+					<figure id="photo-nine" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>ARC574 Student Project</strong> – Melissa Barstow and Jonah Coe Scharff.</figcaption>
+					</figure>
+					<figure id="photo-ten" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Isla Han and Edvard Bruun.</figcaption>
+					</figure>
+					<figure id="photo-eleven" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Isla Han and Edvard Bruun.</figcaption>
+					</figure>
+					<figure id="photo-twelve" class="photo-gallery" role="img" aria-label="">
+						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credits: Maciej Grzeskowiak.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+<!-- ABOUT SECTION-->
+		<section id="about" class="hotpink">
+			<h3 id="about-headline"><span class="flashing">&#x26A0;</span>&nbsp;About&nbsp;<span class="flashing">&#x26A0;</span></h3>
+			<article>
+				<h5><mark>The Lab for Creative Computation (CRCL)</mark> is acting at the interface of design, digital technologies and construction.</h5>
+
+<p>We explore new construction modes that combine robotics with human interventions and digital media, in pursuit of more creative solutions to contemporary design and construction challenges.</p>
+
+<p>Showcasing scientific research and the rigour that it requires. With a playful and accessible approach to technical topics, such as programming and robotics, CRCL strives to break down the barriers for novices to enter the field.</p>
+
+<p>Emphasizing and supporting the significant contributions of women in technology, as well as collaboration, open data, and open science, CRCL seeks to redefine innovation: away from conventional mentalities, and towards one that embraces collaboration, building up on current knowledge.</p>
+
+<p>It is truly experimental, including the acknowledging and embracing the failures that inevitably accompany experimentation.</p>
+			</article>
+		</section>
+
+<!-- NEWS SECTION -->
+		<section id="news" class="hotpink">
+			<h3 id="news-headline"><span class="flashing">&#x26A0;</span>&nbsp;News&nbsp;<span class="flashing">&#x26A0;</span></h3>
+			<article>
+				<ol>
+					<li><h4><time datetime="2022-09-26">09/26/22</time></h4>
+						<figure>
+							<a href="https://bamx.epfl.ch/" target="_blank"><img src="img/crcl-news-2022-09sep-26-bamx-epfl.jpeg" alt="Photo of the lightweight bamboo structure BamX"></a>
+						</figure>
+						In collaboration with GCM, ITKE and an independent artist, the CRCL unveils a lightweight bamboo structure, <a href="https://bamx.epfl.ch/" target="_blank"><mark class="highlight-yellow">BamX</mark></a>, at the heart of the Architecture faculty building.
+					<br /><span class="emoji">&#x1f578; &#x1f38d; &#x1f578;</span></li>
+
+					<li><h4><time datetime="2022-09-26">09/26/22</time></h4>
+						<figure>
+							<a href="https://www.epfl.ch/schools/enac/about/events/20-years-enac/" target="_blank"><img src="img/crcl-news-2022-09sep-26-enac-maxence-grangeot.jpg" alt=""></a>
+						</figure>
+						CRCL presented a robotic assembly prototype of reused concrete for the <a href="https://www.epfl.ch/schools/enac/about/events/20-years-enac/" target="_blank"><mark class="highlight-yellow">ENAC 20 years anniversary exhibition</mark></a>.
+					<br /><span class="emoji">&#x2728; &#x1f388; &#x1f389;</span></li>
+
+					<li><h4><time datetime="2022-09-06">09/06/22</time></h4>
+						<figure>
+							<a href="https://www.youtube.com/watch?v=aVBkiVCDc94" target="_blank"><img src="img/crcl-news-2022-09sep-06-smart-living-lab.jpg" alt=""></a>
+						</figure>
+						Stefana Parascho was invited to give a lecture at <a href="https://www.youtube.com/watch?v=aVBkiVCDc94" target="_blank"><mark class="highlight-yellow">the Smart Living Lab</mark></a>.
+					<br /><span class="emoji">&#x1f3e1; &#x1F469;&#x200D;&#x1F4BB; &#x1f4ac;</span></li>
+
+<!-- MORE NEWS BUTTON -->
+					<button id="more-news">More News…</button>
+
+					<li class="start-hidden"><h4><time datetime="2021-08-10">08/10/21</time></h4>
+						<figure>
+							<a href="https://www.architectmagazine.com/awards/r-d-awards/award-robotic-constructionthe-glass-vault_o" target="_blank"><img src="img/crcl-news-architect-magazine.jpg" alt="Screenshot of Architect Magazine R+D Award website announcement"></a>
+						</figure>
+						The LightVault was awarded the <a href="https://www.architectmagazine.com/awards/r-d-awards/award-robotic-constructionthe-glass-vault_o" target="_blank"><mark class="highlight-yellow">Architect Magazine R+D award!</mark></a> Congrats to Isla Han, Edvard Bruun and Stefana Parascho for making this unique collaborative project happen.
+					<br /><span class="emoji">&#x1f3c6; &#x1f48e; &#x1f3c6;</span></li>
+					
+					<li class="start-hidden"><h4><time datetime="2021-08-07">08/07/21</time></h4>
+						<figure>
+							<a href="http://2021.acadia.org/workshops/#remote-robotic-assemblies" target="_blank"><img src="img/crcl-news-acadia-workshop.jpg" alt="Screenshot of ACADIA Workshops website"></a>
+						</figure>
+						We are teaching a workshop at this year’s ACADIA conference together with Gramazio Kohler Research, ETH Zurich: Controlling robots remotely through COMPAS FAB. <a href="http://2021.acadia.org/workshops/#remote-robotic-assemblies" target="_blank"><mark class="highlight-yellow">Join us by registering here!!</mark></a>
+					<br /><span class="emoji">&#x1f916; &#x1f469; &#x200d;&#x1f4BB;</span></li>
+					
+					<li class="start-hidden"><h4><time datetime="2021-08-06">08/06/21</time></h4>
+						<figure>
+							<a href="https://www.istructe.org/structuralawards/the-shortlist/structural-artistry-(non-buildings)/robotic-construction-the-glass-vault"><img src="img/crcl-news-structural-awards-shortlist.jpg" alt="Screenshot of the Structural Awards website"></a>
+						</figure>
+						<a href="https://www.istructe.org/structuralawards/the-shortlist/structural-artistry-(non-buildings)/robotic-construction-the-glass-vault"><mark class="highlight-yellow">LightVault shortlisted for the Structural Awards 2021</mark></a> - The Institution of Structural Engineers (IStructE)
+					<br /><span class="emoji">&#x1f91e; &#x1f929; &#x1f91e;</span></li>
+					
+					<li class="start-hidden"><h4><time datetime="2021-07-14">07/14/21</time></h4>
+						<figure>
+							<a href="https://link.springer.com/article/10.1007/s41693-021-00062-z"><img src="img/crcl-news-construction-robotics-paper.jpg" alt="Screenshot of Construction Robotics journal article website"></a>
+						</figure>
+						Our paper <a href="https://link.springer.com/article/10.1007/s41693-021-00062-z"><mark class="highlight-yellow">“Robotic additive construction of bar structures: unified sequence and motion planning”</mark></a> in collaboration with the Digital Structures Group MIT is published in Construction Robotics! Led by Yijiang Huang (MIT)
+					<br /><span class="emoji">&#x1f44f; &#x1f44f; &#x1f44f;</span></li>
+					
+					<li class="start-hidden"><h4><time datetime="2021-07-05">07/05/21</time></h4>
+						<figure>
+							<a href="https://www.youtube.com/watch?v=3FSXSJjBLWQ"><img src="img/crcl-news-wia-berlin.jpg" alt="Screenshot of the Women in Architecture Festival Berlin website"></a>
+						</figure>
+						Stefana Parascho speaking at the Women in Architecture Festival Berlin, hosted by the CyPhyLab TU Berlin. <a href="https://www.youtube.com/watch?v=3FSXSJjBLWQ"><mark class="highlight-yellow">Watch the recording here.</mark></a>
+					<br /><span class="emoji">&#x1f3f0; &#x1f469; &#x1f3f0;</span></li>
+					
+					<li class="start-hidden"><h4><time datetime="2021-06-25">06/25/21</time></h4>
+						<figure>
+							<a href="http://2021.acadia.org/about/"><img src="img/crcl-news-acadia-realignments.jpg" alt="Screenshot of the ACADIA 2021 conference website"></a>
+						</figure>
+						Stefana Parascho is Co-Chairing this year’s ACADIA Conference: <a href="http://2021.acadia.org/about/"><mark class="highlight-yellow">“Realignments: toward critical computation”</mark></a> Nov 3<sup>rd</sup> - 6<sup>th</sup>. Save the dates!!
+					<br /><span class="emoji">&#x1f483; &#x1f483; &#x1f483;</span></li>
+					
+					<li class="start-hidden"><h4><time datetime="2021-06-23">06/23/21</time></h4>
+						<figure>
+							<a href="https://www.sciencedirect.com/science/article/abs/pii/S0926580521002545"><img src="img/crcl-news-automation-in-construction-journal.jpg" alt="Screenshot of Automation in Construction journal article website"></a>
+						</figure>
+						Our paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S0926580521002545"><mark class="highlight-yellow">“Three cooperative robotic fabrication methods for the scaffold-free construction of a masonry arch”</mark></a> in collaboration with the Form Finding Lab is published in Automation in Construction Journal! Led by Edvard Bruun.
+					<br /><span class="emoji">&#x1f973; &#x1f9be; &#x1f973;</span></li>
+				</ol>
+			</article>
+		</section>
+
+<!-- TEAM SECTION -->
+		<section id="team" class="hotpink">
+			<h3 id="team-headline"><span class="flashing">&#x26A0;</span>&nbsp;Team&nbsp;<span class="flashing">&#x26A0;</span></h3>
+			<article class="column-width-one-third">
+				<ol>
+					<li>
+						<details open>
+							<summary><h4><strong>Prof. Dr. Stefana Parascho</strong></h4></summary>
+
+							<figure>
+								<img src="img/crcl-team-stefana-pink.jpg" alt="Profile photo of Prof. Dr. Stefana Parascho">
+								<figcaption>&#x1f4f8; Shenhan Zhu</figcaption>
+							</figure>
+
+							<p>Stefana Parascho is the Director of the Lab for Creative Computation (CRCL).</p>
+
+							<p>Stefana studied in Stuttgart and received her Doctorate degree from ETH Zurich, Gramazio Kohler Research. She is an Assistant Professor at EPFL and makes sure that the robots and students in the lab don’t get bored. &#x1f483; &#x1f916; &#x1f57a; When she’s not in the lab, she is probably in a dance class or travelling (except during pandemics). She fights to see more recognition for women in STEM fields and hopes to never get stuck on a fixed research idea.</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary><h4><strong>Isla Xi Han</strong></h4></summary>
+
+							<figure>
+								<img src="img/create-lab-team-isla.jpg">
+								<figcaption>&#x1f4f8; Shenhan Zhu</figcaption>
+							</figure>
+						
+							<!-- <p>PhD student</p>
+
+							<p>Isla is a PhD student in Architecture (Technology Track) at Princeton University. She earned her Bachelor’s Degree in Architecture and Economics from UVa and her professional Master’s Degree in Architecture from Princeton. &#x1f340; She’s very lucky and proud to be the very first member recruited into the CREATE Laboratory Princeton - firstly through Assistantship in Instruction for Stefana‘s course, then hired as Research Specialist II for the LightVault Project, and now as a PhD student in the lab.</p>
+
+							<p>When she’s not around robots &#x1f916;, she enjoys brainstorming and collaborating with friends across disciplines for all sorts of playful projects (music, e-textile, ML and app development … you name it). She would love to better include robots as a flexible and robust collaborator &#x1f91d; with human teams in architectural design and construction settings in the near future. &#x2728;</p>
+
+							<p>Projects: LightVault, Robotoddler</p>
+							<p>Teaching: ARC574</p> -->
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary><h4><strong>Ian Ting</strong></h4></summary>
+
+							<p>MArch Student</p>
+
+							<p>Ian Ting is a Master of Architecture student at Princeton School of Architecture and a research assistant in CREATE Laboratory Princeton. He has a B.S. in Architecture from the University of Michigan where he developed an interest in dabbling in a bit of everything, and his projects have been supported by various interdepartmental grants and fellowships.</p>
+
+							<p>When he’s not contributing to the eventual domination by our robotic overlords &#x1f916;, he likes reading stories and making things by hand &#x1f64c;.</p>
+
+							<p>Projects: LightVault, SpatialAssembly, Robotoddler</p>
+							<p>Teaching: ARC374, ARC311, …</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary><h4><strong>Edvard Bruun</strong></h4></summary>
+						</details>
+					</li>
+				</ol>
+				<p>Previous team members have included: Rafael Pastrana, Lauren Dreier, Lisa Ramsburg, Emmanuel Osorno, Chris Myefski, John Mikesh, and Penelope Priscilla 🐈‍⬛</p>
+			</article>
+		</section>
+	</main>
+<!-- FOOTER -->
+	<footer class="hotpink">
+		<h6 class="text-align-center">All work &#xa9;2019 - 2022 Lab for Creative Computation (CRCL) and Prof. Dr. Stefana Parascho (except where otherwise noted). All rights reserved.</h6>
+		<br />
+		<h6 class="text-align-center">&#x2764;&#x2764;&#x2764; This website designed and built entirely by hand, and just for you &#x2764;&#x2764;&#x2764;<br />by <a href="https://www.ianbesler.com/">Ian Besler</a></h6>
+	</footer>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script>
+	$("h3#about-headline").click(function(){
+		$("section#about article").toggle(500);
+	});
+	$("h3#team-headline").click(function(){
+		$("section#team article").toggle(500);
+	});
+	$("h3#news-headline").click(function(){
+		$("section#news article").toggle(500);
+	});
+	$("button#more-news").click(function(){
+		$(".start-hidden").show(500).css("display", "inline-block");
+		$(this).hide();
+	});
+</script>
+</body>
+</html>

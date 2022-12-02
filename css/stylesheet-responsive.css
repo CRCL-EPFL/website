@@ -1,0 +1,181 @@
+/*
+____________________________________________________
+____________________________________________________
+___________________ LAPTOP SCREEN __________________
+______________________ 1355 PX _____________________
+____________________________________________________
+____________________________________________________
+*/
+
+@media screen and (max-width: 1366px) {
+
+	body {
+		background-image: url("../img/diagonal_lines_7_8px.png");
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+		header img.header-icons {
+			width: 20px;
+		}
+
+	figcaption {
+		font-size: 0.8em;
+	}
+
+}
+
+/*
+____________________________________________________
+____________________________________________________
+___________________ IPAD PORTRAIT __________________
+______________________ 768 PX _____________________
+____________________________________________________
+____________________________________________________
+*/
+
+@media screen and (max-width: 768px) {
+
+	h1 {
+		font-size: 6em;
+	}
+
+	h1 span.headline-font-size-small {
+		font-size: 0.2em;
+	}
+
+	#video,#gallery {
+		width: 96%;
+		display: block;
+	}
+
+	section {
+		margin: 2% 0 0 2%;
+		width: 94%;
+		display: block;
+	}
+
+		section#about article {
+			column-count: 2;
+		}
+
+	div#gallery-frame {
+		height: 60vw;
+	}
+
+	.column-width-one-third {
+		width: 50%;
+	}
+
+}
+
+/*
+____________________________________________________
+____________________________________________________
+___________________ SMALL MOBILE ___________________
+______________________ 500 PX ______________________
+____________________________________________________
+____________________________________________________
+*/
+
+@media screen and (max-width: 500px) {
+
+	body {
+		background-image: url("../img/diagonal_lines_9_6px.png");
+	}
+
+	header {
+		margin: 5% auto 0 auto;
+		width: 90%;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+		.header-banner {
+			padding-bottom: 5%;
+		}
+
+		.header-banner span {
+			font-size: 0;
+		}
+
+		h2 {
+			font-size: 1em;
+		}
+
+		header img.header-icons {
+			width: 20px;
+		}
+
+	section {
+		margin: 5% 0 0 5%;
+		width: 90%;
+	}
+
+		h3 {
+			font-size: 3em;
+		}
+
+		section#about article {
+			column-count: 1;
+		}
+
+	div#gallery-frame {
+		height: 80vh;
+	}
+
+	.column-width-one-third {
+		width: 95%;
+	}
+
+		figcaption {
+			width: 90%;
+			margin: 5%;
+		}
+
+	footer {
+		margin: 5% 0 5% 5%;
+		width: 80%;
+		padding: 5%;
+	}
+
+	footer div {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+		footer div#footer-right {
+			margin-top: 1em;
+			text-align: center;
+		}
+
+}
+
+/*
+____________________________________________________
+____________________________________________________
+____________________ TINY MOBILE ___________________
+______________________ 400 PX ______________________
+____________________________________________________
+____________________________________________________
+*/
+
+@media screen and (max-width: 400px) {
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 0.8em;
+	}
+
+	header img.header-icons {
+		width: 15px;
+	}
+}

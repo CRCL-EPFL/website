@@ -1,0 +1,41 @@
+.photo-gallery {
+	background-size: cover;
+	background-position: center center;
+}
+
+	#photo-one {
+		background-image: url('../img/crcl-carousel-social-signals-1.jpg');
+	}
+	#photo-two {
+		background-image: url('../img/crcl-carousel-lightvault-01.jpg');
+	}
+	#photo-three {
+		background-image: url('../img/crcl-carousel-bamx.jpg');
+	}
+	#photo-four {
+		background-image: url('../img/crcl-carousel-arc574-catherine-ahn-piao-liu-lisa-ramsburg.jpg');
+	}
+	#photo-five {
+		background-image: url('../img/crcl-carousel-social-signals-2.jpg');
+	}
+	#photo-six {
+		background-image: url('../img/crcl-carousel-lightvault-06.jpg');
+	}
+	#photo-seven {
+		background-image: url('../img/crcl-carousel-arc574-catherine-ahn-piao-liu-lisa-ramsburg-02.jpg');
+	}
+	#photo-eight {
+		background-image: url('../img/crcl-carousel-lightvault-02.jpg');
+	}
+	#photo-nine {
+		background-image: url('../img/crcl-carousel-arc596-melissa-barstow-jonah-coe-scharff.jpg');
+	}
+	#photo-ten {
+		background-image: url('../img/crcl-carousel-lightvault-03.jpg');
+	}
+	#photo-eleven {
+		background-image: url('../img/crcl-carousel-lightvault-04.jpg');
+	}
+	#photo-twelve {
+		background-image: url('../img/crcl-carousel-lightvault-05.jpg');
+	}
