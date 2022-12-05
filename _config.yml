@@ -1,0 +1,15 @@
+name: CRCL
+collections:
+  team:
+    people: true
+    order:
+      - stefana.md
+      - tamara.md
+      - eleni.md
+      - ian.md
+      - maxence.md
+      - eric.md
+  news:
+    test: true
+
+collections_dir: collections
