@@ -339,14 +339,15 @@ __________________
 				</h3>
 				<article>
 					<ol>
-						{% for member in site.team %}
+						{% assign team = site.team | sample: 6 %}
+						{% for member in team %}
 							<li>
 								<details open>
 									<summary><h4><strong>{{ member.name }}</strong></h4></summary>
 
 									<figure>
-										<img src="img/crcl-team-stefana-pink.jpg" alt="Profile photo of Prof. Dr. Stefana Parascho">
-										<figcaption>&#x1f4f8; Shenhan Zhu</figcaption>
+										<img src="{{ member.img }}" alt="{{ member.alt }}">
+										{% if member.credit %}<figcaption>&#x1f4f8; {{ member.credit }}</figcaption> {% endif %}
 									</figure>
 
 									<p>{{ member.content }}</p>
@@ -393,7 +394,7 @@ __________________
 				</article>
 				<article>
 					<details open id="standalone">
-						<summary><h4><strong>Cats:</strong></h4></summary>
+						<summary><h4><strong>Cats!</strong></h4></summary>
 						
 						<ul>
 							<li>Penelope Priscilla & Perseus Paulus 🐈‍⬛</li>

@@ -4,9 +4,7 @@ collections:
     people: true
     order:
       - stefana.md
-      - tamara.md
       - eleni.md
-      - ian.md
       - maxence.md
       - eric.md
   news:
