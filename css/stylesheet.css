@@ -58,9 +58,14 @@
 	padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2 {
 	font-weight: normal;
     font-family: 'Space Mono';
+}
+
+h3,h4,h5,h6 {
+	font-weight: normal;
+	font-family: 'IBM Plex Sans';
 }
 
 :focus {
@@ -152,12 +157,13 @@ _-_-_-_-_-_- NAV _-_-_-_-_-_-
 */
 
 nav {
-	position: fixed;
+	position: sticky;
 	z-index: 100;
 	top: 0;
 	left: 3.125%;
 	background-color: #000;
-	margin-top: 3.125%;
+	margin-top: -.3vw;
+	/* margin-top: -1.125%; */
 	width: 93.375%;
 	height: auto;
 }

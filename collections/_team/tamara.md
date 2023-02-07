@@ -1,4 +1,4 @@
 ---
-name: Stefana Parascho
+name: Tamara Pelège
 position: Administrative Assistant
 ---
