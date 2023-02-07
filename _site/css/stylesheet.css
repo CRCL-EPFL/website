@@ -63,14 +63,9 @@ h1 {
 	font-family: "Space Mono";
 }
 
-/* h3 {
-	font-family: 'Roboto Slab'
-} */
-
 h2,h3,h4,h5,h6 {
 	font-weight: normal;
-	font-family: 'IBM Plex Sans'
-
+	font-family: "IBM Plex Sans";
 }
 
 :focus {
