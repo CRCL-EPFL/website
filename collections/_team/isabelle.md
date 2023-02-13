@@ -5,4 +5,4 @@ img:
 alt: Profile photo of Isabelle Cogotti
 credit: 
 ---
-Coming soon!
+[Coming soon!]

@@ -1,13 +1,7 @@
 name: CRCL
 collections:
-  team:
-    people: true
-    order:
-      - stefana.md
-      - eleni.md
-      - maxence.md
-      - eric.md
-  news:
-    test: true
+  - team
+  - friends
+  - advisees
 
 collections_dir: collections
