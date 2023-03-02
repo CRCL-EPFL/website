@@ -203,42 +203,11 @@ __________________
 			<h3 class="off-screen">Photo Gallery</h3>
 			<div id="gallery-frame">
 				<div id="gallery-container">
-					<figure id="photo-one" class="photo-gallery" role="img" aria-label="Four color spotlights shining onto where people are standing">
-						<figcaption><strong>Social Signals</strong> - an interactive media installation that guides pedestrians through public space. Image credit: Mathias Bernhard</figcaption>
-					</figure>
-					<figure id="photo-two" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Shenhan Zhu</figcaption>
-					</figure>
-					<figure id="photo-three" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>BamX</strong> – project in collaboration with GCM, ITKE University of Stuttgart, and Alison Martin. Image credit: Ying Chen</figcaption>
-					</figure>
-					<figure id="photo-four" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>ARC574 Student Project</strong> – Catherine Ahn, Piao Liu, and Lisa Ramsburg.</figcaption>
-					</figure>
-					<figure id="photo-five" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>Social Signals</strong> - an interactive media installation that guides pedestrians through public space. Image credit: Mathias Bernhard</figcaption>
-					</figure>
-					<figure id="photo-six" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Shenhan Zhu</figcaption>
-					</figure>
-					<figure id="photo-seven" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>ARC574 Student Project</strong> – Catherine Ahn, Piao Liu, and Lisa Ramsburg.</figcaption>
-					</figure>
-					<figure id="photo-eight" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Shenhan Zhu</figcaption>
-					</figure>
-					<figure id="photo-nine" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>ARC574 Student Project</strong> – Melissa Barstow and Jonah Coe Scharff.</figcaption>
-					</figure>
-					<figure id="photo-ten" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Isla Han and Edvard Bruun.</figcaption>
-					</figure>
-					<figure id="photo-eleven" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Isla Han and Edvard Bruun.</figcaption>
-					</figure>
-					<figure id="photo-twelve" class="photo-gallery" role="img" aria-label="">
-						<figcaption><strong>LightVault</strong> – project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credits: Maciej Grzeskowiak.</figcaption>
-					</figure>
+					{% for photo in site.data.gallery %}
+						<figure class="photo-gallery" role="img" aria-label="" style="background-image: url({{photo.path}})">
+							<figcaption><strong>{{photo.title}}</strong> &mdash; {{photo.caption}}</figcaption>
+						</figure>
+					{% endfor %}
 				</div>
 			</div>
 		</section>

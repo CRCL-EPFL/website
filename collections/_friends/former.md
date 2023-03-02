@@ -17,3 +17,5 @@ Rafael Pastrana - PhD student
 Laura Fegely - MArch student
 
 Matteo Pacher - Scientific collaborator
+
+Ian Ting - PhD student
