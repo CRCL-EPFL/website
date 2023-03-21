@@ -58,12 +58,12 @@
 	padding: 0;
 }
 
-h1,h3 {
+h1 {
 	font-weight:normal;
-	font-family: "Space Mono";
+	font-family: "IBM Plex Mono";
 }
 
-h2,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
 	font-weight: normal;
 	font-family: "IBM Plex Sans";
 }
@@ -171,6 +171,7 @@ header {
 		header svg {
 			width: 12em;
 			padding: 2em 0 2em 0;
+			color: yellow;
 		}
 
 	.header-titles {
@@ -214,6 +215,10 @@ h2 {
 
 		header img.header-icons:hover {
 			fill: #fff;
+		}
+
+		h2 a {
+			margin: 0 .5%;
 		}
 
 /*
@@ -398,6 +403,7 @@ h3 {
 		left: 0;
 		width: 100%;
 		height: 100%;
+		color:yellow;
 	}
 
 	h3#team-advisees {
