@@ -16,6 +16,8 @@
 		<link rel="stylesheet" type="text/css" href="css/stylesheet-animations.css" />
 		<link rel="stylesheet" type="text/css" href="css/stylesheet-images.css" />
 		<link rel="stylesheet" type="text/css" href="css/stylesheet-responsive.css" />
+		<link rel="stylesheet" type="text/css" href="css/stylesheet-control-panel.css?v=1.1" />
+		<link rel="stylesheet" type="text/css" href="css/stylesheet-colors.css?v=1.1" />
 <!--
 ________________________________________________________________________________________________________________________________________________________________________________
 ___________________________________________________________________________________&&&_&_______&__&&&___________________________________________________________________________
@@ -176,6 +178,16 @@ __________________
 			<li><a href="#team">Team</a></li>
 		</ul>
 	</nav>
+<!--
+_______________________________________
+____________ CONTROL PANEL ____________
+_______________________________________
+-->
+<aside id="control-panel">
+	<div><h5>⚠️ Control Panel ⚠️</h5></div>
+	<button id="emergency-button">Emergency</button>
+	<button id="color-mode-button">Mode</button>
+</aside>
 
 
 <!-- MAIN -->
@@ -334,8 +346,9 @@ __________________
 		<br />
 		<h6 class="text-align-center">&#x2764;&#x2764;&#x2764; This website designed and built entirely by hand, and just for you &#x2764;&#x2764;&#x2764;<br />by <a href="https://www.ianbesler.com/">Ian Besler</a></h6>
 	</footer>
-<!-- <script src="assets/js/jquery-3.6.1.min.js"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="assets/js/jquery-3.6.4.min.js"></script>
+	<script src="assets/js/control-panel-color-mode-button.js"></script>
+	<script src="assets/js/control-panel-emergency-button.js"></script>
 <script>
 	$("h3#about-headline").click(function(){
 		$("section#about article").toggle(500);
