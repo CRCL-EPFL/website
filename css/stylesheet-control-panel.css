@@ -1,0 +1,69 @@
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- CONTROL PANEL -=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+
+aside#control-panel {
+	position: fixed;
+		top: 0;
+		right: -15vw;
+		z-index: 100;
+	width: 20vw;
+	height: 100vh;
+	background-color: gray;
+	transition: transform 0.5s;	
+}
+
+	aside#control-panel:hover {
+		cursor: pointer;
+		transform: translate(-15vw);
+	}
+
+		aside#control-panel div {
+			width: 5vw;
+			height: 100vh;
+			float: left;
+		}
+
+			aside#control-panel h5 {
+				margin-top: 50vh;
+				color: #fff;
+				white-space: nowrap;
+				transform: rotate(-90deg)translateY(-2.5em);
+			}
+
+		aside#control-panel button {
+			display: block;
+			margin: 28vh 0 0 8vw;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+				border-radius: 50%;
+				border-width: 5px;
+				border-style: solid;
+		}
+
+			aside#control-panel button:hover {
+				cursor: pointer;
+			}
+
+			aside#control-panel button#emergency-button {
+				background-color: #f00;
+				border-color: #ff0;
+			}
+
+				aside#control-panel button#emergency-button:hover {
+					background-color: #ff0;
+				}
+
+			aside#control-panel button#mode-button {
+				background-color: #aaa;
+				border-color: #ff0;
+			}
+
+				aside#control-panel button#mode-button:hover {
+					background-color: #ff0;
+				}
+
