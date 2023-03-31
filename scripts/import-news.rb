@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'open-uri'
 require 'feed-normalizer'
 require 'time'
 require 'yaml'
@@ -7,11 +8,10 @@ require 'sanitize'
 
 output_location = "../collections/_news"
 	
-# feed_url = "https://actu.epfl.ch/feeds/rss/crcl/en/"
-feed_url="http://www.iht.com/rss/frontpage.xml"
+feed_url = "https://actu.epfl.ch/feeds/rss/crcl/en/"
 name = "CRCL"
 
-rss = FeedNormalizer::FeedNormalizer.parse open(feed_url)
+rss = FeedNormalizer::FeedNormalizer.parse URI.open(feed_url)
 rss.parser = "SimpleRSS"   
 
 rss.entries.each do |entry|
@@ -19,7 +19,6 @@ rss.entries.each do |entry|
     body = entry.content
     authors = entry.authors.join(', ') rescue ''
     entry_url = entry.urls.first
-    dateadded = Time.new
     date = entry.date_published
     updated = entry.last_updated
     date = updated if date.nil?
@@ -34,10 +33,10 @@ rss.entries.each do |entry|
         file.puts "---"
         file.puts "title: \"#{title}\""
         file.puts "date: #{date}"
-        file.puts "dateadded: #{dateadded}"
         file.puts "description: \"#{description}\""
         file.puts "link: \"#{entry_url}\""
         file.puts "category:"
+        file.puts "emoji:"
         file.puts "---"
         file.close
     end
