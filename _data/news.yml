@@ -1,20 +1,20 @@
-- date: 01/11/23
-  img: img/crcl-news-2023-01jan-11-acadia-ian-besler.jpeg
-  alt: Cover of the 2021 ACADIA Publication
-  link: https://2021.acadia.org/publication/
-  text: The proceedings from ACADIA 2021 &#39;Realignments&#58; Toward Critical Computation&#39; have been published and are available for <a href="https://2021.acadia.org/publication/ACADIA_2021_Proceedings_LowRes.pdf" target="_blank"><mark class="highlight-yellow">free download</mark></a> or <a href="https://www.amazon.com/ACADIA-2021-Realignments-Computation-Architecture/dp/B0BJT2V3TD/ref=sr_1_1?crid=1EO7SUMOPZCDM&keywords=acadia+2021+realignments&qid=1667434720&qu=eyJxc2MiOiIwLjg1IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&s=books&sprefix=2021+acadi%2Cstripbooks%2C75&sr=1-1" target="_blank"><mark class="highlight-yellow">purchase in print</mark></a>.
-  emoji: "&#x1f4da; &#x1f4e5; &#x1f4da;"
+- date: 05/05/23
+  img: img/crcl-news-inaugural-lecture.jpg
+  alt: Informational banner for the inaugural lecture
+  link: https://memento.epfl.ch/event/lecon-inaugurale-prof-stefana-parascho/
+  text: Stefana will be giving her inaugural lecture about design and construction robotics on May 10, from 17:30 to 18:45.
+  emoji: "&#x26A0; &#x26A0; &#x26A0;"
 
-- date: 01/11/23
-  img: img/crcl-news-2023-01jan-11-zerowaste-edvard-bruun.jpg
-  alt: Edvard Bruun presenting ZeroWaste at ACADIA
-  link: https://2022.acadia.org
-  text: Congratulations to CRCL external advisee Edvard Bruun, who presented research on robotic dis- and reassembly of timber structures at <a href="https://2022.acadia.org" target="_blank"><mark class="highlight-yellow">ACADIA 2022</mark></a>.
-  emoji: "&#x1f9be; &#x1f3a4; &#x1f3e0;"
+- date: 03/23/23
+  img: img/crcl-news-cis-seminar.png
+  alt: Stefana Parascho presenting at CIS
+  link: https://www.epfl.ch/research/domains/cis/center-for-intelligent-systems-cis/events/gtkyn/prof-stefana-parascho/
+  text: Stefana was invited to give a lecture on multi-agent robotic processes at CIS. The recording is now available to <a href="https://www.youtube.com/watch?v=TDZfLca98gY" target="_blank"><mark class="highlight-yellow">watch online</mark></a>.
+  emoji: "&#x1f3a4; &#x1F469;&#x200D;&#x1F4BB; &#x1f4ac;"
 
-- date: 09/26/22
-  img: img/crcl-news-2022-09sep-26-bamx-epfl.jpeg
-  alt: Photo of the lightweight bamboo structure BamX
-  link: https://bamx.epfl.ch/
-  text: In collaboration with GCM, ITKE and an independent artist, the CRCL unveils a lightweight bamboo structure, <a href="https://bamx.epfl.ch/" target="_blank"><mark class="highlight-yellow">BamX</mark></a>, at the heart of the Architecture faculty building.
-  emoji: "&#x1f578; &#x1f38d; &#x1f578;"
+- date: 03/23/23
+  img: img/crcl-news-construction-robotics.png
+  alt: Photo of the paper access page
+  link: https://www.annualreviews.org/doi/abs/10.1146/annurev-control-080122-090049
+  text: Construction Robotics&#58; From Automation to Collaboration by Prof. Dr. Stefana Parascho is available for <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-control-080122-090049" target="_blank"><mark class="highlight-yellow">download online</mark></a>.
+  emoji: "&#x1f3d7; &#x1f4dd; &#x1f3d7;"
