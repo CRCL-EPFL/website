@@ -1,3 +1,10 @@
+- date: 05/30/23
+  img: img/crcl-news-positions-2023.jpg
+  alt: Banner for exhibition opening
+  link: https://memento.epfl.ch/event/opening-end-of-year-show-positions-epfl-architectu/
+  text: CRCL is presenting two projects with the opening of POSITIONS tonight at 18:00. Learn more at <a href="https://memento.epfl.ch/event/opening-end-of-year-show-positions-epfl-architectu/" target="_blank"><mark class="highlight-yellow">the event page</mark></a>.
+  emoji: "&#x1f30d; &#x1f3eb; &#x1f30d;"
+
 - date: 05/05/23
   img: img/crcl-news-inaugural-lecture.jpg
   alt: Informational banner for the inaugural lecture
@@ -11,10 +18,3 @@
   link: https://www.epfl.ch/research/domains/cis/center-for-intelligent-systems-cis/events/gtkyn/prof-stefana-parascho/
   text: Stefana was invited to give a lecture on multi-agent robotic processes at CIS. The recording is now available to <a href="https://www.youtube.com/watch?v=TDZfLca98gY" target="_blank"><mark class="highlight-yellow">watch online</mark></a>.
   emoji: "&#x1f3a4; &#x1F469;&#x200D;&#x1F4BB; &#x1f4ac;"
-
-- date: 03/23/23
-  img: img/crcl-news-construction-robotics.png
-  alt: Photo of the paper access page
-  link: https://www.annualreviews.org/doi/abs/10.1146/annurev-control-080122-090049
-  text: Construction Robotics&#58; From Automation to Collaboration by Prof. Dr. Stefana Parascho is available for <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-control-080122-090049" target="_blank"><mark class="highlight-yellow">download online</mark></a>.
-  emoji: "&#xFE0F; &#x1f4dd; &#xFE0F;"
