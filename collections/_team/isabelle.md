@@ -1,7 +1,7 @@
 ---
 name: Isabelle Cogotti
 position: Administrative Assistant
-img:
+img: img/crcl-team-isabelle-cogotti.jpg
 alt: Profile photo of Isabelle Cogotti
 credit: 
 ---
