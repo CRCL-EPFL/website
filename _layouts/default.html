@@ -311,16 +311,33 @@ __________________
 					</ol>
 				</article>
 				<article>
-					<h3 id="team-advisees">Friends</h3>
+					<h3 id="team-advisees">Collaborators</h3>
 					<ol>
 						<li>
 							<summary><h4><strong>Former team members: </strong></h4></summary>
-							{{ site.friends[1].content }}
+							{{ site.collaborators[1].content }}
 						</li>
 
 						<li>
-							<summary><h4><strong>Cats! </strong></h4></summary>
-							{{ site.friends[0].content }}
+							<summary><h4><strong>Friends of the lab: </strong></h4></summary>
+							{{ site.collaborators[2].content }}
+						</li>
+
+						<li>
+							<details open>
+								<summary><h4><strong>Cats!</strong></h4></summary>
+
+								<div id="gallery-frame">
+									<div id="gallery-container">
+										{% for photo in site.data.gallery %}
+											<!-- <figure class="photo-gallery" role="img" aria-label="" style="background-image: url({{photo.path}})"> -->
+											<img src="{{ photo.path }}" alt="{{ member.alt }}" style="height: 100%">
+										{% endfor %}
+									</div>
+								</div>
+
+								{{ site.collaborators[0].content }}
+							</details>
 						</li>
 
 					</ol>
