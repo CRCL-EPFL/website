@@ -183,7 +183,13 @@ __________________
 <!-- VIDEO GALLERY -->
 		<section id="video">
 			<h3 class="off-screen">Video Gallery</h3>
-			<video src="video/crcl_robot-demo.mp4" autoplay controls loop muted poster="video/crcl_demo-poster.jpeg"></video>
+			<div id="video-container">
+				<video autoplay controls loop muted poster="video/crcl_demo-poster.jpeg">
+					<source src="video/crcl-grangeot-robot-demo.mp4">
+				</video>
+
+				<figcaption><strong>Digital Upcycling</strong> &mdash; Maxence Grangeot - CRCL and SXL</figcaption>
+			</div>
 			<script>
 				var myvid = document.getElementById('myvideo');
 				var myvids = [
