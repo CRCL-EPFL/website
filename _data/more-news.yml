@@ -26,6 +26,13 @@
   text: In collaboration with GCM, ITKE and an independent artist, the CRCL unveils a lightweight bamboo structure, <a href="https://bamx.epfl.ch/" target="_blank"><mark class="highlight-yellow">BamX</mark></a>, at the heart of the Architecture faculty building.
   emoji: "&#x1f578; &#x1f38d; &#x1f578;"
 
+- date: 03/23/23
+  img: img/crcl-news-cis-seminar.png
+  alt: Stefana Parascho presenting at CIS
+  link: https://www.epfl.ch/research/domains/cis/center-for-intelligent-systems-cis/events/gtkyn/prof-stefana-parascho/
+  text: Stefana was invited to give a lecture on multi-agent robotic processes at CIS. The recording is now available to <a href="https://www.youtube.com/watch?v=TDZfLca98gY" target="_blank"><mark class="highlight-yellow">watch online</mark></a>.
+  emoji: "&#x1f3a4; &#x1F469;&#x200D;&#x1F4BB; &#x1f4ac;"
+
 - date: 26/09/22
   img: img/crcl-news-2022-09sep-26-enac-maxence-grangeot.jpg
   alt: Robotic assembly prototype

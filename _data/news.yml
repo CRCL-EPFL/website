@@ -1,3 +1,10 @@
+- date: 06/09/23
+  img: img/crcl-news-postdoc-position.png
+  alt: Banner for postdoc opening
+  link: https://recruiting.epfl.ch/Vacancies/2915/Description/2
+  text: CRCL is searching for a postdoctoral researcher for a 2 year project focusing on reconfiguration of timber structures! <a href="https://recruiting.epfl.ch/Vacancies/2915/Description/2" target="_blank"><mark class="highlight-yellow">Learn more about the position opening</mark></a>.
+  emoji: "&#x1fab5; &#x1fe0f; &#x1fab5;"
+
 - date: 05/30/23
   img: img/crcl-news-positions-2023.jpg
   alt: Banner for exhibition opening
@@ -11,10 +18,3 @@
   link: https://memento.epfl.ch/event/lecon-inaugurale-prof-stefana-parascho/
   text: Stefana will be giving her inaugural lecture about design and construction robotics on May 10, from 17:30 to 18:45.
   emoji: "&#x26A0; &#x26A0; &#x26A0;"
-
-- date: 03/23/23
-  img: img/crcl-news-cis-seminar.png
-  alt: Stefana Parascho presenting at CIS
-  link: https://www.epfl.ch/research/domains/cis/center-for-intelligent-systems-cis/events/gtkyn/prof-stefana-parascho/
-  text: Stefana was invited to give a lecture on multi-agent robotic processes at CIS. The recording is now available to <a href="https://www.youtube.com/watch?v=TDZfLca98gY" target="_blank"><mark class="highlight-yellow">watch online</mark></a>.
-  emoji: "&#x1f3a4; &#x1F469;&#x200D;&#x1F4BB; &#x1f4ac;"
