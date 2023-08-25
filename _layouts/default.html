@@ -328,10 +328,11 @@ __________________
 								<summary><h4><strong>Cats!</strong></h4></summary>
 
 								<div id="gallery-frame">
-									<div id="gallery-container">
-										{% for photo in site.data.gallery %}
-											<!-- <figure class="photo-gallery" role="img" aria-label="" style="background-image: url({{photo.path}})"> -->
-											<img src="{{ photo.path }}" alt="{{ member.alt }}" style="height: 100%">
+									<div id="long-gallery-container">
+										{% for photo in site.static_files %}
+											{% if photo.path contains 'img/cats' %}
+												<img src="{{ site.baseurl }}{{ photo.path }}" alt="Photo of a cat" style="height: 100%">
+											{% endif %}
 										{% endfor %}
 									</div>
 								</div>
