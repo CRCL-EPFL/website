@@ -334,7 +334,7 @@ __________________
 								<summary><h4><strong>Cats!</strong></h4></summary>
 
 								<div id="gallery-frame">
-									<div id="long-gallery-container">
+									<div style="height: 100%; width:4922%">
 										{% for photo in site.static_files %}
 											{% if photo.path contains 'img/cats' %}
 												<img src="{{ site.baseurl }}{{ photo.path }}" alt="Photo of a cat" style="height: 100%">
