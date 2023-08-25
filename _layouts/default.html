@@ -317,16 +317,34 @@ __________________
 					</ol>
 				</article>
 				<article>
-					<h3 id="team-advisees">Friends</h3>
+					<h3 id="team-advisees">Collaborators</h3>
 					<ol>
 						<li>
 							<summary><h4><strong>Former team members: </strong></h4></summary>
-							{{ site.friends[1].content }}
+							{{ site.collaborators[1].content }}
 						</li>
 
 						<li>
-							<summary><h4><strong>Cats! </strong></h4></summary>
-							{{ site.friends[0].content }}
+							<summary><h4><strong>Friends of the lab: </strong></h4></summary>
+							{{ site.collaborators[2].content }}
+						</li>
+
+						<li>
+							<details open>
+								<summary><h4><strong>Cats!</strong></h4></summary>
+
+								<div id="gallery-frame">
+									<div id="long-gallery-container">
+										{% for photo in site.static_files %}
+											{% if photo.path contains 'img/cats' %}
+												<img src="{{ site.baseurl }}{{ photo.path }}" alt="Photo of a cat" style="height: 100%">
+											{% endif %}
+										{% endfor %}
+									</div>
+								</div>
+
+								{{ site.collaborators[0].content }}
+							</details>
 						</li>
 
 					</ol>

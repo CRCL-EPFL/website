@@ -1,7 +1,7 @@
 name: CRCL
 collections:
   - team
-  - friends
+  - collaborators
   - advisees
 
 collections_dir: collections
