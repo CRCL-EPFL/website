@@ -4,6 +4,7 @@ position: Laboratory Director
 img: img/crcl-team-stefana.jpg
 alt: Profile photo of Prof. Dr. Stefana Parascho
 credit: Shenhan Zhu
+more: Publications
 ---
 Stefana Parascho is the Director of the Lab for Creative Computation (CRCL).
 
