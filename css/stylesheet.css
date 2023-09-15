@@ -630,6 +630,9 @@ _-_-_-_-_-_- POPUP _-_-_-_-_-_-_
 		font-size: 1em;
 		padding-bottom: 1em;
 	}
+	section#publications article{
+		display: none;
+	}
 
 
 /*
