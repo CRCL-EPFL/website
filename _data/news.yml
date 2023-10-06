@@ -1,20 +1,20 @@
-- date: 08/26/23
-  img: img/crcl-news-futureofconstruction.png
-  alt: Web page of the Future of Construction symposium
-  link: https://futureofconstruction.net
-  text: The Future of Construction Symposium 2023 will take place from September 13 to 15 and will feature keynotes, poster sessions, and workshops revolving around human-machine collaborations in design and construction. <a href="https://futureofconstruction.net" target="_blank"><mark class="highlight-yellow">Find out more</mark></a> and <a href="https://www.events.tum.de/frontend/index.php?sub=172" target="_blank"><mark class="highlight-yellow">register for full access</mark></a> to on-site events!
-  emoji: "&#x1F52E; &#x1F6A7; &#x1F52E;"
+- date: 10/06/23
+  img: img/crcl-news-aagchair.png
+  alt: Scientific Chair of AAG 2023
+  link: https://www.degruyter.com/document/doi/10.1515/9783111162683/html
+  text: Stefana Parascho is a Scientific Chair at AAG 2023, a multi-disciplinary conference connecting architects, engineers, and computer scientists in academia and industry. <a href="https://www.degruyter.com/document/doi/10.1515/9783111162683/html" target="_blank"><mark class="highlight-yellow">Find the conference proceedings online</mark></a>!
+  emoji: "&#x1FA91; &#x1F469; &#x1FA91;"
 
-- date: 06/09/23
-  img: img/crcl-news-postdoc-position.png
-  alt: Banner for postdoc opening
-  link: https://recruiting.epfl.ch/Vacancies/2915/Description/2
-  text: CRCL is searching for a postdoctoral researcher for a 2 year project focusing on reconfiguration of timber structures! <a href="https://recruiting.epfl.ch/Vacancies/2915/Description/2" target="_blank"><mark class="highlight-yellow">Learn more about the position opening</mark></a>.
-  emoji: "&#x1fab5; &#x267B; &#x1fab5;"
+- date: 10/06/23
+  img: img/crcl-news-aag2023.jpg
+  alt: Homepage for AAG 2023
+  link: https://www.aag2023.com/#
+  text: Congratulations to CRCL PhD Candidate Jingwen Wang, who will be presenting her paper on multi-robotic assembly during <a href="https://www.aag2023.com/#" target="_blank"><mark class="highlight-yellow">AAG 2023</mark></a>!
+  emoji: "&#x1F9BE; &#x1F41A; &#x1F9BE;"
 
-- date: 05/30/23
-  img: img/crcl-news-positions-2023.jpg
-  alt: Banner for exhibition opening
-  link: https://memento.epfl.ch/event/opening-end-of-year-show-positions-epfl-architectu/
-  text: CRCL is presenting two projects with the opening of POSITIONS tonight at 18:00. Learn more at <a href="https://memento.epfl.ch/event/opening-end-of-year-show-positions-epfl-architectu/" target="_blank"><mark class="highlight-yellow">the event page</mark></a>.
-  emoji: "&#x1f30d; &#x1f3eb; &#x1f30d;"
+- date: 10/06/23
+  img: img/crcl-news-acmscf2023.png
+  alt: Homepage for ACM SCF 2023
+  link: https://scf.acm.org/2023/index.html
+  text: Congratulations to incoming CRCL PhD Candidate Gabriel Vallat, who will be presenting a paper at the <a href="https://scf.acm.org/2023/index.html" target="_blank"><mark class="highlight-yellow">2023 ACM Symposium on Computational Fabrication</mark></a>!
+  emoji: "&#x1F916; &#x1F9E0; &#x1F916;"
