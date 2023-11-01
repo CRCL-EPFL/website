@@ -19,3 +19,5 @@ Laura Fegely - MArch student
 Matteo Pacher - Scientific collaborator
 
 Ian Ting - PhD student
+
+Adam Joseph Ghadi-Delgado – Teaching assistant

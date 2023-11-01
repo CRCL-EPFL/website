@@ -60,12 +60,12 @@
 
 h1 {
 	font-weight:normal;
-	font-family: "IBM Plex Mono";
+	font-family: "Roboto Mono";
 }
 
 h2,h3,h4,h5,h6 {
 	font-weight: normal;
-	font-family: "IBM Plex Sans";
+	font-family: "Roboto";
 }
 
 :focus {
@@ -551,6 +551,33 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news {
 		background-size: 100px;
 		border: 0.3vw dashed #000;
 		cursor: pointer;
+	}
+
+/*
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+_-_-_-_-_- PUBLICATIONS SECTION _-_-_-_
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+*/
+
+section#publications ol {
+	list-style-type: none;
+}
+
+	section#publications li {
+		margin: 0 1.5% 0 1.5%;
+		vertical-align: top;
+	}
+
+		section#publications li p {
+			margin: 1em;
+		}
+
+section#publications article ol li {
+	display: inline-block;
+}
+
+	section#publications article ol li.start-hidden {
+		display: none;
 	}
 
 /*

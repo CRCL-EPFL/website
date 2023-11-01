@@ -3,6 +3,6 @@ collections:
   - team
   - collaborators
   - advisees
-  - more
+  - publications
 
 collections_dir: collections
