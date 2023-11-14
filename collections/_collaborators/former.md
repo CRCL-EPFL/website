@@ -20,4 +20,4 @@ Matteo Pacher - Scientific collaborator
 
 Ian Ting - PhD student
 
-Adam Joseph Ghadi-Delgado – Teaching assistant
+Adam Joseph Ghadi-Delgado – MArch student
