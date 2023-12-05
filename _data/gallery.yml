@@ -1,4 +1,8 @@
-- path: 'img/crcl-carousel-social-signals-1.jpg'
+- path: 'img/crcl-carousel-grangeotupcycling-01.jpg'
+  title: Digital Upcycling
+  caption: 'a structural wall from reclaimed concrete rubble. Image credit: Maxence Grangeot'
+
+- path: 'img/crcl-carousel-social-signals-2.jpg'
   title: Social Signals
   caption: 'an interactive media installation that guides pedestrians through public space. Image credit: Mathias Bernhard'
 
@@ -6,15 +10,15 @@
   title: LightVault
   caption: 'project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Shenhan Zhu'
 
+- path: 'img/crcl-carousel-grangeotupcycling-02.jpg'
+  title: Digital Upcycling
+  caption: 'a structural wall from reclaimed concrete rubble. Image credit: Maxence Grangeot'
+
 - path: 'img/crcl-carousel-bamx.jpg'
   title: BamX
   caption: 'project in collaboration with GCM, ITKE University of Stuttgart, and Alison Martin. Image credit: Ying Chen'
 
-- path: 'img/crcl-carousel-arc574-catherine-ahn-piao-liu-lisa-ramsburg.jpg'
-  title: ARC574 Student Project
-  caption: 'Catherine Ahn, Piao Liu, and Lisa Ramsburg.'
-
-- path: 'img/crcl-carousel-social-signals-2.jpg'
+- path: 'img/crcl-carousel-social-signals-1.jpg'
   title: Social Signals
   caption: 'an interactive media installation that guides pedestrians through public space. Image credit: Mathias Bernhard'
 
@@ -30,13 +34,9 @@
   title: LightVault
   caption: 'project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Shenhan Zhu'
 
-- path: 'img/crcl-carousel-arc596-melissa-barstow-jonah-coe-scharff.jpg'
-  title: ARC574 Student Project
-  caption: 'Catherine Ahn, Piao Liu, and Lisa Ramsburg.'
-
-- path: 'img/crcl-carousel-lightvault-03.jpg'
-  title: LightVault
-  caption: 'project in collaboration with Skidmore Owings & Merrill and Form Finding Lab Princeton, (with support of Glass and Transparency Research Group at TU Delft, Universidad de Alcalá, the Timbrel Vault Workshop, Global Robots, and Poesia Glass). Image credit: Isla Han and Edvard Bruun.'
+- path: 'img/crcl-carousel-grangeotupcycling-03.jpg'
+  title: Digital Upcycling
+  caption: 'a structural wall from reclaimed concrete rubble. Image credit: Maxence Grangeot'
 
 - path: 'img/crcl-carousel-lightvault-04.jpg'
   title: LightVault

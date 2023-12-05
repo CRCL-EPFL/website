@@ -1,6 +1,6 @@
 ---
 name: Alexandra Pittiglio
-position: Scientific Assistant
+position: PhD Candidate
 img: 
 alt: Profile photo of Alexandra Pittiglio
 ---
