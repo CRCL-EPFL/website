@@ -1,9 +1,13 @@
 ---
 section: Papers
 ---
-Han, Isla Xi, and Stefana Parascho. 2023. ‘Improv-Structure: Exploring Improvisation in Collective Human-Robot Construction’. In Trends on Construction in the Digital Era, edited by António Gomes Correia, Miguel Azenha, Paulo J. S. Cruz, Paulo Novais, and Paulo Pereira, 233–43. Cham: Springer International Publishing.
+Vallat, Gabriel, Jingwen Wang, Anna Maddux, Maryam Kamgarpour, and Stefana Parascho. “Reinforcement Learning for Scaffold-Free Construction of Spanning Structures.” In Proceedings of the 8th ACM Symposium on Computational Fabrication, 1–12. SCF ’23. New York, NY, USA: Association for Computing Machinery, 2023. <a href="https://doi.org/10.1145/3623263.3623359" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1145/3623263.3623359.</mark></a>
 
-Duong, Eric, and Stefana Parascho. 2023. ‘Social Signals: An Adaptive Installation for Mediating Space during COVID-19 and Beyond’ – accepted for publication, CAAD Futures, Delft NL.
+Wang, Jingwen, Wenjun Liu, Gene Ting-Chun Kao, Ioanna Mitropoulou, Francesco Ranaudo, Philippe Block, and Benjamin Dillenburger. “Multi-Robotic Assembly of Discrete Shell Structures.” In Multi-Robotic Assembly of Discrete Shell Structures, 261–74. De Gruyter, 2023. <a href=" https://doi.org/10.1515/9783111162683-020" target="_blank"><mark class="highlight-yellow"> https://doi.org/10.1515/9783111162683-020.</mark></a>
+
+Duong, Eric, and Stefana Parascho. “Social Signals: An Adaptive Installation for Mediating Space During COVID-19 and Beyond.” In Computer-Aided Architectural Design. INTERCONNECTIONS: Co-Computing Beyond Boundaries, edited by Michela Turrin, Charalampos Andriotis, and Azarakhsh Rafiee, 547–61. Communications in Computer and Information Science. Cham: Springer Nature Switzerland, 2023. <a href="https://doi.org/10.1007/978-3-031-37189-9_36" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1007/978-3-031-37189-9_36.</mark></a>
+
+Han, Isla Xi, and Stefana Parascho. 2023. ‘Improv-Structure: Exploring Improvisation in Collective Human-Robot Construction’. In Trends on Construction in the Digital Era, edited by António Gomes Correia, Miguel Azenha, Paulo J. S. Cruz, Paulo Novais, and Paulo Pereira, 233–43. Cham: Springer International Publishing.
 
 Bruun, Edvard, Erin Besler, Sigrid Adriaenssens and Stefana Parascho. 2022. “Towards Computing Cooperative Robotic Sequences for the Disassembly and Reuse of Timber Frame Structures.” In ACADIA 2022 Hybrids and Haeccieties: Proceedings of the 41st Annual Conference of the Association for Computer Aided Design in Architecture.
 
