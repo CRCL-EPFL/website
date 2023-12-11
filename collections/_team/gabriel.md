@@ -1,7 +1,7 @@
 ---
 name: Gabriel Vallat
 position: PhD Candidate
-img: 
+img: img/crcl-team-gabriel-vallat.jpg
 alt: Profile photo of Gabriel Vallat
 ---
 Gabriel is a PhD student at CRCL and Sycamore lab. He's working on multi-agent reinforcement learning in a collaborative setting. 🦾🫂
