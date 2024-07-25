@@ -1,3 +1,10 @@
+- title: The Broken Promise of Automation in Construction and How Feminist Tech Agendas Can Correct Course.
+  img: img/crcl-research-manuscript.jpg
+  alt: Manuscript image
+  link: 
+  text: An upcoming manuscript on the unrealized dream of construction automation.
+  emoji: "&#x2640; &#x2640; &#x2640;"
+
 - title: Motion Pictures
   img: img/crcl-research-motion-pictures.png
   alt: Web page of the Future of Construction symposium
@@ -12,4 +19,4 @@
   text: A platform dedicated to beginner-friendly creative coding tutorials and exercises for building architecture with robots
   emoji: "&#x1F3EB; &#x1F916; &#x1F3EB;"
 
-- title: More Under Construction!
+# - title: More Under Construction!
