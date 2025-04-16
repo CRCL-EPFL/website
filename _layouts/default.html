@@ -70,7 +70,6 @@ ________________________________________________________________________________
 _____________________________________________________________________________________&&&&&______________________________________________________________________________________
 _____________________________________________________________________________________&&&&&______________________________________________________________________________________
 _____________________________________________________________________________________&&&&&______________________________________________________________________________________
-_____________________________________________________________________________________&&&&&______________________________________________________________________________________
 ____________________________________________________________________________________&&&&&&&_____________________________________________________________________________________
 ___________________________________________________________________________________&&&&&&&&&____________________________________________________________________________________
 __________________________________________________THIS WEBSITE DESIGNED AND BUILT ENTIRELY BY HAND AND JUST FOR YOU IN BUCOLIC__________________________________________________
@@ -170,7 +169,7 @@ __________________
 	<header class="hotpink">
 		<div class="header-icon flashing"><?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 224 196" style="enable-background:new 0 0 224 196;" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><path class="st0" d="M99.9,7c5.4-9.3,18.9-9.3,24.2,0l97,168c5.4,9.3-1.3,21-12.1,21H15c-10.8,0-17.5-11.7-12.1-21L99.9,7z M114.6,22.5c-1.2-2-4-2-5.2,0l-88.3,153c-1.2,2,0.3,4.5,2.6,4.5h176.7c2.3,0,3.8-2.5,2.6-4.5L114.6,22.5z"/><path class="st0" d="M105,129c-1.7,0-3-1.3-3-3V70c0-1.7,1.3-3,3-3h14c1.7,0,3,1.3,3,3v56c0,1.7-1.3,3-3,3H105z"/><path class="st0" d="M126,153c0,7.7-6.3,14-14,14s-14-6.3-14-14s6.3-14,14-14S126,145.3,126,153z"/></svg></div><div class="header-titles">
 			<h1>CRCL<br /><span class="headline-font-size-small">Lab for Creative Computation</span></h1>
-			<h2><a href="mailto:stefana.parascho@epfl.ch">Prof. Dr. Stefana Parascho</a> <a href="mailto:stefana.parascho@epfl.ch"><img class="header-icons" src="img/email-icon-black.svg" alt="Email logo" onmouseover="this.src='img/email-icon-white.svg'" onmouseout="this.src='img/email-icon-black.svg'"></a> <a href="https://twitter.com/crcl_epfl"><img class="header-icons" src="img/twitter-logo-black.svg" alt="Twitter logo" onmouseover="this.src='img/twitter-logo-white.svg'" onmouseout="this.src='img/twitter-logo-black.svg'"></a> <a href="https://www.instagram.com/crcl_epfl/"><img class="header-icons" src="img/instagram-logo-black.svg" alt="Instagram logo" onmouseover="this.src='img/instagram-logo-white.svg'" onmouseout="this.src='img/instagram-logo-black.svg'"></a>
+			<h2><a href="mailto:stefana.parascho@epfl.ch">Prof. Dr. Stefana Parascho</a> <a href="mailto:stefana.parascho@epfl.ch"><img class="header-icons" src="img/email-icon-black.svg" alt="Email logo" onmouseover="this.src='img/email-icon-white.svg'" onmouseout="this.src='img/email-icon-black.svg'"></a> <a href="https://www.instagram.com/crcl_epfl/"><img class="header-icons" src="img/instagram-logo-black.svg" alt="Instagram logo" onmouseover="this.src='img/instagram-logo-white.svg'" onmouseout="this.src='img/instagram-logo-black.svg'"></a>
 			</h2>
 		</div><div class="header-icon flashing"><?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 224 196" style="enable-background:new 0 0 224 196;" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><path class="st0" d="M99.9,7c5.4-9.3,18.9-9.3,24.2,0l97,168c5.4,9.3-1.3,21-12.1,21H15c-10.8,0-17.5-11.7-12.1-21L99.9,7z M114.6,22.5c-1.2-2-4-2-5.2,0l-88.3,153c-1.2,2,0.3,4.5,2.6,4.5h176.7c2.3,0,3.8-2.5,2.6-4.5L114.6,22.5z"/><path class="st0" d="M105,129c-1.7,0-3-1.3-3-3V70c0-1.7,1.3-3,3-3h14c1.7,0,3,1.3,3,3v56c0,1.7-1.3,3-3,3H105z"/><path class="st0" d="M126,153c0,7.7-6.3,14-14,14s-14-6.3-14-14s6.3-14,14-14S126,145.3,126,153z"/></svg></div>
 	</header>
@@ -192,8 +191,9 @@ __________________
 <!-- VIDEO GALLERY -->
 		<section id="video">
 			<h3 class="off-screen">Video Gallery</h3>
+			
 			<div id="video-container">
-				<video id="myvideo" autoplay controls muted poster="video/crcl-wang-vallat-robotoddler-poster.png">
+				<video id="myvideo" autoplay muted poster="video/crcl-wang-vallat-robotoddler-poster.png">
 					<source src="video/crcl-wang-vallat-robotoddler-short-fast.mp4">
 				</video>
 
@@ -211,7 +211,7 @@ __________________
 				
 				// Array of captions matching the video order
 				var captions = [
-					"<strong>Robotic RL</strong> &mdash; Gabriel Vallat and Jingwen Wang - CRCL and Sycamore",
+					"<strong>LightVault</strong>",
 					"", // Empty caption for second video
 					""  // Empty caption for third video
 				];
@@ -406,11 +406,15 @@ __________________
 								<summary><h4><strong>Cats!</strong></h4></summary>
 
 								<div id="gallery-frame">
-									<div style="height: 100%; width:4922%">
-										{% for photo in site.static_files %}
-										<!-- Reorder -->
+									<div id="cats-container" style="height: 100%; display: flex; gap: 10px;">
+										{% assign cat_photos = site.static_files | reverse %}
+										{% for photo in cat_photos %}
 											{% if photo.path contains 'img/cats' %}
-												<img src="{{ site.baseurl }}{{ photo.path }}" alt="Photo of a cat" style="height: 100%">
+												<div class="cat-image-wrapper">
+													<div class="cat-image-inner">
+														<img src="{{ site.baseurl }}{{ photo.path }}" alt="Photo of a cat">
+													</div>
+												</div>
 											{% endif %}
 										{% endfor %}
 									</div>
@@ -429,7 +433,7 @@ __________________
 	<footer class="hotpink">
 		<h6 class="text-align-center">All work &#xa9;2019 - 2025 Lab for Creative Computation (CRCL) and Prof. Dr. Stefana Parascho (except where otherwise noted). All rights reserved.</h6>
 		<br />
-		<h6 class="text-align-center">&#x2764;&#x2764;&#x2764; This website designed and built entirely by hand, and just for you &#x2764;&#x2764;&#x2764;<br />by <a href="https://www.ianbesler.com/">Ian Besler</a></h6>
+		<h6 class="text-align-center">&#x2764;&#x2764;&#x2764; This website designed and built entirely by hand, and just for you &#x2764;&#x2764;&#x2764;<br />by <a href="https://www.ianbesler.com/">Ian Besler</a> and Eric Duong</h6>
 	</footer>
 <!-- <script src="assets/js/jquery-3.6.1.min.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -488,6 +492,32 @@ __________________
 			teamList.appendChild(item);
 		});
 	});
+
+	// Function to calculate and set cat gallery width
+	function setCatGalleryWidth() {
+		const container = document.getElementById('cats-container');
+		const images = container.getElementsByTagName('img');
+		
+		Promise.all(Array.from(images).map(img => {
+			return new Promise((resolve) => {
+				if (img.complete) {
+					resolve(img.naturalWidth / img.naturalHeight);
+				} else {
+					img.onload = () => resolve(img.naturalWidth / img.naturalHeight);
+				}
+			});
+		})).then(aspectRatios => {
+			const containerHeight = container.clientHeight;
+			const totalWidth = aspectRatios.reduce((sum, ratio) => sum + (containerHeight * ratio), 0);
+			const padding = images.length * 10; // Gap between
+			container.style.width = `${totalWidth + padding}px`;
+		});
+	}
+
+	// Call the function when document is ready
+	document.addEventListener('DOMContentLoaded', setCatGalleryWidth);
+	// Also on window resize to handle viewport changes
+	window.addEventListener('resize', setCatGalleryWidth);
 </script>
 </body>
 </html>

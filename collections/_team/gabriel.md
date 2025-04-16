@@ -3,6 +3,7 @@ name: Gabriel Vallat
 position: PhD Candidate
 img: img/crcl-team-gabriel-vallat.jpg
 alt: Profile photo of Gabriel Vallat
+credit: Alex Pittiglio
 ---
 Gabriel is a PhD student at CRCL and Sycamore lab. He's working on multi-agent reinforcement learning in a collaborative setting. 🦾🫂
 He has obtained a bachelor's degree in micro-engineering and a master's in robotics, both at the EPFL. During his civilian service, he worked as a data analyst in aquatic ecology at EAWAG, where he used deep neural networks to predict the evolution of plankton populations. 🦠🦆

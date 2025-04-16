@@ -770,3 +770,42 @@ _-_-_-_-_-_- COLOR CLASSES -_-_-_-_-_-_
 .magenta {
 	background-color: magenta;
 }
+
+#gallery-frame {
+    overflow: hidden;
+}
+
+#cats-container {
+    position: relative;
+    height: 100%;
+}
+
+.cat-image-wrapper {
+    position: relative;
+    height: 100%;
+    overflow: visible;
+}
+
+.cat-image-inner {
+    height: 100%;
+    position: relative;
+    clip-path: inset(0 0 0 0);
+}
+
+.cat-image-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 0 2px black;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.cat-image-inner img {
+    height: 100%;
+    width: auto;
+    display: block;
+}

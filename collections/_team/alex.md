@@ -3,6 +3,7 @@ name: Alexandra Pittiglio
 position: PhD Candidate
 img: img/crcl-team-alex-pittiglio.jpg
 alt: Profile photo of Alexandra Pittiglio
+credit: Eric Duong
 ---
 Alexandra is a Ph.D. candidate at CRCL, working on human-robot collaboration through a lens of materiality, psychology of teamwork, and interaction design. 🤖
 

@@ -1,5 +1,11 @@
 ---
 ---
+Marirena Kladeftira - Postdoc → <a href="https://aap.cornell.edu/people/marirena-kladeftira" target="_blank"><mark class="highlight-yellow">Innovation Fellow at Cornell Design Tech</mark></a>
+
+Ziqi Wang – Postdoc → <a href="https://kiki007.github.io" target="_blank"><mark class="highlight-yellow">Asst. Professor at Hong Kong University of Science and Technology</mark></a>
+
+Edvard Bruun – PhD → <a href="https://www.bar-lab.org" target="_blank"><mark class="highlight-yellow">Asst. Professor at Georgia Tech College of Engineering</mark></a>
+
 Lisa Ramsburg - MArch student
 
 Emmanuel Osorno - MArch student
@@ -21,9 +27,3 @@ Matteo Pacher - Scientific collaborator
 Ian Ting - PhD student
 
 Adam Joseph Ghadi-Delgado - MArch student
-
-Ziqi Wang – Postdoc → <a href="https://kiki007.github.io" target="_blank"><mark class="highlight-yellow">Hong Kong University of Science and Technology – Asst. Professor</mark></a>
-
-Marirena Kladeftira - Postdoc → <a href="https://aap.cornell.edu/people/marirena-kladeftira" target="_blank"><mark class="highlight-yellow">Cornell Design Tech – Innovation Fellow</mark></a>
-
-Edvard Bruun – PhD → <a href="https://www.bar-lab.org" target="_blank"><mark class="highlight-yellow">Georgia Tech College of Engineering – Asst. Professor</mark></a>
