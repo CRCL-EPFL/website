@@ -1,3 +1,24 @@
+- date: 03/27/25
+  img: img/crcl-news-2025-caadria.jpg
+  alt: A small scale wood structure
+  link: https://papers.cumincad.org/data/works/att/caadria2025_753.pdf
+  text: Bravo to Alex Pittiglio and Xiliu Yang for presenting their paper, <a href="https://papers.cumincad.org/data/works/att/caadria2025_753.pdf" target="_blank"><mark class="highlight-yellow">Augmented Human-Robot Collaborative Bending&#58; Human-robot collaboration for biogenic material bending-active assemblies</mark></a>, at <a href="https://www.caadria2025.org/paper-sessions" target="_blank"><mark class="highlight-yellow">CAADRIA 25</mark></a>!
+  emoji: 🎍🗾🎍
+
+- date: 09/16/24
+  img: img/crcl-news-2025-dms-maxence.jpeg
+  alt: Edvard presenting his research
+  link: https://design-modelling-symposium.de
+  text: CRCL in Germany! Maxence presented Structural Concrete Rubble Arrangements at the <a href="https://design-modelling-symposium.de" target="_blank"><mark class="highlight-yellow">Design Modeling Symposium 2024</mark></a> in Kassel
+  emoji: 🪨🎤🪨
+
+- date: 09/10/24
+  img: img/crcl-news-2024-beta2024.jpg
+  alt: Robot installation at Beta 2024
+  link: https://betacity.eu/en/tema-beta-2024-cover-me-softly/
+  text: We're showing 'I am not a robot' at <a href="https://betacity.eu/en/tema-beta-2024-cover-me-softly/" target="_blank"><mark class="highlight-yellow">Beta 2024</mark></a> - the Timișoara Architecture Biennale! Created by Eric Duong, Stefana Parascho, and Zara Pfeiffer, the installation deconstructs our relationships to robots through a recontextualization of behavior, sense, and control
+  emoji: 🦾🧠💥
+
 - date: 07/24/24
   img: img/crcl-news-dms-workshop.jpg
   alt: A small scale wood structure
@@ -27,13 +48,6 @@
   emoji: "&#x1FAA8; &#x1F3C6; &#x1FAA8;"
 
 - date: 05/20/24
-  img: img/crcl-news-robarch2024.jpg
-  alt: RobArch promotional header image
-  link: https://robarch2024.org/schedule
-  text: Isla Xi Han and Maxence will be presenting their papers at the upcoming <a href="https://robarch2024.org/schedule" target="_blank"><mark class="highlight-yellow">Rob|Arch 2024</mark></a>! Keep an eye on Paper Session 1 for Isla's presentation of “Spontaneous Tensegrity&#58; Exploring Improvisational Design and Robotic Fabrication in Tensegrity Structures” and Paper Session 2 for Maxence's presentation of “Rising from Rubble&#58; Leveraging Existing Construction Tools for Upcycling Concrete Waste into Slender Walls”!
-  emoji: "&#x1f9be; &#x1f3a4; &#x1f9be;"
-
-# - date: 03/20/24
   img: img/crcl-news-robarch2024.jpg
   alt: RobArch promotional header image
   link: https://robarch2024.org/schedule
