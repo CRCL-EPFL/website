@@ -146,7 +146,7 @@ body,main {
 
 body {
 	background-color: #ff69b4;
-	font-family: "IBM Plex Sans";
+	font-family: "Roboto";
 	background-image: url("../img/diagonal_lines_5_10px.png");
 	background-attachment: fixed;
 }
@@ -194,7 +194,7 @@ h1 {
 
 	h1 span.headline-font-size-small {
 		font-size: 0.2em;
-		font-family: "IBM Plex Sans";
+		font-family: "Roboto";
 		color: #ff69b4;
 		background-color: #000;
 		position: relative;
@@ -434,7 +434,7 @@ h3 {
 
 	h3#team-advisees {
 		font-size: 3em;
-		font-family: 'IBM Plex Sans';
+		font-family: 'Roboto';
 		margin-top: 0;
 		cursor: default;
 		pointer-events: none;
@@ -528,7 +528,7 @@ _-_-_-_-_-_- MORE NEWS BUTTON _-_-_-_-_-_-
 */
 
 button {
-	font-family: "IBM Plex Sans";
+	font-family: "Roboto";
 }
 
 button#less-news {
