@@ -280,6 +280,19 @@ nav {
 				text-decoration: none;
 			}
 
+			#desktop-nav {
+				position: sticky;
+				top: 0;
+				width: 93.375%;
+				z-index: 100;
+			}
+
+			@media (max-width: 800px) {
+				#desktop-nav {
+					display: none;
+				}
+			}
+
 /*
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 _-_-_-_-_-_- VIDEO GALLERY -_-_-_-_-_-_
@@ -508,8 +521,12 @@ _-_-_-_-_-_- NEWS SECTION _-_-_-_-_-_-
 	}
 
 		section#news article ol li.start-hidden {
-			display: none !important; 
+			display: none; 
 		}
+		
+		/* section#news article ol li.start-hidden.visible-news {
+			display: inline-block;
+		} */
 
 		#news figure,#team figure {
 			width: 100%;
@@ -536,6 +553,7 @@ _-_-_-_-_-_- MORE NEWS BUTTON _-_-_-_-_-_-
 
 button {
 	font-family: "Roboto";
+	color: #000;
 }
 
 button#less-news {
@@ -552,13 +570,13 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news {
 	width: 97%;
 }
 
-	button#more-news:hover,button#download-full-cv:hover, button#show-bio:hover, button#less-news:hover {
-		background-attachment: fixed;
-		background-image: url("../img/diagonal_lines_5_10px-pink-inverted.svg");
-		background-size: 100px;
-		border: 0.3vw dashed #000;
-		cursor: pointer;
-	}
+button#more-news:hover,button#download-full-cv:hover, button#show-bio:hover, button#less-news:hover {
+	background-attachment: fixed;
+	background-image: url("../img/diagonal_lines_5_10px-pink-inverted.svg");
+	background-size: 100px;
+	border: 0.3vw dashed #000;
+	cursor: pointer;
+}
 
 /*
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
@@ -821,80 +839,9 @@ _-_-_-_-_-_- COLOR CLASSES -_-_-_-_-_-_
 	scroll-margin-top: 5em; /* nav height */
 }
 
-#mobile-menu-wrapper {
-
-}
-
 #mobile-menu-button {
     display: none;
 }
-
-/* MOBILE NAV*/
-@media (max-width: 800px) {
-    #mobile-menu-button {
-        display: block;
-        background: #ff69b4;
-        color: #000;
-        border: 3px solid #000;
-        padding: 0.25em .5em;
-        font-size: 2em;
-        cursor: pointer;
-        width: auto;
-    }
-	#mobile-menu-wrapper {
-		position: fixed;
-		top: 0;
-		right: 0;
-		z-index: 200;
-	}
-    #mobile-menu-wrapper nav {
-        display: none;
-        position: absolute;
-        top: 3.5em; /* just below the button */
-        right: 0;
-        width: max-content;
-        min-width: 8em;
-        background: #ff69b4;
-        border: 3px solid #000;
-        /* box-shadow: 0 0.5em 1em rgba(0,0,0,0.1); */
-        z-index: 201;
-        padding: 0.5em 0;
-    }
-    #mobile-menu-wrapper nav ul {
-        text-align: right;
-        padding: 0;
-        margin: 0;
-    }
-    #mobile-menu-wrapper nav ul li {
-        display: block;
-        padding: 0.25em 1.5em;
-    }
-    #mobile-menu-wrapper nav ul li a {
-        color: #000 !important;
-        font-size: 2em;
-        line-height: 1.2;
-        background: none;
-        text-decoration: none;
-        display: block;
-    }
-    #mobile-menu-wrapper nav ul li a:hover {
-        color: #ff69b4 !important;
-		background: #000 !important;
-    }
-
-	section#news ol,
-	section#research ol,
-	section#team ol {
-		display: block !important;
-		column-count: 1 !important;
-		/* If you use flex, override it: */
-		flex-direction: column !important;
-	}
-	section#news ol > li,
-	section#research ol > li,
-	section#team ol > li {
-		width: 100% !important;
-		display: block !important;
-		margin: 0 0 1.5em 0 !important;
-	}
+#mobile-menu-wrapper {
+	display: none;
 }
