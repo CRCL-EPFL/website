@@ -8,4 +8,8 @@
 
 <a href="http://besleranddaughter.com" target="_blank"><mark class="highlight-yellow">Besler & Daughter</mark></a>
 
+<a href="https://www.epfl.ch/labs/thema/" target="_blank"><mark class="highlight-yellow">THEMA</mark></a>
+
+<a href="https://riot.today" target="_blank"><mark class="highlight-yellow">RIOT</mark></a>
+
 <a href="http://spolialab.com" target="_blank"><mark class="highlight-yellow">SPOLIA</mark></a>

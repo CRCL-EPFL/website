@@ -164,20 +164,27 @@ header {
 }
 
 	.header-icon {
-		width: 25%;
-		display: inline-block;
+		width: 15%;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		vertical-align: middle;
 	}
-
-		header svg {
-			width: 12em;
-			padding: 2em 0 2em 0;
-			color: yellow;
-		}
+	
+	.header-icon svg {
+		width: 100%;
+		height: 100%;
+		display: block;
+		padding: 0;
+		color: yellow;
+		/* vertical-align: middle; */
+	}
 
 	.header-titles {
 		width: 50%;
 		padding: 5em 0 2em 0;
 		display: inline-block;
+		vertical-align: middle;
 	}
 
 .off-screen {
@@ -635,17 +642,17 @@ _-_-_-_-_-_- TEAM SECTION _-_-_-_-_-_-
 		width: 33%;
 	}
 
-	div#team ol,div#team ul {
+	section#team ol,section#team ul {
 			list-style-type: none;
 		}
 
-			div#team li {
+			section#team li {
 			width: 29.9%;
 			margin: 0 1.5% 0 1.5%;
 			vertical-align: top;
 			}
 
-				div#team li p {
+				section#team li p {
 					margin: 0.5em 0;
 				}
 
@@ -654,11 +661,11 @@ _-_-_-_-_-_- TEAM SECTION _-_-_-_-_-_-
 						padding: 0;
 					}
 
-	div#team article ol li {
+	section#team article ol li {
 		display: inline-block;
 	}
 
-	div#team article.hidden-bio {
+	section#team article.hidden-bio {
 		display: none;
 	}
 
@@ -808,4 +815,70 @@ _-_-_-_-_-_- COLOR CLASSES -_-_-_-_-_-_
     height: 100%;
     width: auto;
     display: block;
+}
+
+.section-anchor {
+	scroll-margin-top: 5em; /* nav height */
+}
+
+#mobile-menu-wrapper {
+
+}
+
+#mobile-menu-button {
+    display: none;
+}
+
+/* MOBILE NAV*/
+@media (max-width: 800px) {
+    #mobile-menu-button {
+        display: block;
+        background: #ff69b4;
+        color: #000;
+        border: 3px solid #000;
+        padding: 0.25em .5em;
+        font-size: 2em;
+        cursor: pointer;
+        width: auto;
+    }
+	#mobile-menu-wrapper {
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 200;
+	}
+    #mobile-menu-wrapper nav {
+        display: none;
+        position: absolute;
+        top: 3.5em; /* just below the button */
+        right: 0;
+        width: max-content;
+        min-width: 8em;
+        background: #ff69b4;
+        border: 3px solid #000;
+        /* box-shadow: 0 0.5em 1em rgba(0,0,0,0.1); */
+        z-index: 201;
+        padding: 0.5em 0;
+    }
+    #mobile-menu-wrapper nav ul {
+        text-align: right;
+        padding: 0;
+        margin: 0;
+    }
+    #mobile-menu-wrapper nav ul li {
+        display: block;
+        padding: 0.25em 1.5em;
+    }
+    #mobile-menu-wrapper nav ul li a {
+        color: #000 !important;
+        font-size: 2em;
+        line-height: 1.2;
+        background: none;
+        text-decoration: none;
+        display: block;
+    }
+    #mobile-menu-wrapper nav ul li a:hover {
+        color: #ff69b4 !important;
+		background: #000 !important;
+    }
 }
