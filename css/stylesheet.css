@@ -72,6 +72,11 @@ h2,h3,h4,h5,h6 {
 	outline: 0.1em solid #fff;
 }
 
+:root {
+	--border-width-major: 5px;
+	--border-width-minor: 3px;
+  }
+
 ::selection {
 	background-color: #fff;
 }
@@ -92,7 +97,7 @@ details > summary::-webkit-details-marker {
 
 .hotpink {
 	background-color: #ff69b4;
-	border: 0.3vw solid #000;
+	border: var(--border-width-major) solid #000;
 }
 
 	mark {
@@ -317,7 +322,7 @@ _-_-_-_-_-_- VIDEO GALLERY -_-_-_-_-_-_
 	}
 
 	div#video-container {
-		border: 2px solid #000;
+		border: var(--border-width-minor) solid #000;
 		height: 26.2vw;;
   		width: 100%;
 		position: relative;
@@ -538,11 +543,11 @@ _-_-_-_-_-_- NEWS SECTION _-_-_-_-_-_-
 
 		#news figure img,#team figure img {
 			width: 100%;
-			border: 0.2em solid #000;
+			border: var(--border-width-minor) solid #000;
 		}
 
 		#news figure img:hover {
-			border: 0.2em dashed #000;
+			border: var(--border-width-minor) dashed #000;
 		}
 
 /*
@@ -564,7 +569,7 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news {
 	background-attachment: fixed;
 	background-image: url("../img/diagonal_lines_5_10px-pink.svg");
 	background-size: 100px;
-	border: 0.3vw solid #000;
+	border: var(--border-width-major) solid #000;
 	font-size: 2em;
 	margin: 1.5%;
 	width: 97%;
@@ -574,7 +579,7 @@ button#more-news:hover,button#download-full-cv:hover, button#show-bio:hover, but
 	background-attachment: fixed;
 	background-image: url("../img/diagonal_lines_5_10px-pink-inverted.svg");
 	background-size: 100px;
-	border: 0.3vw dashed #000;
+	border: var(--border-width-major) dashed #000;
 	cursor: pointer;
 }
 
@@ -643,11 +648,11 @@ _-_-_-_-_- RESEARCH SECTION _-_-_-_-_-
 
 		#research figure img {
 			width: 100%;
-			border: 0.2em solid #000;
+			border: var(--border-width-minor) solid #000;
 		}
 
 		#research figure img:hover {
-			border: 0.2em dashed #000;
+			border: var(--border-width-minor) dashed #000;
 		}
 
 /*
@@ -809,6 +814,7 @@ _-_-_-_-_-_- COLOR CLASSES -_-_-_-_-_-_
     position: relative;
     height: 100%;
     overflow: visible;
+	border: var(--border-width-minor) solid #000;
 }
 
 .cat-image-inner {
@@ -824,7 +830,7 @@ _-_-_-_-_-_- COLOR CLASSES -_-_-_-_-_-_
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: inset 0 0 0 2px black;
+    /* box-shadow: inset 0 0 0 2px black; */
     pointer-events: none;
     z-index: 1;
 }
