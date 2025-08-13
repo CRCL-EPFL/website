@@ -258,6 +258,10 @@ ____________________________________________________
 		display: none;
 	}
 
+	section#research li.start-hidden {
+		display: none;
+	}
+
 
 	#video-container {
 		min-height: 50vw; 

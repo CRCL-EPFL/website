@@ -1,5 +1,9 @@
 ---
 ---
+Hong-Bin Yang - Scientific collaborator
+
+Marcel Garrobé Fonollosa - Reinforcement learning intern
+
 Marirena Kladeftira - Postdoc → <a href="https://aap.cornell.edu/people/marirena-kladeftira" target="_blank"><mark class="highlight-yellow">Innovation Fellow at Cornell Design Tech</mark></a>
 
 Ziqi Wang – Postdoc → <a href="https://kiki007.github.io" target="_blank"><mark class="highlight-yellow">Asst. Professor at Hong Kong University of Science and Technology</mark></a>

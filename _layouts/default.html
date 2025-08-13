@@ -338,7 +338,7 @@ __________________
 
 				<article>
 					<ol>
-						{% for article in site.data.research %}
+						{% for article in site.data.research limit:6 %}
 							<li><h4><time>{{ article.title }}</time></h4>
 								<figure>
 									<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}"></a>
@@ -346,6 +346,20 @@ __________________
 								{{ article.text }}
 							<br /><span class="emoji">{{ article.emoji }}</span></li>
 						{% endfor %}
+
+<!-- MORE RESEARCH BUTTON -->
+						<button id="more-research">More Research…</button>
+
+						{% for article in site.data.research offset:6 %}
+							<li class="start-hidden"><h4><time>{{ article.title }}</time></h4>
+								<figure>
+									<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}"></a>
+								</figure>
+								{{ article.text }}
+							<br /><span class="emoji">{{ article.emoji }}</span></li>
+						{% endfor %}
+
+						<button id="less-research">Less Research…</button>
 					</ol>
 				</article>
 			<!-- </section> -->
@@ -377,6 +391,7 @@ __________________
 					{% endfor %}
 				</ol>
 			</article>
+			{% if site.advisees.size > 0 %}
 			<article>
 				<h3 id="team-advisees">Advisees</h3>
 				<ol>
@@ -397,6 +412,7 @@ __________________
 					{% endfor %}
 				</ol>
 			</article>
+			{% endif %}
 			<article>
 				<h3 id="team-advisees">Collaborators</h3>
 				<ol>
@@ -462,19 +478,31 @@ __________________
 		$("section#research article").toggle(500);
 	});
 	$("button#more-news").click(function(){
-		$(".start-hidden").show(500).css("display", "inline-block");
+		$("section#news .start-hidden").show(500).css("display", "inline-block");
 		$("button#less-news").show(500).css("display", "inline-block");
 		$(this).hide();
 	});
 	$("button#less-news").click(function(){
 		// $(".start-hidden").show(0).css("display", "inline-block");
-		$(".start-hidden").hide(500);
+		$("section#news .start-hidden").hide(500);
 		$("button#more-news").show(500).css("display", "inline-block");
 		$(this).hide();
 	});
 	// Starting popup
 	$("button#more").click(function(){
 		$("")
+	});
+
+	$("button#more-research").click(function(){
+		$("section#research .start-hidden").show(500).css("display", "inline-block");
+		$("button#less-research").show(500).css("display", "inline-block");
+		$(this).hide();
+	});
+	$("button#less-research").click(function(){
+		// $(".start-hidden").show(0).css("display", "inline-block");
+		$("section#research .start-hidden").hide(500);
+		$("button#more-research").show(500).css("display", "inline-block");
+		$(this).hide();
 	});
 
 	// Shuffle array elements (Fisher-Yates)

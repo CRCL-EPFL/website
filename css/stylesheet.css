@@ -565,7 +565,11 @@ button#less-news {
 	display: none;
 }
 
-button#more-news,button#download-full-cv,button#show-bio, button#less-news {
+button#less-research {
+	display: none;
+}
+
+button#more-news,button#download-full-cv,button#show-bio, button#less-news, button#more-research, button#less-research {
 	background-attachment: fixed;
 	background-image: url("../img/diagonal_lines_5_10px-pink.svg");
 	background-size: 100px;
@@ -575,7 +579,7 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news {
 	width: 97%;
 }
 
-button#more-news:hover,button#download-full-cv:hover, button#show-bio:hover, button#less-news:hover {
+button#more-news:hover,button#download-full-cv:hover, button#show-bio:hover, button#less-news:hover, button#more-research:hover, button#less-research:hover {
 	background-attachment: fixed;
 	background-image: url("../img/diagonal_lines_5_10px-pink-inverted.svg");
 	background-size: 100px;

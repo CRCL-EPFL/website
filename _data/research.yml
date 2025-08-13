@@ -1,15 +1,57 @@
+- title: Multi-agent Reinforcement Learning for Robotic Construction
+  img: img/crcl-research-multi-agent.png
+  alt: Manuscript image
+  link: https://gv.crclcrclcrcl.org
+  text: Research by Gabriel Vallat on training robots to build structures from specifications 
+  emoji: 🤖📝🏗️
+
+- title: Interacting with Construction Robots
+  img: img/crcl-research-interacting-construction.jpg
+  alt: Manuscript image
+  link: https://iwcr.crclcrclcrcl.org
+  text: A collection of collaborative robotics projects developed by Eleni Skevaki
+  emoji: 🤖📱🤖
+
+- title: Rubble Walls
+  img: img/crcl-research-rubble-walls.jpg
+  alt: Manuscript image
+  link: https://rw.crclcrclcrcl.org
+  text: Research by Maxence Grangeot on upcycling large irregular concrete rubble pieces from demolition sites into walls
+  emoji: 🪨🏗️🪨
+
+- title: Re:Config
+  img: img/crcl-research-reconfig.jpeg
+  alt: Manuscript image
+  link: https://reconfig.crclcrclcrcl.org
+  text: Human-robot adaptive workflows for disassembly, repair, and construction
+  emoji: 🏫🤖🏠
+
+- title: Digital Woodcraft
+  img: img/crcl-research-digital-woodcraft.jpg
+  alt: Manuscript image
+  link: https://dwc.crclcrclcrcl.org
+  text: Human-robot fabrication workflow for the use of curved wood in construction by Alberto Johnsson
+  emoji: 🪵💻🪵
+
+- title: Reward Shaping for Autonomous Robotic Construction
+  img: img/crcl-research-reward-shaping.png
+  alt: Manuscript image
+  link: https://sdrl.crclcrclcrcl.org/
+  text: Producing more stable structures for robotic construction by Marcel Garrobé Fonollosa
+  emoji: 📊🤖📊
+
 - title: RIOT:CRCL
   img: img/crcl-crcl+riot.png
   alt: Manuscript image
   link: 
-  text: An upcoming manuscript on the unrealized dream of construction automation.
+  text: An upcoming manuscript on the unrealized dream of construction automation
   emoji: "&#x1F310; &#x1F4D6; &#x1F310;"
 
 - title: Motion Pictures
   img: img/crcl-research-motion-pictures.png
   alt: Web page of the Future of Construction symposium
   link: https://mp.crclcrclcrcl.org
-  text: An interactive installation that brings together building occupancy analysis methods, trajectory prediction, and digital media to understand and mediate shared spaces.
+  text: An interactive installation that brings together building occupancy analysis methods, trajectory prediction, and digital media to understand and mediate shared spaces
   emoji: "&#x1F52E; &#x1F6A7; &#x1F52E;"
 
 - title: L.E.A.R.N.

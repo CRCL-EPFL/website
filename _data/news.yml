@@ -1,3 +1,17 @@
+- date: 08/13/25
+  img: img/crcl-news-siggraph-2025.png
+  alt: SIGGRAPH 2025 conference banner
+  link: https://s2025.conference-schedule.org/session/?sess=sess137
+  text: Jingwen Wang will be presenting the paper <a href="https://s2025.conference-schedule.org/session/?sess=sess137" target="_blank"><mark class="highlight-yellow">'Learning to Assemble with Alternative Plans'</mark></a> at <a href="https://s2025.conference-schedule.org/session/?sess=sess137" target="_blank"><mark class="highlight-yellow">SIGGRAPH 2025</mark></a> in the Robots in the World session! The paper explores robotic assembly planning through disassembly and will be presented today at 9:00am PDT.
+  emoji: 🧩🤖🧩
+
+- date: 05/10/25
+  img: img/crcl-news-2025-timespaceexistence-reconfig.jpg
+  alt: Re:Config project installation at Time Space Existence 2025
+  link: https://timespaceexistence.com/
+  text: Our <a href="https://www.reconfig.crclcrclcrcl.org/" target="_blank"><mark class="highlight-yellow">Re:Config</mark></a> project is now on display at <a href="https://timespaceexistence.com/" target="_blank"><mark class="highlight-yellow">Time Space Existence 2025</mark></a> in Venice! The installation showcases our human-robot adaptive workflows for disassembly, repair, and construction of timber structures. Come explore the project at Palazzo Mora until November 23rd!
+  emoji: 🏛️🪵🤖
+
 - date: 04/25/25
   img: img/crcl-news-2025-tech-position.png
   alt: Banner for technician position
