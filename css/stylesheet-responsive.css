@@ -239,15 +239,16 @@ ____________________________________________________
     }
 
 	section#news ol,
-	section#research ol,
+	section#research .research-grid,
 	section#team ol {
 		display: block;
 		column-count: 1 !important;
 		/* If you use flex, override it: */
 		flex-direction: column !important;
+		grid-template-columns: 1fr !important;
 	}
 	section#news ol > li,
-	section#research ol > li,
+	section#research .research-item,
 	section#team ol > li {
 		width: 100% !important;
 		display: block;
@@ -258,7 +259,7 @@ ____________________________________________________
 		display: none;
 	}
 
-	section#research li.start-hidden {
+	section#research .research-item.start-hidden {
 		display: none;
 	}
 

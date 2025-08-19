@@ -12,4 +12,6 @@
 
 <a href="https://riot.today" target="_blank"><mark class="highlight-yellow">RIOT</mark></a>
 
+<a href="https://www.epfl.ch/labs/sxl/" target="_blank"><mark class="highlight-yellow">SXL</mark></a>
+
 <a href="http://spolialab.com" target="_blank"><mark class="highlight-yellow">SPOLIA</mark></a>

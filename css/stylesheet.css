@@ -620,27 +620,47 @@ _-_-_-_-_- RESEARCH SECTION _-_-_-_-_-
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 */
 
-	section#research ol {
+	section#research .research-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.5em;
 		list-style-type: none;
 	}
 
-		section#research li {
-			width: 29.9%;
-			margin: 0 1.5% 0 1.5%;
+		section#research .research-item {
 			vertical-align: top;
 		}
 
-			section#research li p {
+			section#research .research-item p {
 				margin: 0 0;
 			}
 
-	section#research article ol li {
-		display: inline-block;
+	section#research article .research-item {
+		display: block;
 	}
 
-		section#research article ol li.start-hidden {
+		section#research article .research-item.start-hidden {
 			display: none;
 		}
+
+	/* Responsive breakpoints for research grid */
+	@media (max-width: 1200px) {
+		section#research .research-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	@media (max-width: 900px) {
+		section#research .research-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 600px) {
+		section#research .research-grid {
+			grid-template-columns: 1fr;
+		}
+	}
 
 		#research figure,#team figure {
 			width: 100%;
