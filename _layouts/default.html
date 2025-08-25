@@ -177,6 +177,7 @@ __________________
 		<li><a href="#news">News</a></li>
 		<li><a href="#publications">Publications</a></li>
 		<li><a href="#research">Research</a></li>
+		<li><a href="#teaching">Teaching</a></li>
 		<li><a href="#team">Team</a></li>
 		</ul>
 	</nav>
@@ -190,6 +191,7 @@ __________________
 			<li><a href="#news">News</a></li>
 			<li><a href="#publications">Publications</a></li>
 			<li><a href="#research">Research</a></li>
+			<li><a href="#teaching">Teaching</a></li>
 			<li><a href="#team">Team</a></li>
 		</ul>
 		</nav>
@@ -323,8 +325,6 @@ __________________
 					{% endfor %}
 				</ol>
 			</article>
-
-			
 		</section>
 
 <!-- RESEARCH SECTION -->
@@ -363,6 +363,42 @@ __________________
 					<button id="less-research">Less Research…</button>
 				</article>
 			<!-- </section> -->
+		</section>
+
+		<!-- TEACHING SECTION -->
+		<section id="teaching" class="hotpink section-anchor">
+			<h3 id="teaching-headline">
+				<div class="h3-icon flashing"><?xml version="1.0" encoding="utf-8"?><svg class="h3-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 224 196" style="enable-background:new 0 0 224 196; position:absolute;top: 0;left: 0;width: 100%;height: 100%" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:currentColor}</style><path class="st0" d="M99.9,7c5.4-9.3,18.9-9.3,24.2,0l97,168c5.4,9.3-1.3,21-12.1,21H15c-10.8,0-17.5-11.7-12.1-21L99.9,7z M114.6,22.5c-1.2-2-4-2-5.2,0l-88.3,153c-1.2,2,0.3,4.5,2.6,4.5h176.7c2.3,0,3.8-2.5,2.6-4.5L114.6,22.5z"/><path class="st0" d="M105,129c-1.7,0-3-1.3-3-3V70c0-1.7,1.3-3,3-3h14c1.7,0,3,1.3,3,3v56c0,1.7-1.3,3-3,3H105z"/><path class="st0" d="M126,153c0,7.7-6.3,14-14,14s-14-6.3-14-14s6.3-14,14-14S126,145.3,126,153z"/></svg></div>
+					&nbsp;Teaching&nbsp;
+				<div class="h3-icon flashing"><?xml version="1.0" encoding="utf-8"?><svg class="h3-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 224 196" style="enable-background:new 0 0 224 196; position:absolute;top: 0;left: 0;width: 100%;height: 100%" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:currentColor}</style><path class="st0" d="M99.9,7c5.4-9.3,18.9-9.3,24.2,0l97,168c5.4,9.3-1.3,21-12.1,21H15c-10.8,0-17.5-11.7-12.1-21L99.9,7z M114.6,22.5c-1.2-2-4-2-5.2,0l-88.3,153c-1.2,2,0.3,4.5,2.6,4.5h176.7c2.3,0,3.8-2.5,2.6-4.5L114.6,22.5z"/><path class="st0" d="M105,129c-1.7,0-3-1.3-3-3V70c0-1.7,1.3-3,3-3h14c1.7,0,3,1.3,3,3v56c0,1.7-1.3,3-3,3H105z"/><path class="st0" d="M126,153c0,7.7-6.3,14-14,14s-14-6.3-14-14s6.3-14,14-14S126,145.3,126,153z"/></svg></div>
+			</h3>
+
+			<article>
+				<div class="research-grid">
+					{% for course in site.data.teaching limit:8 %}
+						<div class="research-item"><h4><time>{{ course.title }}</time></h4>
+							<figure>
+								<a href="{{ course.link }}" target="_blank"><img src="{{ course.img }}" alt="{{ course.alt }}"></a>
+							</figure>
+							{{ course.text }}
+						<br /><span class="emoji">{{ course.emoji }}</span></div>
+					{% endfor %}
+
+					{% for course in site.data.teaching offset:8 %}
+						<div class="research-item start-hidden"><h4><time>{{ course.title }}</time></h4>
+							<figure>
+								<a href="{{ course.link }}" target="_blank"><img src="{{ course.img }}" alt="{{ course.alt }}"></a>
+							</figure>
+							{{ course.text }}
+						<br /><span class="emoji">{{ course.emoji }}</span></div>
+					{% endfor %}
+				</div>
+
+<!-- MORE TEACHING BUTTON -->
+				<!-- <button id="more-teaching">More Teaching…</button>
+
+				<button id="less-teaching">Less Teaching…</button> -->
+			</article>
 		</section>
 
 <!-- TEAM SECTION -->
@@ -452,7 +488,9 @@ __________________
 				</ol>
 			</article>
 		</section>
+
 	</main>
+	
 <!-- FOOTER -->
 	<footer class="hotpink">
 		<h6 class="text-align-center">All work &#xa9;2019 - 2025 Lab for Creative Computation (CRCL) and Prof. Dr. Stefana Parascho (except where otherwise noted). All rights reserved.</h6>

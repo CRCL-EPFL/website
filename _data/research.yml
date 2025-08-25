@@ -26,19 +26,19 @@
   text: Human-robot adaptive workflows for disassembly, repair, and construction
   emoji: 🏫🤖🏠
 
+- title: Stereotomy
+  img: 
+  alt: Coming soon!
+  link: 
+  text: Coming soon!
+  emoji: 🪨⚒️🪨
+
 - title: Digital Woodcraft
   img: img/crcl-research-digital-woodcraft.jpg
   alt: Manuscript image
   link: https://dwc.crclcrclcrcl.org
   text: Human-robot fabrication workflow for the use of curved wood in construction by Alberto Johnsson
   emoji: 🪵💻🪵
-
-- title: Reward Shaping for Autonomous Robotic Construction
-  img: img/crcl-research-reward-shaping.png
-  alt: Manuscript image
-  link: https://sdrl.crclcrclcrcl.org/
-  text: Producing more stable structures for robotic construction by Marcel Garrobé Fonollosa
-  emoji: 📊🤖📊
 
 - title: RIOT:CRCL
   img: img/crcl-crcl+riot.png
