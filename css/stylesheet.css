@@ -455,13 +455,55 @@ section, footer {
 		padding-top: .5em;
 	}
 
-	section#about article {
-		column-count: 3;
+	section#about article.about-two-column {
+		display: flex;
+		gap: 2rem;
+		align-items: flex-start;
+		column-count: unset; /* Remove the 3-column layout */
 	}
 
-		section#about article p {
+	.about-diagram {
+		flex: 1;
+		min-height: 400px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.diagram-placeholder {
+		width: 100%;
+		height: 300px;
+		/* border: 2px #000; */
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* color: #000; */
+		/* font-style: italic; */
+	}
+
+	.about-text {
+		flex: 1;
+	}
+
+		section#about article.about-two-column .about-text p {
 			margin-top: 1em;
 		}
+
+	/* Responsive: stack vertically on mobile */
+	@media (max-width: 768px) {
+		section#about article.about-two-column {
+			flex-direction: column;
+		}
+		
+		.about-diagram {
+			min-height: 200px;
+		}
+		
+		.diagram-placeholder {
+			height: 200px;
+		}
+	}
 
 h3 {
 	cursor: pointer;
