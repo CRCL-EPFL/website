@@ -1,6 +1,36 @@
 ---
 section: Papers
 ---
+Wang, Ziqi, Wenjun Liu, Jingwen Wang, et al. "Learning to Assemble with Alternative Plans." ACM Transactions on Graphics 44, no. 4 (2025): 1–16. <a href="https://doi.org/10.1145/3730824" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1145/3730824.</mark></a>
+
+Grangeot, Maxence. “BEYOND STONE: Tectonics of Concrete Rubble Spolia.” Landskab, January 7, 2025.
+
+Grangeot, Maxence, Célia Küpfer, Maléna Bastien Masse, and Corentin Fivet. “Demolition Concrete as a New Building Material: Exploring New Supply Chains for Waste-Negative Concrete Structures.” International Conference on Structures and Architecture, 2025.
+
+Fivet, Corentin, Stefana Parascho, Maxence Grangeot, and Malena Bastien-Masse. "Disused Concrete, Digital Acupuncture and Reuse." Architectural Design 94, no. 5 (2024): 88–97. <a href="https://doi.org/10.1002/ad.3101" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1002/ad.3101.</mark></a>
+
+Settimi, Andrea, Damien Gilliard, Eleni Skevaki, et al. "DiffCheck: A Scan-CAD Evaluation Tool for Digital Manufacturing and Assembly Processes in Timber Construction." In Structures and Architecture: REstructure REmaterialize REthink REuse, edited by Mario Rinke and Marie Frier Hvejsel. CRC Press, 2025. <a href="https://doi.org/10.1201/9781003658641-83" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1201/9781003658641-83.</mark></a>
+
+Grangeot, M., T. Auffret-Postel, S. Parascho, and C. Fivet. "New Tectonics of Concrete through Rubble Reuse." In Structures and Architecture, 1st ed., by Mario Rinke and Marie Frier Hvejsel. CRC Press, 2025. <a href="https://doi.org/10.1201/9781003658641-141" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1201/9781003658641-141.</mark></a>
+
+Grangeot, Maxence, Maléna Bastien Masse, Stefana Parascho, and Corentin Fivet. “Concrete Rubble as a New Structural Construction Material: Opportunities of Digital Processes with Existing Tools.” Buildings Building Materials, and Repair&Renovation, no. Advances in Concrete Technology for Sustainable Architecture (2024).
+
+Grangeot, Maxence, Malena Bastien-Masse, Corentin Fivet, and Stefana Parascho. "Large Concrete Rubble as a New Structural Construction Material: Opportunities and Digital Processes for Load-Bearing Walls." Buildings 15, no. 9 (2025): 1437. <a href="https://doi.org/10.3390/buildings15091437" target="_blank"><mark class="highlight-yellow">https://doi.org/10.3390/buildings15091437.</mark></a>
+
+Grangeot, Maxence, Corentin Fivet, and Stefana Parascho. “Digital Upcycling: New Tectonics for Architecture.” In Transcalar Prospects in Climate Crisis. 2024.
+
+Küpfer, Célia, Maxence Grangeot, Barbara Lambec, and Corentin Fivet. "Reading the Existing: What Discarded Materials Bring to the Project." In Architecture Revalued. Baukultur and the Culture of Transition, First, edited by Valentin Bourdon, Anna Livia Friel, and Paula Viganò. EPFL Press, 2024. <a href="https://doi.org/10.55430/6641BKVA01" target="_blank"><mark class="highlight-yellow">https://doi.org/10.55430/6641BKVA01.</mark></a>
+
+Marshall, Daniel, and Maxence Grangeot. "An Investigation into Machine Learning Matchmaking for Reused Rubble Concrete Masonry Units (RR-CMU)." In Redefining the Art of Structural Design, edited by Philippe Block, Giulia Boller, Catherine De Wolf, Jacqueline Pauli, and Walter Kaufmann. 2024. <a href="https://infoscience.epfl.ch/handle/20.500.14299/240924" target="_blank"><mark class="highlight-yellow">https://infoscience.epfl.ch/handle/20.500.14299/240924.</mark></a>
+
+Skevaki, Eleni Maria, Marirena Kladeftira, Ziqi Wang, and Stefana Parascho. "Human-Robot Interaction - Workshop at Design Modeling Symposium 2024." September 2024. <a href="https://infoscience.epfl.ch/handle/20.500.14299/253264" target="_blank"><mark class="highlight-yellow">https://infoscience.epfl.ch/handle/20.500.14299/253264.</mark></a>
+
+Küpfer, Célia, Malena Bastien-Masse, Maxence Grangeot, et al. "From Soon-to-Be Demolished Mushroom Column Slabs to Reused Reinforced Concrete Saw-Cut Assemblies: The Case of the rebuiLT Pavilion." IOP Conference Series: Earth and Environmental Science 1363 (June 2024): 012052. <a href="https://doi.org/10.1088/1755-1315/1363/1/012052" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1088/1755-1315/1363/1/012052.</mark></a>
+
+Skevaki, Eleni, Marirena Kladeftira, Alexandra Pittiglio, and Stefana Parascho. "Assembly of Spaceframes in Hybrid Teams: Adaptive Digital Fabrication Workflows for Human-Robot Collaboration." June 2024. <a href="https://doi.org/10.52842/conf.caadria.2024.3.291" target="_blank"><mark class="highlight-yellow">https://doi.org/10.52842/conf.caadria.2024.3.291.</mark></a>
+
+Grangeot, M, C Fivet, and S Parascho. "From Concrete Waste to Walls: An Investigation of Reclamation and Digital Technologies for New Load-Bearing Structures." Journal of Physics: Conference Series 2600, no. 19 (2023): 192019. <a href="https://doi.org/10.1088/1742-6596/2600/19/192019" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1088/1742-6596/2600/19/192019.</mark></a>
+
 Vallat, Gabriel, Jingwen Wang, Anna Maddux, Maryam Kamgarpour, and Stefana Parascho. “Reinforcement Learning for Scaffold-Free Construction of Spanning Structures.” In Proceedings of the 8th ACM Symposium on Computational Fabrication, 1–12. SCF ’23. New York, NY, USA: Association for Computing Machinery, 2023. <a href="https://doi.org/10.1145/3623263.3623359" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1145/3623263.3623359.</mark></a>
 
 Wang, Jingwen, Wenjun Liu, Gene Ting-Chun Kao, Ioanna Mitropoulou, Francesco Ranaudo, Philippe Block, and Benjamin Dillenburger. “Multi-Robotic Assembly of Discrete Shell Structures.” In Multi-Robotic Assembly of Discrete Shell Structures, 261–74. De Gruyter, 2023. <a href=" https://doi.org/10.1515/9783111162683-020" target="_blank"><mark class="highlight-yellow"> https://doi.org/10.1515/9783111162683-020.</mark></a>

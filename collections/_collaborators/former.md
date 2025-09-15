@@ -14,9 +14,11 @@ Lauren Dreier - PhD student
 
 Ian Ting - PhD student
 
-Matteo Pacher - Scientific collaborator
+Alberto Johnsson – Scientific collaborator
 
 Hong-Bin Yang - Scientific collaborator
+
+Matteo Pacher - Scientific collaborator
 
 Marcel Garrobé Fonollosa - Reinforcement learning intern
 
