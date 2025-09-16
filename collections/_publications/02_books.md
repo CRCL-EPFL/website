@@ -1,9 +1,13 @@
 ---
 section: Books
 ---
-Parascho Stefana. 2023. “Beyond Optimization: Interaction as a Means to Resituate Digital Fabrication.” book chapter, in Homing the Machine.
+Parascho Stefana. 2024. “Design Space Explorations: On the role of visualisation in architectural fabrication and design.” book chapter, in Bio/Matter/Techno/Synthetics, University of Pennsylvania.
 
-Parascho Stefana. “Design Space Explorations: On the role of visualisation in architectural fabrication and design.” book chapter, in Bio/Matter/Techno/Synthetics, University of Pennsylvania.
+Grangeot, Maxence, Corentin Fivet, and Stefana Parascho. “Digital Upcycling: New Tectonics for Architecture.” In Transcalar Prospects in Climate Crisis. 2024.
+
+Duong, Eric and Stefana Parascho. “Motion Pictures.” In Transcalar Prospects in Climate Crisis. 2024.
+
+Parascho Stefana. 2023. “Beyond Optimization: Interaction as a Means to Resituate Digital Fabrication.” book chapter, in Homing the Machine.
 
 Bruun, Edvard, Stefana Parascho and Sigrid Adriaenssens. 2023. “Cooperative Robotic Fabrication for a Circular Economy.” book chapter, in Circular Built Environment in the Digital Age. Edited by Catherine De Wolf, Sultan Çetin, and Nancy Bocken.
 
