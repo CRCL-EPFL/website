@@ -460,6 +460,7 @@ section, footer {
 		gap: 2rem;
 		align-items: flex-start;
 		column-count: unset; /* Remove the 3-column layout */
+		margin-top: 2rem;
 	}
 
 	.about-diagram {
@@ -483,7 +484,7 @@ section, footer {
 	}
 
 	.about-text {
-		flex: 1;
+		flex: 2;
 	}
 
 		section#about article.about-two-column .about-text p {
