@@ -1,3 +1,10 @@
+- date: 10/07/25
+  img: img/crcl-news-phdhires.png
+  alt: Graphic for PhD position openings
+  link: https://careers.epfl.ch/job/Lausanne-PhD-position-in-Human-Robot-Collaborative-Assembly/1163538455/
+  text: We are hiring PhD students! If you are interested in human-robot collaborative workflows for timber construction, <a href="https://careers.epfl.ch/job/Lausanne-PhD-position-in-Human-Robot-Collaborative-Assembly/1163538455/" target="_blank"><mark class="highlight-yellow">apply here now!</mark></a> Application review begins on October 25th.
+  emoji: ⚠️⚠️⚠️
+
 - date: 09/03/25
   img: img/crcl-news-ecaade-2025-alberto.jpg
   alt: eCAADe 2025 conference banner with robotic fabrication theme

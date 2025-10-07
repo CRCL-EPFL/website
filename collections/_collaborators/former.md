@@ -1,6 +1,6 @@
 ---
 ---
-Isla Xi Han – PhD student
+Isla Xi Han – PhD student → <a href="https://archdesign.utk.edu/directory/isla-han/" target="_blank"><mark class="highlight-yellow">Lecturer at University of Tennessee Knoxville</mark></a>
 
 Alexandra Pittiglio – PhD student
 
