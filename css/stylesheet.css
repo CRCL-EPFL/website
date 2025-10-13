@@ -698,6 +698,29 @@ _-_-_-_-_- RESEARCH SECTION _-_-_-_-_-
 		}
 	}
 
+/*
+--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+_-_-_-_-_- TEACHING SECTION _-_-_-_-_-
+--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+*/
+
+	section#teaching .teaching-list {
+		display: block;
+	}
+
+		section#teaching .teaching-item {
+			margin-bottom: 2em;
+			display: block;
+		}
+
+			section#teaching .teaching-item p {
+				margin: 0.5em 0;
+			}
+
+			section#teaching .teaching-item h4 {
+				margin-bottom: 0.5em;
+			}
+
 		#research figure,#team figure {
 			width: 100%;
 		}

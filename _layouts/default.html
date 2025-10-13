@@ -374,23 +374,16 @@ __________________
 			</h3>
 
 			<article>
-				<div class="research-grid">
-					{% for course in site.data.teaching limit:8 %}
-						<div class="research-item"><h4><time>{{ course.title }}</time></h4>
-							<figure>
-								<a href="{{ course.link }}" target="_blank"><img src="{{ course.img }}" alt="{{ course.alt }}"></a>
-							</figure>
-							{{ course.text }}
-						<br /><span class="emoji">{{ course.emoji }}</span></div>
-					{% endfor %}
-
-					{% for course in site.data.teaching offset:8 %}
-						<div class="research-item start-hidden"><h4><time>{{ course.title }}</time></h4>
-							<figure>
-								<a href="{{ course.link }}" target="_blank"><img src="{{ course.img }}" alt="{{ course.alt }}"></a>
-							</figure>
-							{{ course.text }}
-						<br /><span class="emoji">{{ course.emoji }}</span></div>
+				<div class="teaching-list">
+					{% for course in site.data.teaching %}
+						<div class="teaching-item">
+							<h4><time>{{ course.title }}</time></h4>
+							<p>{{ course.text }}</p>
+							{% if course.semester %}
+								<p><strong>{{ course.semester }}</strong></p>
+							{% endif %}
+							<span class="emoji">{{ course.emoji }}</span>
+						</div>
 					{% endfor %}
 				</div>
 
