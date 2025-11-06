@@ -184,7 +184,7 @@ __________________
 	
 	<!-- Mobile Nav -->
 	<div id="mobile-menu-wrapper">
-		<button id="mobile-menu-button" aria-label="Open menu">☰</button>
+		<button id="mobile-menu-button" aria-label="Open menu">?</button>
 		<nav class="hotpink">
 		<ul>
 			<li><a href="#about">About</a></li>
@@ -285,7 +285,7 @@ __________________
 					{% for article in site.data.news limit:3 %}
 						<li><h4><time>{{ article.date }}</time></h4>
 							<figure>
-								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}"></a>
+								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="lazy" decoding="async" fetchpriority="{% if forloop.first %}high{% else %}auto{% endif %}"></a>
 							</figure>
 							{{ article.text }}
 						<br /><span class="emoji">{{ article.emoji }}</span></li>
@@ -297,7 +297,7 @@ __________________
 					{% for article in site.data.news offset:3 %}
 						<li class="start-hidden"><h4><time>{{ article.date }}</time></h4>
 							<figure>
-								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}"></a>
+								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="lazy" decoding="async"></a>
 							</figure>
 							{{ article.text }}
 						<br /><span class="emoji">{{ article.emoji }}</span></li>
@@ -341,7 +341,7 @@ __________________
 						{% for article in site.data.research limit:8 %}
 							<div class="research-item"><h4><time>{{ article.title }}</time></h4>
 								<figure>
-									<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}"></a>
+									<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="{% if forloop.index <= 4 %}eager{% else %}lazy{% endif %}" decoding="async" fetchpriority="{% if forloop.index <= 2 %}high{% else %}auto{% endif %}"></a>
 								</figure>
 								{{ article.text }}
 							<br /><span class="emoji">{{ article.emoji }}</span></div>
@@ -350,7 +350,7 @@ __________________
 						{% for article in site.data.research offset:8 %}
 							<div class="research-item start-hidden"><h4><time>{{ article.title }}</time></h4>
 								<figure>
-									<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}"></a>
+									<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="lazy" decoding="async"></a>
 								</figure>
 								{{ article.text }}
 							<br /><span class="emoji">{{ article.emoji }}</span></div>
@@ -388,9 +388,9 @@ __________________
 				</div>
 
 <!-- MORE TEACHING BUTTON -->
-				<!-- <button id="more-teaching">More Teaching…</button>
+				<!-- <button id="more-teaching">More Teaching?</button>
 
-				<button id="less-teaching">Less Teaching…</button> -->
+				<button id="less-teaching">Less Teaching?</button> -->
 			</article>
 		</section>
 
@@ -409,7 +409,7 @@ __________________
 								<summary><h4><strong>{{ member.name }}</strong></h4></summary>
 
 								<figure>
-									<img src="{{ member.img }}" alt="{{ member.alt }}">
+									<img src="{{ member.img }}" alt="{{ member.alt }}" loading="lazy" decoding="async">
 									{% if member.credit %}<figcaption>&#x1f4f8; {{ member.credit }}</figcaption> {% endif %}
 								</figure>
 
@@ -430,7 +430,7 @@ __________________
 								<summary><h4><strong>{{ adv.name }}</strong></h4></summary>
 
 								<figure>
-									{% if adv.img %}<img src="{{ adv.img }}" alt="{{ adv.alt }}"> {% endif %}
+									{% if adv.img %}<img src="{{ adv.img }}" alt="{{ adv.alt }}" loading="lazy" decoding="async"> {% endif %}
 									{% if adv.credit %}<figcaption>&#x1f4f8; {{ adv.credit }}</figcaption> {% endif %}
 								</figure>
 
@@ -466,7 +466,7 @@ __________________
 										{% if photo.path contains 'img/cats' %}
 											<div class="cat-image-wrapper">
 												<div class="cat-image-inner">
-													<img src="{{ site.baseurl }}{{ photo.path }}" alt="Photo of a cat">
+													<img src="{{ site.baseurl }}{{ photo.path }}" alt="Photo of a cat" loading="lazy" decoding="async">
 												</div>
 											</div>
 										{% endif %}

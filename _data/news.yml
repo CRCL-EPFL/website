@@ -1,8 +1,21 @@
+- date: 11/05/25
+  img: img/crcl-news-iros25.jpg
+  alt: Graphic for PhD position openings
+  link: https://iros25.org
+  text: |
+    <p>Together with Qianqing Wang (EESD Lab – EPFL), Jingwen Wang presented their paper “Dynamic Planning and Assembly for Constructing Mortar-Joint Multi-Leaf Stone Masonry Walls with a Robotic Arm” at <a href="https://iros25.org" target="_blank"><mark class="highlight-yellow">IROS 2025</mark></a>! The team built the first load-bearing wall from raw stones and mortar with a robotic arm.</p> 
+    <p>Co-authored by Qianqing Wang*, Jingwen Wang*, Bryan German Pantoja Rosero, Katrin Beyer, and Stefana Parascho.</p>
+    <p>A proud step toward merging robotic precision and traditional craftsmanship in stone masonry!</p>
+  emoji: 🪨🤖🪨
+
 - date: 10/31/25
   img: img/crcl-news-acadia25.jpg
   alt: Graphic for PhD position openings
   link: https://2025.acadia.org/
-  text: Eleni Skevaki and Marirena Kladeftira will present “TimberProxy&#58; A Tangible Human–Robot Interface for Incremental Design and Fabrication of Timber Structures” at <a href="https://2025.acadia.org/" target="_blank"><mark class="highlight-yellow">ACADIA 2025</mark></a> in Miami, Florida on Friday, 7 November at 11:15 (local time). The paper is authored by Eleni Skevaki, Marirena Kladeftira, Ziqi Wang, Sihui Wu, Gudela Grote, and Stefana Parascho. Join us to explore new interfaces for construction robotics!
+  text: |
+    <p>Eleni Skevaki and Marirena Kladeftira will present “TimberProxy&#58; A Tangible Human–Robot Interface for Incremental Design and Fabrication of Timber Structures” at <a href="https://2025.acadia.org/" target="_blank"><mark class="highlight-yellow">ACADIA 2025</mark></a> in Miami, Florida on Friday, 7 November at 11:15 (local time).</p> 
+    <p>The paper is authored by Eleni Skevaki, Marirena Kladeftira, Ziqi Wang, Sihui Wu, Gudela Grote, and Stefana Parascho. </p>
+    <p>Join us to explore new interfaces for construction robotics! </p>
   emoji: ☀️🦾☀️
 
 - date: 10/22/25

@@ -11,7 +11,7 @@
       }
 
       .cls-5 {
-        fill: pink;
+        fill: #ff69b4; /* hotpink */
       }
 
       .cls-6 {
@@ -19,7 +19,7 @@
       }
 
       .cls-2 {
-        stroke: silver;
+        stroke: #e661a3;
       }
 
       .cls-2, .cls-3 {
@@ -28,7 +28,7 @@
       }
 
       .cls-3 {
-        stroke: #000;
+        stroke: #e661a3;
       }
     </style>
     <clipPath id="clippath">

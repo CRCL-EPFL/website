@@ -554,7 +554,11 @@ _-_-_-_-_-_- NEWS SECTION _-_-_-_-_-_-
 		}
 
 			section#news li p {
-				margin: 0 0;
+				margin: 0 0 1em 0;
+			}
+
+			section#news li p:last-of-type {
+				margin-bottom: 0;
 			}
 
 	section#news article ol li {
@@ -607,6 +611,8 @@ button#less-research {
 
 button#more-news,button#download-full-cv,button#show-bio, button#less-news, button#more-research, button#less-research {
 	background-attachment: fixed;
+	/*background-color: #ff69b4;*/
+	/*background-blend-mode: multiply;*/
 	background-image: url("../img/diagonal_lines_5_10px-pink.svg");
 	background-size: 100px;
 	border: var(--border-width-major) solid #000;
