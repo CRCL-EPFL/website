@@ -809,6 +809,16 @@ _-_-_-_-_-_- TEAM SECTION _-_-_-_-_-_-
 		font-size: 1.5em;
 	}
 
+	section#team .contact-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5em;
+	}
+
+	section#team .contact-column {
+		vertical-align: top;
+	}
+
 /*
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 _-_-_-_-_-_- POPUP _-_-_-_-_-_-_
