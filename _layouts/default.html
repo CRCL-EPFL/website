@@ -384,6 +384,13 @@ __________________
 									<div class="new-badge">NEW</div>
 								{% endif %}
 								<h4><time>{{ item.title }}</time></h4>
+								
+								{% if item.img %}
+									<figure class="teaching-image">
+										<img src="{{ item.img }}" alt="{{ item.title }}" loading="lazy" decoding="async">
+									</figure>
+								{% endif %}
+								
 								<p>{{ item.text }}</p>
 								{% if item.semester %}
 									<p><strong>{{ item.semester }}</strong></p>
