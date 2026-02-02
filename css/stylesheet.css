@@ -321,6 +321,25 @@ nav {
 				text-decoration: none;
 			}
 
+			.nav-item-with-badge a {
+				position: relative;
+			}
+
+			.nav-badge {
+				background-color: #ff0;
+				color: #000;
+				padding: 0.2em 0.4em;
+				font-size: 0.4em;
+				font-weight: bold;
+				font-family: "Roboto Mono";
+				border: 2px solid #000;
+				position: absolute;
+				top: 0;
+				right: -1.5em;
+				white-space: nowrap;
+				line-height: 1;
+			}
+
 			#desktop-nav {
 				position: sticky;
 				top: 0;
@@ -331,6 +350,11 @@ nav {
 			@media (max-width: 800px) {
 				#desktop-nav {
 					display: none;
+				}
+				
+				.nav-badge {
+					font-size: 0.5em;
+					padding: 0.25em 0.45em;
 				}
 			}
 
@@ -710,12 +734,27 @@ _-_-_-_-_- TEACHING SECTION _-_-_-_-_-
 --_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 */
 
-	section#teaching .teaching-list {
-		display: block;
+	.teaching-subsection-header {
+		font-size: 3em;
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+		cursor: default;
+		pointer-events: none;
+	}
+
+	.teaching-subsection-header:hover {
+		background-color: transparent;
+		color: inherit;
+	}
+
+	section#teaching .teaching-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5em;
+		margin-bottom: 2em;
 	}
 
 		section#teaching .teaching-item {
-			margin-bottom: 2em;
 			display: block;
 		}
 
@@ -726,6 +765,115 @@ _-_-_-_-_- TEACHING SECTION _-_-_-_-_-
 			section#teaching .teaching-item h4 {
 				margin-bottom: 0.5em;
 			}
+
+	/* Responsive breakpoints for teaching grid */
+	@media (max-width: 900px) {
+		section#teaching .teaching-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	/* PDF Download Styles */
+	.pdf-download-container {
+		margin-bottom: 1em;
+	}
+
+	.pdf-preview-link {
+		display: block;
+		text-decoration: none;
+	}
+
+	.pdf-preview {
+		position: relative;
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	.pdf-preview img {
+		width: 100%;
+		display: block;
+		border: var(--border-width-minor) solid #000;
+		transition: border 0.2s;
+	}
+
+	.pdf-preview-link:hover .pdf-preview img {
+		border: var(--border-width-minor) dashed #000;
+	}
+
+	.pdf-download-overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #000;
+		color: #ff69b4;
+		padding: 0.5em 1.5em;
+		font-size: 2em;
+		font-weight: bold;
+		font-family: "Roboto Mono";
+		border: var(--border-width-minor) solid #ff69b4;
+		pointer-events: none;
+		transition: all 0.2s;
+		display: flex;
+		align-items: center;
+		gap: 0.3em;
+	}
+
+	.pdf-download-overlay::before {
+		content: "⬇";
+		font-size: 1.2em;
+		line-height: 1;
+	}
+
+	.pdf-preview-link:hover .pdf-download-overlay {
+		background-color: #ff69b4;
+		color: #000;
+		border-color: #000;
+	}
+
+	.pdf-download-text {
+		margin: 0.5em 0 1em 0;
+		font-size: 1.2em;
+	}
+
+	.pdf-download-text a {
+		text-decoration: underline;
+	}
+
+	/* NEW Badge */
+	.teaching-item {
+		position: relative;
+	}
+
+	.new-badge {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #ff0;
+		color: #000;
+		padding: 0.3em 0.6em;
+		font-size: 1em;
+		font-weight: bold;
+		font-family: "Roboto Mono";
+		border: var(--border-width-minor) solid #000;
+		z-index: 10;
+		animation-name: flashing;
+		animation-duration: 2.0s;
+		animation-iteration-count: infinite;
+		-moz-animation-name: flashing;
+		-moz-animation-duration: 2.0s;
+		-moz-animation-iteration-count: infinite;
+		-ms-animation-name: flashing;
+		-ms-animation-duration: 2.0s;
+		-ms-animation-iteration-count: infinite;
+		-o-animation-name: flashing;
+		-o-animation-duration: 2.0s;
+		-o-animation-iteration-count: infinite;
+		-webkit-animation-name: flashing;
+		-webkit-animation-duration: 2.0s;
+		-webkit-animation-iteration-count: infinite;
+	}
 
 		#research figure,#team figure {
 			width: 100%;

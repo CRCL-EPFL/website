@@ -1,24 +1,37 @@
+- title: "Dual Arm Adaptation for Robotic Construction"
+  text: Dual-robot collaborative construction of self-supporting arches under geometric and physical uncertainty
+  semester: "Spring 2026, beginning early February"
+  pdf: "file/crcl_s26_dual-arm-adaptation.pdf" 
+  emoji: 🦾🪨🦾
+  type: project
+  new: true
+
 - title: "AR-503 - Digital Design and Making: A Critical Introduction"
   text: Learn more about the course on the coursebook <a href="https://edu.epfl.ch/coursebook/en/digital-design-and-making-a-critical-introduction-AR-503" target="_blank"><mark class="highlight-yellow">the coursebook</mark></a>.
   semester: "Fall 2022, Fall 2023, Fall 2025"
   emoji: 🦾💡🦾
+  type: course
 
 - title: "AR-211 - Stereotomie"
   text:
   semester: "Fall 2024"
   emoji: ⚒️🪨⚒️
+  type: course
 
 - title: "Digital ENAC"
   text: A weeklong course on daylight analysis using Grasshopper
   semester: "January 2024"
   emoji: 🦗☀️🦗
+  type: course
 
 - title: "AR-508 - Digital Design and Making - New Approaches"
   text:
   semester: "Spring 2023"
   emoji: 🤖🎨🤖
+  type: course
 
 - title: "LE-AR-N"
   text: Find materials for computational design and building with robots on the <a href="https://www.le-ar-n.org/" target="_blank"><mark class="highlight-yellow">LE-AR-N website!</mark></a>.
   semester: "Ongoing"
   emoji: 🖥️🧠🖥️
+  type: course
