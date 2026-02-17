@@ -1,23 +1,27 @@
 @keyframes flashing {
 	0% {opacity: 1;}
+	50% {opacity: 1;}
 	99% {opacity: 0;}
 	100% {opacity: 1;}
 }
 
 @-moz-keyframes flashing {
 	0% {opacity: 1;}
+	50% {opacity: 1;}
 	99% {opacity: 0;}
 	100% {opacity: 1;}
 }
 
 @-o-keyframes flashing {
 	0% {opacity: 1;}
+	50% {opacity: 1;}
 	99% {opacity: 0;}
 	100% {opacity: 1;}
 }
 
 @-webkit-keyframes flashing {
 	0% {opacity: 1;}
+	50% {opacity: 1;}
 	99% {opacity: 0;}
 	100% {opacity: 1;}
 }

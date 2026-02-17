@@ -177,7 +177,7 @@ __________________
 		<li><a href="#news">News</a></li>
 		<li><a href="#publications">Publications</a></li>
 		<li><a href="#research">Research</a></li>
-		<li><a href="#teaching">Teaching</a></li>
+		<li class="nav-item-with-badge"><a href="#teaching">Teaching<span class="nav-badge">NEW</span></a></li>
 		<li><a href="#team">Team</a></li>
 		</ul>
 	</nav>
@@ -191,7 +191,7 @@ __________________
 			<li><a href="#news">News</a></li>
 			<li><a href="#publications">Publications</a></li>
 			<li><a href="#research">Research</a></li>
-			<li><a href="#teaching">Teaching</a></li>
+			<li class="nav-item-with-badge"><a href="#teaching">Teaching<span class="nav-badge">NEW</span></a></li>
 			<li><a href="#team">Team</a></li>
 		</ul>
 		</nav>
@@ -376,23 +376,67 @@ __________________
 			</h3>
 
 			<article>
-				<div class="teaching-list">
-					{% for course in site.data.teaching %}
-						<div class="teaching-item">
-							<h4><time>{{ course.title }}</time></h4>
-							<p>{{ course.text }}</p>
-							{% if course.semester %}
-								<p><strong>{{ course.semester }}</strong></p>
-							{% endif %}
-							<span class="emoji">{{ course.emoji }}</span>
-						</div>
+				<!-- SEMESTER PROJECTS SUBSECTION -->
+				<h3 class="teaching-subsection-header">Semester Projects</h3>
+				<div class="teaching-grid">
+					{% for item in site.data.teaching %}
+						{% if item.type == "project" %}
+							<div class="teaching-item">
+								{% if item.new %}
+									<div class="new-badge">NEW</div>
+								{% endif %}
+								<h4><time>{{ item.title }}</time></h4>
+								
+								{% if item.img %}
+									<figure class="teaching-image">
+										<img src="{{ item.img }}" alt="{{ item.title }}" loading="lazy" decoding="async">
+									</figure>
+								{% endif %}
+								
+								<p>{{ item.text }}</p>
+								{% if item.semester %}
+									<p><strong>{{ item.semester }}</strong></p>
+								{% endif %}
+								{% if item.pdf %}
+									{% if item.pdf_preview %}
+										<div class="pdf-download-container">
+											<a href="{{ item.pdf }}" target="_blank" download class="pdf-preview-link">
+												<figure class="pdf-preview">
+													<img src="{{ item.pdf_preview }}" alt="{{ item.title }} PDF preview" loading="lazy" decoding="async">
+													<div class="pdf-download-overlay">
+														<span>DOWNLOAD</span>
+													</div>
+												</figure>
+											</a>
+										</div>
+									{% else %}
+										<p class="pdf-download-text">
+											<a href="{{ item.pdf }}" target="_blank" download><mark class="highlight-yellow">↓ PROJECT .PDF ↓</mark></a>
+										</p>
+									{% endif %}
+								{% endif %}
+								<span class="emoji">{{ item.emoji }}</span>
+							</div>
+						{% endif %}
 					{% endfor %}
 				</div>
 
-<!-- MORE TEACHING BUTTON -->
-				<!-- <button id="more-teaching">More Teaching?</button>
-
-				<button id="less-teaching">Less Teaching?</button> -->
+				<!-- COURSES SUBSECTION -->
+				<h3 class="teaching-subsection-header">Courses</h3>
+				<div class="teaching-grid">
+					{% for item in site.data.teaching %}
+						{% if item.type == "course" %}
+							<div class="teaching-item">
+								<h4><time>{{ item.title }}</time></h4>
+								<p>{{ item.text }}</p>
+								{% if item.semester %}
+									<p><strong>{{ item.semester }}</strong></p>
+								{% endif %}
+								<span class="emoji">{{ item.emoji }}</span>
+							</div>
+						{% endif %}
+					{% endfor %}
+				</div>
 			</article>
 		</section>
 
