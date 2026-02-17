@@ -1,3 +1,25 @@
+- date: 13/02/26
+  img: img/crcl-news-amld26-talk-photo.jpg
+  alt: Photo of the robot demo from AMLD
+  link: https://www.youtube.com/watch?v=zMqbRbono-E
+  text: If you missed the talk from Applied Machine Learning Days, you can catch up with the recording <a href="https://www.youtube.com/watch?v=zMqbRbono-E" target="_blank"><mark class="highlight-yellow">now available on YouTube!</mark></a> Featuring a robot demo prepared by our very own Jingwen and Megi!
+  emoji: 📹🎤📹
+  credit: '@Samueldevantery'
+
+- date: 10/02/26
+  img: img/crcl-news-amld26-stefana-lecture.jpg
+  alt: Graphic for AMLD
+  link: https://2026.appliedmldays.org/
+  text: Join us on Tuesday, February 10th at the <a href="https://2026.appliedmldays.org/" target="_blank"><mark class="highlight-yellow">Applied Machine Learning Days Intelligence Summit</mark></a> in Lausanne! Stefana Parascho will be giving a keynote on Machine Learning for Autonomous Robotic Construction as part of the session Multimodal Intelligence in the Physical World. 
+  emoji: 🧠🧠🧠
+
+- date: 23/12/25
+  img: img/crcl-news-srd25-talk.jpg
+  alt: Graphic for AMLD
+  link: https://www.youtube.com/watch?v=Q0Ac02OKUqw
+  text: Stefana's keynote from <a href="https://swissroboticsday.ch/" target="_blank"><mark class="highlight-yellow">Swiss Robotics Day</mark></a>, Under Construction&#58; Building with Robots Beyond the Automation Myth is now on <a href="https://www.youtube.com/watch?v=Q0Ac02OKUqw" target="_blank"><mark class="highlight-yellow">YouTube!</mark></a>
+  emoji: 🦾📹🦾
+
 - date: 11/05/25
   img: img/crcl-news-iros25.jpg
   alt: Graphic for PhD position openings

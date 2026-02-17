@@ -286,6 +286,7 @@ __________________
 						<li><h4><time>{{ article.date }}</time></h4>
 							<figure>
 								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="lazy" decoding="async" fetchpriority="{% if forloop.first %}high{% else %}auto{% endif %}"></a>
+								{% if article.credit %}<figcaption>&#x1f4f8; {{ article.credit }}</figcaption> {% endif %}
 							</figure>
 							{{ article.text }}
 						<br /><span class="emoji">{{ article.emoji }}</span></li>
@@ -298,6 +299,7 @@ __________________
 						<li class="start-hidden"><h4><time>{{ article.date }}</time></h4>
 							<figure>
 								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="lazy" decoding="async"></a>
+								{% if article.credit %}<figcaption>&#x1f4f8; {{ article.credit }}</figcaption> {% endif %}
 							</figure>
 							{{ article.text }}
 						<br /><span class="emoji">{{ article.emoji }}</span></li>

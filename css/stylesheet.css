@@ -590,6 +590,15 @@ _-_-_-_-_-_- NEWS SECTION _-_-_-_-_-_-
 			border: var(--border-width-minor) dashed #000;
 		}
 
+		#news figcaption {
+			float: right;
+			position: relative;
+			top: -3em;
+			font-size: 0.6em;
+			background-color: hotpink;
+			padding: 0.2em;
+		}
+
 /*
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 _-_-_-_-_-_- MORE NEWS BUTTON _-_-_-_-_-_-
