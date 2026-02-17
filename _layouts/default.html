@@ -174,7 +174,7 @@ __________________
 	<nav id="desktop-nav" class="hotpink">
 		<ul>
 		<li><a href="#about">About</a></li>
-		<li><a href="#news">News</a></li>
+		<li{% if site.data.news[0].new %} class="nav-item-with-badge"{% endif %}><a href="#news">News{% if site.data.news[0].new %}<span class="nav-badge">NEW</span>{% endif %}</a></li>
 		<li><a href="#publications">Publications</a></li>
 		<li><a href="#research">Research</a></li>
 		<li class="nav-item-with-badge"><a href="#teaching">Teaching<span class="nav-badge">NEW</span></a></li>
@@ -188,7 +188,7 @@ __________________
 		<nav class="hotpink">
 		<ul>
 			<li><a href="#about">About</a></li>
-			<li><a href="#news">News</a></li>
+			<li{% if site.data.news[0].new %} class="nav-item-with-badge"{% endif %}><a href="#news">News{% if site.data.news[0].new %}<span class="nav-badge">NEW</span>{% endif %}</a></li>
 			<li><a href="#publications">Publications</a></li>
 			<li><a href="#research">Research</a></li>
 			<li class="nav-item-with-badge"><a href="#teaching">Teaching<span class="nav-badge">NEW</span></a></li>
@@ -283,7 +283,7 @@ __________________
 			<article>
 				<ol>
 					{% for article in site.data.news limit:3 %}
-						<li><h4><time>{{ article.date }}</time></h4>
+						<li{% if article.new %} class="news-item-new"{% endif %}><h4><time>{{ article.date }}</time>{% if article.new %}<span class="news-badge">NEW</span>{% endif %}</h4>
 							<figure>
 								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="lazy" decoding="async" fetchpriority="{% if forloop.first %}high{% else %}auto{% endif %}"></a>
 								{% if article.credit %}<figcaption>&#x1f4f8; {{ article.credit }}</figcaption> {% endif %}
@@ -296,7 +296,7 @@ __________________
 					<button id="more-news">More News…</button>
 
 					{% for article in site.data.news offset:3 %}
-						<li class="start-hidden"><h4><time>{{ article.date }}</time></h4>
+						<li class="start-hidden{% if article.new %} news-item-new{% endif %}"><h4><time>{{ article.date }}</time>{% if article.new %}<span class="news-badge">NEW</span>{% endif %}</h4>
 							<figure>
 								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="lazy" decoding="async"></a>
 								{% if article.credit %}<figcaption>&#x1f4f8; {{ article.credit }}</figcaption> {% endif %}
