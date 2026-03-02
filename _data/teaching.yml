@@ -5,7 +5,7 @@
   img: "img/crcl_dual-arm_project.jpg"
   emoji: 🦾🪨🦾
   type: project
-  new: true
+  new: false
 
 - title: "AR-503 - Digital Design and Making: A Critical Introduction"
   text: Learn more about the course on the coursebook <a href="https://edu.epfl.ch/coursebook/en/digital-design-and-making-a-critical-introduction-AR-503" target="_blank"><mark class="highlight-yellow">the coursebook</mark></a>.
