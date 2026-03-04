@@ -450,20 +450,32 @@ __________________
 			<article>
 				<ol id="team-list">
 					{% for member in site.team %}
-						<li>
-							<details open>
-								<summary><h4><strong>{{ member.name }}</strong></h4></summary>
+						{% if member.img %}
+							<li>
+								<details open>
+									<summary><h4><strong>{{ member.name }}</strong>{% if member.position %}<span class="team-position">{{ member.position }}</span>{% endif %}</h4></summary>
 
-								<figure>
-									<img src="{{ member.img }}" alt="{{ member.alt }}" loading="lazy" decoding="async">
-									{% if member.credit %}<figcaption>&#x1f4f8; {{ member.credit }}</figcaption> {% endif %}
-								</figure>
+									<figure>
+										<img src="{{ member.img }}" alt="{{ member.alt }}" loading="lazy" decoding="async">
+										{% if member.credit %}<figcaption>&#x1f4f8; {{ member.credit }}</figcaption> {% endif %}
+									</figure>
 
-								<p>{{ member.content }}</p>
+									<p>{{ member.content }}</p>
 
-							</details>
-						</li>
+								</details>
+							</li>
+						{% endif %}
 					{% endfor %}
+
+					<li class="team-no-img-item">
+						<ul class="team-no-img-list">
+							{% for member in site.team %}
+								{% unless member.img %}
+									<li><h4><strong>{{ member.name }}</strong>{% if member.position %}<span class="team-position">{{ member.position }}</span>{% endif %}</h4></li>
+								{% endunless %}
+							{% endfor %}
+						</ul>
+					</li>
 				</ol>
 			</article>
 			{% if site.advisees.size > 0 %}
@@ -506,7 +518,7 @@ __________________
 							<summary><h4><strong>Cats!</strong></h4></summary>
 
 							<div id="gallery-frame">
-								<div id="cats-container" style="height: 100%; display: flex; gap: 10px;">
+								<div id="cats-container" style="height: 100%; display: flex;">
 									{% assign cat_photos = site.static_files | reverse %}
 									{% for photo in cat_photos %}
 										{% if photo.path contains 'img/cats' %}
@@ -613,18 +625,28 @@ __________________
 		return array;
 	}
 
-	// Shuffle team on page load
+	// Shuffle team on page load, keeping no-img group last
 	document.addEventListener('DOMContentLoaded', function() {
 		const teamList = document.getElementById('team-list');
-		const teamItems = Array.from(teamList.children);
+		const noImgItem = teamList.querySelector('.team-no-img-item');
+		const teamItems = Array.from(teamList.children).filter(el => !el.classList.contains('team-no-img-item'));
 		const shuffledItems = shuffleArray(teamItems);
 		
-		// Clear list
 		teamList.innerHTML = '';
-		
-		// Add back the shuffled items
-		shuffledItems.forEach(item => {
-			teamList.appendChild(item);
+		shuffledItems.forEach(item => teamList.appendChild(item));
+		teamList.appendChild(noImgItem);
+	});
+
+	// Former members role accordion — one open at a time
+	document.addEventListener('DOMContentLoaded', function() {
+		document.querySelectorAll('details.role-section').forEach(function(details) {
+			details.addEventListener('toggle', function() {
+				if (this.open) {
+					document.querySelectorAll('details.role-section').forEach(function(other) {
+						if (other !== details) other.removeAttribute('open');
+					});
+				}
+			});
 		});
 	});
 
@@ -632,20 +654,20 @@ __________________
 	function setCatGalleryWidth() {
 		const container = document.getElementById('cats-container');
 		const images = container.getElementsByTagName('img');
-		
+
 		Promise.all(Array.from(images).map(img => {
 			return new Promise((resolve) => {
 				if (img.complete) {
-					resolve(img.naturalWidth / img.naturalHeight);
+					resolve();
 				} else {
-					img.onload = () => resolve(img.naturalWidth / img.naturalHeight);
+					img.onload = () => resolve();
 				}
 			});
-		})).then(aspectRatios => {
-			const containerHeight = container.clientHeight;
-			const totalWidth = aspectRatios.reduce((sum, ratio) => sum + (containerHeight * ratio), 0);
-			const padding = images.length * 10; // Gap between
-			container.style.width = `${totalWidth + padding}px`;
+		})).then(() => {
+			const totalWidth = Array.from(images).reduce((sum, img) => {
+				return sum + img.getBoundingClientRect().width;
+			}, 0);
+			container.style.width = `${totalWidth}px`;
 		});
 	}
 

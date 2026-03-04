@@ -78,6 +78,7 @@ h2,h3,h4,h5,h6 {
 	--hotpink-dark: #e06aba;
 	--bg-line-spacing: 32px;
 	--text-on-dark: #fff;
+	--tag-padding: 0.25em 0.5em;
   }
 
 ::selection {
@@ -426,6 +427,7 @@ _-_-_-_-_-_- PHOTO GALLERY -_-_-_-_-_-_
 		scroll-behavior: smooth;
 		overflow-x: scroll;
 		overflow-y: hidden;
+		border: var(--border-width-minor) solid #000;
 	}
 
 		/* width */
@@ -435,7 +437,8 @@ _-_-_-_-_-_- PHOTO GALLERY -_-_-_-_-_-_
 
 		/* Track */
 		div#gallery-frame::-webkit-scrollbar-track {
-			background: transparent; 
+			background: transparent;
+			border-top: var(--border-width-minor) solid #000;
 		}
 
 		/* Handle */
@@ -565,13 +568,58 @@ article {
 			margin: 1em 0;
 			font-size: 1.2em;
 			color: var(--hotpink);
+			line-height: 0;
 		}
 
 		h4 time,h4 strong {
 			background-color: #000;
 			color: var(--text-on-dark);
-			padding: 0.15em .25em;
+			padding: var(--tag-padding);
 			font-weight: 500;
+			display: inline-block;
+			vertical-align: top;
+			line-height: normal;
+			position: relative;
+			top: -0.15em;
+		}
+
+		.role-header {
+			background-color: var(--hotpink);
+			color: #000;
+			box-shadow: inset 0 0 0 0.15em #000;
+			padding: var(--tag-padding);
+			font-weight: 500;
+			display: inline-block;
+			margin: 0.25em 0;
+			cursor: pointer;
+		}
+
+		details.role-section summary:focus {
+			outline: none;
+		}
+
+		details.role-section summary .role-header::after {
+			content: " ▶";
+			display: inline-block;
+			transition: transform 0.2s;
+			margin-left: 0.5em;
+		}
+
+		details.role-section[open] summary .role-header::after {
+			transform: rotate(90deg);
+		}
+
+		h4 .team-position {
+			background-color: var(--hotpink);
+			color: #000;
+			box-shadow: inset 0 0 0 0.15em #000;
+			padding: var(--tag-padding);
+			font-weight: 500;
+			display: inline-block;
+			vertical-align: top;
+			line-height: normal;
+			position: relative;
+			top: -0.15em;
 		}
 
 /*
@@ -620,6 +668,7 @@ _-_-_-_-_-_- NEWS SECTION _-_-_-_-_-_-
 
 		#news figure img,#team figure img {
 			width: 100%;
+			display: block;
 			border: var(--border-width-minor) solid #000;
 		}
 
@@ -685,6 +734,7 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news, butt
 	);
 	border: var(--border-width-major) solid #000;
 	font-size: 2em;
+	padding: 0.2em;
 	margin: 1.5%;
 	width: 97%;
 }
@@ -825,6 +875,7 @@ _-_-_-_-_- TEACHING SECTION _-_-_-_-_-
 
 	.teaching-image img {
 		width: 100%;
+		display: block;
 		border: var(--border-width-minor) solid #000;
 	}
 
@@ -951,6 +1002,7 @@ _-_-_-_-_- TEACHING SECTION _-_-_-_-_-
 
 		#research figure img {
 			width: 100%;
+			display: block;
 			border: var(--border-width-minor) solid #000;
 		}
 
@@ -990,6 +1042,26 @@ _-_-_-_-_-_- TEAM SECTION _-_-_-_-_-_-
 	section#team article ol li {
 		display: inline-block;
 	}
+
+	.team-no-img-item {
+		display: block;
+		width: 100%;
+		margin: 0;
+		vertical-align: top;
+	}
+
+	.team-no-img-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	section#team .team-no-img-list li {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
 
 	section#team article.hidden-bio {
 		display: none;
@@ -1114,20 +1186,21 @@ _-_-_-_-_-_- COLOR CLASSES -_-_-_-_-_-_
 	background-color: magenta;
 }
 
-#gallery-frame {
-    overflow: hidden;
-}
-
 #cats-container {
     position: relative;
     height: 100%;
+    background: #000;
 }
 
 .cat-image-wrapper {
     position: relative;
     height: 100%;
     overflow: visible;
-	border: var(--border-width-minor) solid #000;
+	border-right: var(--border-width-minor) solid #000;
+}
+
+.cat-image-wrapper:last-child {
+	border-right: none;
 }
 
 .cat-image-inner {
