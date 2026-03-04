@@ -46,9 +46,13 @@ ____________________________________________________
 		font-size: 0.2em;
 	}
 
-	#video,#gallery {
+	#top-gallery-row {
+		flex-direction: column;
 		width: 96%;
-		display: block;
+	}
+
+	#video,#gallery {
+		width: 100%;
 	}
 
 	section {

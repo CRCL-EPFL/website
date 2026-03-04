@@ -35,3 +35,9 @@
 <p>Emmanuel Osorno – MArch student</p>
 <p>Lisa Ramsburg – MArch student</p>
 </details>
+
+<details class="role-section">
+<summary><span class="role-header">Admin</span></summary>
+<p>Isabelle Cogotti – Administrative assistant</p>
+<p>Tamara Pelège – Administrative assistant</p>
+</details>

@@ -17,7 +17,7 @@
   new: false
 
 - title: "AR-503 - Digital Design and Making: A Critical Introduction"
-  text: Learn more about the course on the coursebook <a href="https://edu.epfl.ch/coursebook/en/digital-design-and-making-a-critical-introduction-AR-503" target="_blank"><mark class="highlight-yellow">the coursebook</mark></a>.
+  text: Learn more about the course on <a href="https://edu.epfl.ch/coursebook/en/digital-design-and-making-a-critical-introduction-AR-503" target="_blank"><mark class="highlight-yellow">the coursebook</mark></a>.
   semester: "Fall 2022, Fall 2023, Fall 2025"
   emoji: 🦾💡🦾
   type: course

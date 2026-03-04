@@ -377,11 +377,18 @@ _-_-_-_-_-_- VIDEO GALLERY -_-_-_-_-_-_
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 */
 
-	#video,#gallery {
+	#top-gallery-row {
 		margin: 3.125% 0 0 3.125%;
-		width: 45.68%;
+		width: 93.375%;
+		display: flex;
+		gap: 3.125%;
+	}
+
+	#video,#gallery {
+		flex: 1;
+		min-width: 0;
+		margin: 0;
 		padding: 0;
-		display: inline-block;
 	}
 
 	video {
@@ -396,7 +403,7 @@ _-_-_-_-_-_- VIDEO GALLERY -_-_-_-_-_-_
 
 	div#video-container {
 		border: var(--border-width-major) solid #000;
-		height: 26.2vw;;
+		height: 26.2vw;
   		width: 100%;
 		position: relative;
 		overflow: hidden;
@@ -427,7 +434,7 @@ _-_-_-_-_-_- PHOTO GALLERY -_-_-_-_-_-_
 		scroll-behavior: smooth;
 		overflow-x: scroll;
 		overflow-y: hidden;
-		border: var(--border-width-minor) solid #000;
+		border: var(--border-width-major) solid #000;
 	}
 
 		/* width */
@@ -443,12 +450,14 @@ _-_-_-_-_-_- PHOTO GALLERY -_-_-_-_-_-_
 
 		/* Handle */
 		div#gallery-frame::-webkit-scrollbar-thumb {
-			background: #000; 
+			background: #000;
+			border-top: var(--border-width-minor) solid #000;
 		}
 
 		/* Handle on hover */
 		div#gallery-frame::-webkit-scrollbar-thumb:hover {
 			background: #fff;
+			border-top: var(--border-width-minor) solid #000;
 		}
 
 	div#gallery-container {
@@ -1188,7 +1197,7 @@ _-_-_-_-_-_- COLOR CLASSES -_-_-_-_-_-_
 
 #cats-container {
     position: relative;
-    height: 100%;
+    height: calc(100% - 30px - var(--border-width-minor));
     background: #000;
 }
 

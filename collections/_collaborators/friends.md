@@ -14,4 +14,6 @@
 
 <a href="https://www.epfl.ch/labs/sxl/" target="_blank"><mark class="highlight-yellow">SXL</mark></a>
 
+<a href="https://www.epfl.ch/schools/enac/gis/" target="_blank"><mark class="highlight-yellow">GIS EPFL</mark></a>
+
 <a href="http://spolialab.com" target="_blank"><mark class="highlight-yellow">SPOLIA</mark></a>
