@@ -72,8 +72,12 @@ h2,h3,h4,h5,h6 {
 }
 
 :root {
-	--border-width-major: 5px;
-	--border-width-minor: 3px;
+	--border-width-major: 7px;
+	--border-width-minor: 5px;
+	--hotpink: #ff7ad2;
+	--hotpink-dark: #e06aba;
+	--bg-line-spacing: 32px;
+	--text-on-dark: #fff;
   }
 
 ::selection {
@@ -95,12 +99,13 @@ details > summary::-webkit-details-marker {
 }
 
 .hotpink {
-	background-color: #ff69b4;
+	background-color: var(--hotpink);
+	/*background-color: #ff69b4;*/
 	border: var(--border-width-major) solid #000;
 }
 
 	mark {
-		color: #ff69b4;
+		color: var(--text-on-dark);
 		background-color: #000;
 	}
 
@@ -114,7 +119,7 @@ details > summary::-webkit-details-marker {
 		/*border-bottom: 0.1em dashed #dda0dd;*/
 		background-color: #000;
 		padding: 0 .25em;
-		color: #ff69b4;
+		color: var(--text-on-dark);
 	}
 
 a:link {
@@ -149,9 +154,16 @@ body,main {
 }
 
 body {
-	background-color: #ff69b4;
+	background-color: var(--hotpink);
 	font-family: "Roboto";
-	background-image: url("../img/diagonal_lines_5_10px.png");
+	/* background-image: url("../img/diagonal_lines_5_10px.png"); */
+	background-image: repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent var(--bg-line-spacing),
+		#000 var(--bg-line-spacing),
+		#000 calc(var(--bg-line-spacing) + var(--border-width-major))
+	);
 	background-attachment: fixed;
 }
 
@@ -165,30 +177,30 @@ header {
 	margin: 3% 0 0 3.125%;
 	width: 93.375%;
 	text-align: center;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
 }
 
 	.header-icon {
 		width: 15%;
-		display: inline-flex;
+		flex-shrink: 0;
+		display: flex;
 		align-items: center;
 		justify-content: center;
-		vertical-align: middle;
+		padding: 1.5em;
 	}
 	
 	.header-icon svg {
-		width: 100%;
 		height: 100%;
+		width: auto;
 		display: block;
-		padding: 0;
 		color: yellow;
-		/* vertical-align: middle; */
 	}
 
 	.header-titles {
 		width: 50%;
 		padding: 5em 0 2em 0;
-		display: inline-block;
-		vertical-align: middle;
 	}
 
 .off-screen {
@@ -206,7 +218,7 @@ h1 {
 	h1 span.headline-font-size-small {
 		font-size: 0.2em;
 		font-family: "Roboto";
-		color: #ff69b4;
+		color: var(--text-on-dark);
 		background-color: #000;
 		position: relative;
 		top: 0.5em;
@@ -311,7 +323,7 @@ nav {
 			}
 
 			nav a:hover {
-				color: #ff69b4;
+				color: var(--text-on-dark);
 				text-decoration: none;
 				background-color: #000;
 			}
@@ -382,7 +394,7 @@ _-_-_-_-_-_- VIDEO GALLERY -_-_-_-_-_-_
 	}
 
 	div#video-container {
-		border: var(--border-width-minor) solid #000;
+		border: var(--border-width-major) solid #000;
 		height: 26.2vw;;
   		width: 100%;
 		position: relative;
@@ -394,7 +406,7 @@ _-_-_-_-_-_- VIDEO GALLERY -_-_-_-_-_-_
 	}
 
 		#video figcaption {
-			background-color: #ff69b4;
+			background-color: var(--hotpink);
 			position: absolute;
 			/* width: 50%; */
 			left: 0;
@@ -455,7 +467,7 @@ _-_-_-_-_-_- PHOTO GALLERY -_-_-_-_-_-_
 			}
 
 			#gallery figcaption {
-				background-color: #ff69b4;
+				background-color: var(--hotpink);
 				position: absolute;
 				width: 50%;
 				left: 0;
@@ -527,7 +539,7 @@ h3 {
 
 	h3:hover {
 		background-color: #000;
-		color: hotpink;
+		color: var(--text-on-dark);
 	}
 
 		h5 {
@@ -544,7 +556,7 @@ article {
 					position: relative;
 					top: -3em;
 					font-size: 0.6em;
-					background-color: hotpink;
+					background-color: var(--hotpink);
 					padding: 0.2em;
 				}
 
@@ -552,14 +564,15 @@ article {
 			border-top: 0.15em dashed #000;
 			margin: 1em 0;
 			font-size: 1.2em;
-			color: hotpink;
+			color: var(--hotpink);
 		}
 
-			h4 time,h4 strong {
-				background-color: #000;
-				padding: 0.15em .25em;
-				font-weight: 500;
-			}
+		h4 time,h4 strong {
+			background-color: #000;
+			color: var(--text-on-dark);
+			padding: 0.15em .25em;
+			font-weight: 500;
+		}
 
 /*
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
@@ -619,7 +632,7 @@ _-_-_-_-_-_- NEWS SECTION _-_-_-_-_-_-
 			position: relative;
 			top: -3em;
 			font-size: 0.6em;
-			background-color: hotpink;
+			background-color: var(--hotpink);
 			padding: 0.2em;
 		}
 
@@ -660,8 +673,16 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news, butt
 	background-attachment: fixed;
 	/*background-color: #ff69b4;*/
 	/*background-blend-mode: multiply;*/
-	background-image: url("../img/diagonal_lines_5_10px-pink.svg");
-	background-size: 100px;
+	/* background-image: url("../img/diagonal_lines_5_10px-pink.svg"); */
+	/* background-size: 100px; */
+	background-color: var(--hotpink);
+	background-image: repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent var(--bg-line-spacing),
+		var(--hotpink-dark) var(--bg-line-spacing),
+		var(--hotpink-dark) calc(var(--bg-line-spacing) + var(--border-width-major))
+	);
 	border: var(--border-width-major) solid #000;
 	font-size: 2em;
 	margin: 1.5%;
@@ -670,8 +691,16 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news, butt
 
 button#more-news:hover,button#download-full-cv:hover, button#show-bio:hover, button#less-news:hover, button#more-research:hover, button#less-research:hover {
 	background-attachment: fixed;
-	background-image: url("../img/diagonal_lines_5_10px-pink-inverted.svg");
-	background-size: 100px;
+	/* background-image: url("../img/diagonal_lines_5_10px-pink-inverted.svg"); */
+	/* background-size: 100px; */
+	background-color: var(--hotpink-dark);
+	background-image: repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent var(--bg-line-spacing),
+		var(--hotpink) var(--bg-line-spacing),
+		var(--hotpink) calc(var(--bg-line-spacing) + var(--border-width-major))
+	);
 	border: var(--border-width-major) dashed #000;
 	cursor: pointer;
 }
@@ -759,7 +788,7 @@ _-_-_-_-_- TEACHING SECTION _-_-_-_-_-
 
 	.teaching-subsection-header {
 		font-size: 3em;
-		margin-top: 1em;
+		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 		cursor: default;
 		pointer-events: none;
@@ -774,7 +803,7 @@ _-_-_-_-_- TEACHING SECTION _-_-_-_-_-
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1.5em;
-		margin-bottom: 2em;
+		margin-bottom: .5em;
 	}
 
 		section#teaching .teaching-item {
@@ -844,12 +873,12 @@ _-_-_-_-_- TEACHING SECTION _-_-_-_-_-
 		left: 50%;
 		transform: translate(-50%, -50%);
 		background-color: #000;
-		color: #ff69b4;
+		color: var(--text-on-dark);
 		padding: 0.5em 1.5em;
 		font-size: 2em;
 		font-weight: bold;
 		font-family: "Roboto Mono";
-		border: var(--border-width-minor) solid #ff69b4;
+		border: var(--border-width-minor) solid var(--hotpink);
 		pointer-events: none;
 		transition: all 0.2s;
 		display: flex;
@@ -864,7 +893,7 @@ _-_-_-_-_- TEACHING SECTION _-_-_-_-_-
 	}
 
 	.pdf-preview-link:hover .pdf-download-overlay {
-		background-color: #ff69b4;
+		background-color: var(--hotpink);
 		color: #000;
 		border-color: #000;
 	}
@@ -971,7 +1000,7 @@ _-_-_-_-_-_- TEAM SECTION _-_-_-_-_-_-
 		position: relative;
 		top: -3em;
 		font-size: 0.6em;
-		background-color: hotpink;
+		background-color: var(--hotpink);
 		padding: 0.2em;
 	}
 
