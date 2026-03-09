@@ -460,10 +460,10 @@ _-_-_-_-_-_- PHOTO GALLERY -_-_-_-_-_-_
 			border-top: var(--border-width-minor) solid #000;
 		}
 
-		div#gallery-frame {
+		/*div#gallery-frame {
 		    scrollbar-color: #000 transparent;
 		    scrollbar-width: auto;
-		}
+		}*/
 
 	div#gallery-container {
 		height: 100%;

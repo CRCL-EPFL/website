@@ -388,11 +388,12 @@ __________________
 							<div class="teaching-item">
 								<h4><time>{{ item.title }}</time>{% if item.new %}<span class="new-badge">NEW</span>{% endif %}</h4>
 								
-								{% if item.img %}
-									<figure class="teaching-image">
-										<img src="{{ item.img }}" alt="{{ item.title }}" loading="lazy" decoding="async">
-									</figure>
-								{% endif %}
+							{% if item.img %}
+								<figure class="teaching-image">
+									<img src="{{ item.img }}" alt="{{ item.title }}" loading="lazy" decoding="async">
+									{% if item.credit %}<figcaption>&#x1f4f8; {{ item.credit }}</figcaption> {% endif %}
+								</figure>
+							{% endif %}
 								
 								<p>{{ item.text }}</p>
 								{% if item.semester %}

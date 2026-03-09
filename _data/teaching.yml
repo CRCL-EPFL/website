@@ -7,6 +7,7 @@
   emoji: 🏫🤖🏫
   type: project
   new: true
+  credit: Alberto Johnsson
 
 - title: "Dual Arm Adaptation for Robotic Construction"
   text: Dual-robot collaborative construction of self-supporting arches under geometric and physical uncertainty
