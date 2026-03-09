@@ -7,7 +7,7 @@
 <p>Ziqi Wang – Postdoc → <a href="https://kiki007.github.io" target="_blank"><mark class="highlight-yellow">Asst. Professor at Hong Kong University of Science and Technology</mark></a></p>
 </details>
 
-<details class="role-section">
+<details class="role-section" open>
 <summary><span class="role-header">PhDs</span></summary>
 <p>Isla Xi Han – PhD student → <a href="https://archdesign.utk.edu/directory/isla-han/" target="_blank"><mark class="highlight-yellow">Lecturer at University of Tennessee Knoxville</mark></a></p>
 <p>Edvard Bruun – PhD student → <a href="https://www.bar-lab.org" target="_blank"><mark class="highlight-yellow">Asst. Professor at Georgia Tech College of Engineering</mark></a></p>

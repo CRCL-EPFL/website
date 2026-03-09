@@ -61,9 +61,9 @@ ____________________________________________________
 		display: block;
 	}
 
-		section#about article {
-			column-count: 2;
-		}
+	section#about article.about-grid {
+		grid-template-columns: 1fr 1fr;
+	}
 
 	div#gallery-frame {
 		height: 60vw;
@@ -124,8 +124,12 @@ ____________________________________________________
 			font-size: 3em;
 		}
 
-		section#about article {
-			column-count: 1;
+	section#about article.about-grid {
+		grid-template-columns: 1fr;
+	}
+
+		section#about .about-image {
+			min-height: 200px;
 		}
 
 	div#gallery-frame {

@@ -1,7 +1,10 @@
 - title: "Master's Projects - Architecture"
   text: |
-    <h5>Topics</h5>
-    <p>More info on topic proposals will be available soon! Stay tuned</p>
+    <p>We'll add some topic ideas soon, but in the meantime you can see projects that previous students have completed with us. Of course if you have any ideas related to robots, digital fabrication, design software, and computation feel free to reach out and discuss more with us!</p>
+    <p>Contact: <a href="mailto:eric.duong@epfl.ch" target="_blank"><mark class="highlight-yellow">Eric Duong</mark></a></p>
+    <h5>Previous Projects</h5>
+    <p>Alberto Johnsson: <a href="https://livingarchives.epfl.ch/projects/?author=5974&project=6690" target="_blank"><mark class="highlight-yellow">Digital Woodcraft : A Wood-Making Village in the Jorat</mark></a></p>
+    <p>Johan Link: <a href="https://livingarchives.epfl.ch/projects/?author=12253&project=8156" target="_blank"><mark class="highlight-yellow">A chapel in Rüeggisberg</mark></a></p>
   semester: "Spring 2026"
   img: "img/crcl-pdm-alberto.jpg"
   emoji: 🏫🤖🏫
@@ -9,13 +12,17 @@
   new: true
   credit: Alberto Johnsson
 
-- title: "Dual Arm Adaptation for Robotic Construction"
-  text: Dual-robot collaborative construction of self-supporting arches under geometric and physical uncertainty
+- title: "Master's Project - Microengineering"
+  text: |
+    <h5>Dual Arm Adaptation for Robotic Construction</h5>
+    <p>Dual-robot collaborative construction of self-supporting arches under geometric and physical uncertainty</p>
+    <p>Contact: <a href="mailto:jingwen.wang@epfl.ch" target="_blank"><mark class="highlight-yellow">Jingwen Wang</mark></a></p>
   semester: "Spring 2026, beginning early February"
   pdf: "file/crcl_s26_dual-arm-adaptation.pdf" 
   img: "img/crcl_dual-arm_project.jpg"
   emoji: 🦾🪨🦾
   type: project
+  credit: Jingwen Wang
   new: false
 
 - title: "AR-503 - Digital Design and Making: A Critical Introduction"
