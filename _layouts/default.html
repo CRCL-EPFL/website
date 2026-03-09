@@ -254,7 +254,8 @@ __________________
 			<div id="gallery-frame">
 				<div id="gallery-container">
 					{% for photo in site.data.gallery %}
-						<figure class="photo-gallery" role="img" aria-label="" style="background-image: url({{photo.path}})">
+						<figure class="photo-gallery">
+							<img src="{{photo.path}}" alt="{{photo.caption}}" loading="lazy" decoding="async">
 							<figcaption><strong>{{photo.title}}</strong> &mdash; {{photo.caption}}</figcaption>
 						</figure>
 					{% endfor %}
@@ -286,7 +287,7 @@ __________________
 			<article>
 				<ol>
 					{% for article in site.data.news limit:3 %}
-						<li{% if article.new %} class="news-item-new"{% endif %}><h4><time>{{ article.date }}</time>{% if article.new %}<span class="news-badge">NEW</span>{% endif %}</h4>
+						<li{% if article.new %} class="news-item-new"{% endif %}><h4><time>{{ article.date }}</time>{% if article.new %}<span class="new-badge">NEW</span>{% endif %}</h4>
 							<figure>
 								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="lazy" decoding="async" fetchpriority="{% if forloop.first %}high{% else %}auto{% endif %}"></a>
 								{% if article.credit %}<figcaption>&#x1f4f8; {{ article.credit }}</figcaption> {% endif %}
@@ -299,7 +300,7 @@ __________________
 					<button id="more-news">More News…</button>
 
 					{% for article in site.data.news offset:3 %}
-						<li class="start-hidden{% if article.new %} news-item-new{% endif %}"><h4><time>{{ article.date }}</time>{% if article.new %}<span class="news-badge">NEW</span>{% endif %}</h4>
+						<li class="start-hidden{% if article.new %} news-item-new{% endif %}"><h4><time>{{ article.date }}</time>{% if article.new %}<span class="new-badge">NEW</span>{% endif %}</h4>
 							<figure>
 								<a href="{{ article.link }}" target="_blank"><img src="{{ article.img }}" alt="{{ article.alt }}" loading="lazy" decoding="async"></a>
 								{% if article.credit %}<figcaption>&#x1f4f8; {{ article.credit }}</figcaption> {% endif %}
@@ -385,10 +386,7 @@ __________________
 					{% for item in site.data.teaching %}
 						{% if item.type == "project" %}
 							<div class="teaching-item">
-								{% if item.new %}
-									<div class="new-badge">NEW</div>
-								{% endif %}
-								<h4><time>{{ item.title }}</time></h4>
+								<h4><time>{{ item.title }}</time>{% if item.new %}<span class="new-badge">NEW</span>{% endif %}</h4>
 								
 								{% if item.img %}
 									<figure class="teaching-image">
@@ -654,6 +652,30 @@ __________________
 	});
 
 	// Function to calculate and set cat gallery width
+	function setGalleryWidth() {
+		const container = document.getElementById('gallery-container');
+		const images = container.getElementsByTagName('img');
+		const galleryHeight = document.getElementById('gallery-frame').clientHeight;
+
+		Promise.all(Array.from(images).map(img => {
+			return new Promise((resolve) => {
+				if (img.complete) {
+					resolve(img.naturalWidth / img.naturalHeight);
+				} else {
+					img.onload = () => resolve(img.naturalWidth / img.naturalHeight);
+				}
+			});
+		})).then(aspectRatios => {
+			const borderWidth = 5; // keep in sync with --border-width-major in stylesheet.css
+			const numBorders = aspectRatios.length - 1;
+			const totalImgWidth = aspectRatios.reduce((sum, ratio) => sum + (galleryHeight * ratio), 0);
+			container.style.width = `${totalImgWidth + (numBorders * borderWidth)}px`;
+		});
+	}
+
+	document.addEventListener('DOMContentLoaded', setGalleryWidth);
+	window.addEventListener('resize', setGalleryWidth);
+
 	function setCatGalleryWidth() {
 		const container = document.getElementById('cats-container');
 		const images = container.getElementsByTagName('img');

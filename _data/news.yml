@@ -1,11 +1,21 @@
+- date: 09/03/26
+  img: img/crcl-news-construction-robotics-tft.jpg
+  alt: Graphic for PhD position openings
+  link: https://link.springer.com/article/10.1007/s41693-025-00175-9 
+  text: |
+    <p>“Truss from Trash: A Human–Robot Framework for Adaptive Timber Assembly on the Construction Floor” is <a href="https://link.springer.com/article/10.1007/s41693-025-00175-9" target="_blank"><mark class="highlight-yellow">now published in Construction Robotics!</mark></a></p>
+    <p>The work explores how design can evolve alongside robotic fabrication, enabling real-time negotiation between design intent and material availability through situated, projection-based interaction.</p>
+    <p>📄 Co-authored by Eleni Skevaki, Eric Duong, Hong-Bin Yang & Stefana Parascho</p>
+  emoji: 🪵🤖📽️
+  new: true
+
 - date: 02/03/26
   img: img/crcl_engineering-industry-day26.jpg
   alt: Banner for Engineering Industry Day EPFL 2026
   link: https://industryday.epfl.ch/
   text: Find us tomorrow at <a href="https://industryday.epfl.ch/EPFL" target="_blank"><mark class="highlight-yellow">Engineering Industry Day</mark></a>, where we'll be showcasing our latest robotic research and developments at our booth!
   emoji: 📅🏭📅
-  new: true
-
+  
 - date: 13/02/26
   img: img/crcl-news-amld26-talk-photo.jpg
   alt: Photo of the robot demo from AMLD

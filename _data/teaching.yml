@@ -1,9 +1,10 @@
-- title: "Dual Arm Adaptation for Robotic Construction"
-  text: Dual-robot collaborative construction of self-supporting arches under geometric and physical uncertainty
-  semester: "Spring 2026, beginning early February"
-  pdf: "file/crcl_s26_dual-arm-adaptation.pdf" 
-  img: "img/crcl_dual-arm_project.jpg"
-  emoji: 🦾🪨🦾
+- title: "Master's Projects - Architecture"
+  text: |
+    <h5>Topics</h5>
+    <p>More info on topic proposals will be available soon! Stay tuned</p>
+  semester: "Spring 2026"
+  img: "img/crcl-pdm-alberto.jpg"
+  emoji: 🏫🤖🏫
   type: project
   new: true
 
