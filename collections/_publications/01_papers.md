@@ -1,6 +1,11 @@
 ---
 section: Papers
+new: true
 ---
+Skevaki, Eleni, Eric Duong, Hong-Bin Yang, and Stefana Parascho. 2025. “Truss from Trash: A Human–Robot Framework for Adaptive Timber Assembly on the Construction Floor.” Construction Robotics 10 (1): 2. <a href="https://doi.org/10.1007/s41693-025-00175-9" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1007/s41693-025-00175-9.</mark></a>
+
+Wang, Qianqing, Jingwen Wang, Bryan German Pantoja Rosero, Katrin Beyer, and Stefana Parascho. 2025. “Dynamic Planning and Assembly for Constructing Mortar-Joint Multi-Leaf Stone Masonry Walls with a Robotic Arm.” 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), October, 4873–80. <a href="https://doi.org/10.1109/IROS60139.2025.11246708" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1109/IROS60139.2025.11246708.</mark></a>
+
 Wang, Ziqi, Wenjun Liu, Jingwen Wang, Gabriel Vallat, Fan Shi, Stefana Parascho, and Maryam Kamgarpour. "Learning to Assemble with Alternative Plans." ACM Transactions on Graphics 44, no. 4 (2025): 1–16. <a href="https://doi.org/10.1145/3730824" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1145/3730824.</mark></a>
 
 Fivet, Corentin, Stefana Parascho, Maxence Grangeot, and Malena Bastien-Masse. "Disused Concrete, Digital Acupuncture and Reuse." Architectural Design 94, no. 5 (2024): 88–97. <a href="https://doi.org/10.1002/ad.3101" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1002/ad.3101.</mark></a>
