@@ -1,5 +1,5 @@
 - date: 31/03/26
-  img: img/crcl_news_cap-uncertainty.jpeg
+  img: img/news/crcl_news_cap-uncertainty.jpeg
   alt: Poster for Capitalizing on Uncertainty summer school
   link: https://cap-uncertainty.epfl.ch/
   text: |
@@ -13,25 +13,25 @@
   new: true
 
 - date: 09/03/26
-  img: img/crcl-news-construction-robotics-tft.jpg
+  img: img/news/crcl_news_construction-robotics-tft.jpg
   alt: Graphic for PhD position openings
-  link: https://link.springer.com/article/10.1007/s41693-025-00175-9 
+  link: https://link.springer.com/article/10.1007/s41693-025-00175-9
   text: |
-    <p>“Truss from Trash: A Human–Robot Framework for Adaptive Timber Assembly on the Construction Floor” is <a href="https://link.springer.com/article/10.1007/s41693-025-00175-9" target="_blank"><mark class="highlight-yellow">now published in Construction Robotics!</mark></a></p>
+    <p>"Truss from Trash: A Human–Robot Framework for Adaptive Timber Assembly on the Construction Floor" is <a href="https://link.springer.com/article/10.1007/s41693-025-00175-9" target="_blank"><mark class="highlight-yellow">now published in Construction Robotics!</mark></a></p>
     <p>The work explores how design can evolve alongside robotic fabrication, enabling real-time negotiation between design intent and material availability through situated, projection-based interaction.</p>
     <p>📄 Co-authored by Eleni Skevaki, Eric Duong, Hong-Bin Yang & Stefana Parascho</p>
   emoji: 🪵🤖📽️
   new: false
 
 - date: 02/03/26
-  img: img/crcl_engineering-industry-day26.jpg
+  img: img/news/crcl_news_engineering-industry-day26.jpg
   alt: Banner for Engineering Industry Day EPFL 2026
   link: https://industryday.epfl.ch/
   text: Find us tomorrow at <a href="https://industryday.epfl.ch/EPFL" target="_blank"><mark class="highlight-yellow">Engineering Industry Day</mark></a>, where we'll be showcasing our latest robotic research and developments at our booth!
   emoji: 📅🏭📅
-  
+
 - date: 13/02/26
-  img: img/crcl-news-amld26-talk-photo.jpg
+  img: img/news/crcl_news_amld26-talk-photo.jpg
   alt: Photo of the robot demo from AMLD
   link: https://www.youtube.com/watch?v=zMqbRbono-E
   text: If you missed the talk from Applied Machine Learning Days, you can catch up with the recording <a href="https://www.youtube.com/watch?v=zMqbRbono-E" target="_blank"><mark class="highlight-yellow">now available on YouTube!</mark></a> Featuring a robot demo prepared by our very own Jingwen and Megi!
@@ -40,323 +40,323 @@
   new: false
 
 - date: 10/02/26
-  img: img/crcl-news-amld26-stefana-lecture.jpg
+  img: img/news/crcl_news_amld26-stefana-lecture.jpg
   alt: Graphic for AMLD
   link: https://2026.appliedmldays.org/
-  text: Join us on Tuesday, February 10th at the <a href="https://2026.appliedmldays.org/" target="_blank"><mark class="highlight-yellow">Applied Machine Learning Days Intelligence Summit</mark></a> in Lausanne! Stefana Parascho will be giving a keynote on Machine Learning for Autonomous Robotic Construction as part of the session Multimodal Intelligence in the Physical World. 
+  text: Join us on Tuesday, February 10th at the <a href="https://2026.appliedmldays.org/" target="_blank"><mark class="highlight-yellow">Applied Machine Learning Days Intelligence Summit</mark></a> in Lausanne! Stefana Parascho will be giving a keynote on Machine Learning for Autonomous Robotic Construction as part of the session Multimodal Intelligence in the Physical World.
   emoji: 🧠🧠🧠
 
 - date: 23/12/25
-  img: img/crcl-news-srd25-talk.jpg
+  img: img/news/crcl_news_srd25-talk.jpg
   alt: Graphic for AMLD
   link: https://www.youtube.com/watch?v=Q0Ac02OKUqw
   text: Stefana's keynote from <a href="https://swissroboticsday.ch/" target="_blank"><mark class="highlight-yellow">Swiss Robotics Day</mark></a>, Under Construction&#58; Building with Robots Beyond the Automation Myth is now on <a href="https://www.youtube.com/watch?v=Q0Ac02OKUqw" target="_blank"><mark class="highlight-yellow">YouTube!</mark></a>
   emoji: 🦾📹🦾
 
 - date: 11/05/25
-  img: img/crcl-news-iros25.jpg
+  img: img/news/crcl_news_iros25.jpg
   alt: Graphic for PhD position openings
   link: https://iros25.org
   text: |
-    <p>Together with Qianqing Wang (EESD Lab – EPFL), Jingwen Wang presented their paper “Dynamic Planning and Assembly for Constructing Mortar-Joint Multi-Leaf Stone Masonry Walls with a Robotic Arm” at <a href="https://iros25.org" target="_blank"><mark class="highlight-yellow">IROS 2025</mark></a>! The team built the first load-bearing wall from raw stones and mortar with a robotic arm.</p> 
+    <p>Together with Qianqing Wang (EESD Lab – EPFL), Jingwen Wang presented their paper "Dynamic Planning and Assembly for Constructing Mortar-Joint Multi-Leaf Stone Masonry Walls with a Robotic Arm" at <a href="https://iros25.org" target="_blank"><mark class="highlight-yellow">IROS 2025</mark></a>! The team built the first load-bearing wall from raw stones and mortar with a robotic arm.</p>
     <p>Co-authored by Qianqing Wang*, Jingwen Wang*, Bryan German Pantoja Rosero, Katrin Beyer, and Stefana Parascho.</p>
     <p>A proud step toward merging robotic precision and traditional craft in stone masonry!</p>
   emoji: 🪨🤖🪨
 
 - date: 10/31/25
-  img: img/crcl-news-acadia25.jpg
+  img: img/news/crcl_news_acadia25.jpg
   alt: Graphic for PhD position openings
   link: https://2025.acadia.org/
   text: |
-    <p>Eleni Skevaki and Marirena Kladeftira will present “TimberProxy&#58; A Tangible Human–Robot Interface for Incremental Design and Fabrication of Timber Structures” at <a href="https://2025.acadia.org/" target="_blank"><mark class="highlight-yellow">ACADIA 2025</mark></a> in Miami, Florida on Friday, 7 November at 11:15 (local time).</p> 
+    <p>Eleni Skevaki and Marirena Kladeftira will present "TimberProxy&#58; A Tangible Human–Robot Interface for Incremental Design and Fabrication of Timber Structures" at <a href="https://2025.acadia.org/" target="_blank"><mark class="highlight-yellow">ACADIA 2025</mark></a> in Miami, Florida on Friday, 7 November at 11:15 (local time).</p>
     <p>The paper is authored by Eleni Skevaki, Marirena Kladeftira, Ziqi Wang, Sihui Wu, Gudela Grote, and Stefana Parascho. </p>
     <p>Join us to explore new interfaces for construction robotics! </p>
   emoji: ☀️🦾☀️
 
 - date: 10/22/25
-  img: img/crcl_news_baker_forum.jpg
+  img: img/news/crcl_news_baker-forum.jpg
   alt: Graphic for PhD position openings
   link: https://somfoundation.com/events/creating-new-architecture-through-research-madrid/
   text: Stefana Parascho will be speaking at the <a href="https://somfoundation.com/news/som-foundation-announces-speakers-for-the-third-william-f-baker-international-research-and-design-forum-in-madrid/" target="_blank"><mark class="highlight-yellow">third William F. Baker International Research and Design Forum</mark></a> in Madrid! Come to see her talk on November 6, alongside many other leading designers and researchers
   emoji: 🇪🇸👩🇪🇸
 
 - date: 10/07/25
-  img: img/crcl-news-phdhires.png
+  img: img/news/crcl_news_phdhires.png
   alt: Graphic for PhD position openings
   link: https://careers.epfl.ch/job/Lausanne-PhD-position-in-Human-Robot-Collaborative-Assembly/1163538455/
   text: We are hiring PhD students! If you are interested in human-robot collaborative workflows for timber construction, <a href="https://careers.epfl.ch/job/Lausanne-PhD-position-in-Human-Robot-Collaborative-Assembly/1163538455/" target="_blank"><mark class="highlight-yellow">apply here now!</mark></a> Application review begins on October 25th.
   emoji: ⚠️⚠️⚠️
 
 - date: 09/03/25
-  img: img/crcl-news-ecaade-2025-alberto.jpg
+  img: img/news/crcl_news_ecaade-2025-alberto.jpg
   alt: eCAADe 2025 conference banner with robotic fabrication theme
   link: https://conf.dap.tuwien.ac.at/preprints/ecaade2025/ecaade2025_311.pdf
   text: Alberto Johnsson presents his research <a href="https://conf.dap.tuwien.ac.at/preprints/ecaade2025/ecaade2025_311.pdf" target="_blank"><mark class="highlight-yellow">"Crafted by Hand and Machine&#58; Human-robot fabrication workflow for the use of curved wood in construction"</mark></a> at <a href="https://ecaade2025.metu.edu.tr/" target="_blank"><mark class="highlight-yellow">eCAADe 2025</mark></a> in Ankara, Turkey! Tune in to hear about human-robot collaboration methods for working with curved wood elements in construction.
   emoji: 🪵🤖🪚
 
 - date: 08/25/25
-  img: img/crcl-news-swiss-robotics-day-2025.jpg
+  img: img/news/crcl_news_swiss-robotics-day-2025.jpg
   alt: Swiss Robotics Day 2025 event banner
   link: https://swissroboticsday.ch/srd25/agenda/
   text: Prof. Stefana Parascho will be giving a keynote lecture on <a href="https://swissroboticsday.ch/srd25/agenda/" target="_blank"><mark class="highlight-yellow">Sustainability in Robotics</mark></a> at <a href="https://swissroboticsday.ch/" target="_blank"><mark class="highlight-yellow">Swiss Robotics Day 2025</mark></a>! The event brings together leading experts in robotics research and industry, featuring talks, workshops, and demonstrations focused on sustainable robotics solutions.
   emoji: 🇨🇭🤖🌱
 
 - date: 08/23/25
-  img: img/crcl-news-dms-2026.jpeg
+  img: img/news/crcl_news_dms-2026.jpeg
   alt: Design Modelling Symposium 2026 announcement
   link: https://design-modelling-symposium.de
   text: "We're excited to announce the 10th edition of the <a href=\"https://design-modelling-symposium.de\" target=\"_blank\"><mark class=\"highlight-yellow\">Design Modelling Symposium</mark></a> will take place at EPFL Fribourg from 10-12 September 2026! This edition will focus on the shifting relationship between designers and intelligent machines through three key areas: Designing with Materials, Designing with People, and Designing with Ethics."
   emoji: 🇨🇭🚧🇨🇭
 
 - date: 08/13/25
-  img: img/crcl-news-siggraph-2025.png
+  img: img/news/crcl_news_siggraph-2025.png
   alt: SIGGRAPH 2025 conference banner
   link: https://s2025.conference-schedule.org/session/?sess=sess137
   text: Jingwen Wang will be presenting the paper <a href="https://s2025.conference-schedule.org/session/?sess=sess137" target="_blank"><mark class="highlight-yellow">'Learning to Assemble with Alternative Plans'</mark></a> at <a href="https://s2025.conference-schedule.org/session/?sess=sess137" target="_blank"><mark class="highlight-yellow">SIGGRAPH 2025</mark></a> in the Robots in the World session! The paper explores robotic assembly planning through disassembly and will be presented today at 9:00am PDT.
   emoji: 🧩🤖🧩
 
 - date: 05/10/25
-  img: img/crcl-news-2025-timespaceexistence-reconfig.jpg
+  img: img/news/crcl_news_timespaceexistence-reconfig.jpg
   alt: Re:Config project installation at Time Space Existence 2025
   link: https://timespaceexistence.com/
   text: Our <a href="https://www.reconfig.crclcrclcrcl.org/" target="_blank"><mark class="highlight-yellow">Re:Config</mark></a> project is now on display at <a href="https://timespaceexistence.com/" target="_blank"><mark class="highlight-yellow">Time Space Existence 2025</mark></a> in Venice! The installation showcases our human-robot adaptive workflows for disassembly, repair, and construction of timber structures. Come explore the project at Palazzo Mora until November 23rd!
   emoji: 🏛️🪵🤖
 
 - date: 04/25/25
-  img: img/crcl-news-2025-tech-position.png
+  img: img/news/crcl_news_tech-position.png
   alt: Banner for technician position
   link: https://careers.epfl.ch/job/Lausanne-Automation-and-robotics-technicianEngineer/940703374/
   text: The GIS platform at ENAC is searching for an <a href="https://careers.epfl.ch/job/Lausanne-Automation-and-robotics-technicianEngineer/940703374/" target="_blank"><mark class="highlight-yellow">automation and robotics technician or engineer</mark></a> to complete their team! CRCL works closely with GIS for technical support, so please consider applying if you are interested in working with us.
   emoji: 🦾🛠️🦾
 
 - date: 04/23/25
-  img: img/crcl-news-2025-venice.jpeg
+  img: img/news/crcl_news_venice.jpeg
   alt: Image of a wooden structure under construction
   link: https://timespaceexistence.com
-  text: CRCL will be in Venice for <a href="https://timespaceexistence.com" target="_blank"><mark class="highlight-yellow">Time Space Existence</mark></a>, beginning May 10. Come by to see the structure we are building and adapting with robots as part of Re:Config!  
+  text: CRCL will be in Venice for <a href="https://timespaceexistence.com" target="_blank"><mark class="highlight-yellow">Time Space Existence</mark></a>, beginning May 10. Come by to see the structure we are building and adapting with robots as part of Re:Config!
   emoji: 🪵🪚🪵
 
 - date: 03/28/25
-  img: img/crcl-news-2025-caadria-yca.jpeg
+  img: img/news/crcl_news_caadria-yca.jpeg
   alt: A small scale wood structure
   link: https://www.caadria2025.org/yca
   text: Congrats to Isla Xi Han for winning the <a href="https://www.caadria2025.org/yca" target="_blank"><mark class="highlight-yellow">Young CAADRIA Award</mark></a> at this year's conference for her paper, <a href="https://papers.cumincad.org/data/works/att/caadria2025_778.pdf" target="_blank"><mark class="highlight-yellow">From Words to Actions&#58; A large language model (LLM) approach for human-robot interaction in design-fabrication settings</mark></a>!
   emoji: 🏆💬🏆
 
 - date: 03/27/25
-  img: img/crcl-news-2025-caadria.jpg
+  img: img/news/crcl_news_caadria.jpg
   alt: CAADRIA 2025 graphic
   link: https://papers.cumincad.org/data/works/att/caadria2025_753.pdf
   text: Bravo to Alex Pittiglio and Xiliu Yang for presenting their paper, <a href="https://papers.cumincad.org/data/works/att/caadria2025_753.pdf" target="_blank"><mark class="highlight-yellow">Augmented Human-Robot Collaborative Bending&#58; Human-robot collaboration for biogenic material bending-active assemblies</mark></a>, at <a href="https://www.caadria2025.org/paper-sessions" target="_blank"><mark class="highlight-yellow">CAADRIA 25</mark></a>!
   emoji: 🎍🗾🎍
 
 - date: 09/16/24
-  img: img/crcl-news-2025-dms-maxence.jpeg
+  img: img/news/crcl_news_dms-maxence.jpeg
   alt: Edvard presenting his research
   link: https://design-modelling-symposium.de
   text: CRCL in Germany! Maxence presented Structural Concrete Rubble Arrangements at the <a href="https://design-modelling-symposium.de" target="_blank"><mark class="highlight-yellow">Design Modeling Symposium 2024</mark></a> in Kassel
   emoji: 🪨🎤🪨
 
 - date: 09/10/24
-  img: img/crcl-news-2024-beta2024.jpg
+  img: img/news/crcl_news_beta2024.jpg
   alt: Robot installation at Beta 2024
   link: https://betacity.eu/en/tema-beta-2024-cover-me-softly/
   text: We're showing 'I am not a robot' at <a href="https://betacity.eu/en/tema-beta-2024-cover-me-softly/" target="_blank"><mark class="highlight-yellow">Beta 2024</mark></a> - the Timișoara Architecture Biennale! Created by Eric Duong, Stefana Parascho, and Zara Pfeiffer, the installation deconstructs our relationships to robots through a recontextualization of behavior, sense, and control
   emoji: 🦾🧠💥
 
 - date: 07/24/24
-  img: img/crcl-news-dms-workshop.jpg
+  img: img/news/crcl_news_dms-workshop.jpg
   alt: A small scale wood structure
   link: https://design-modelling-symposium.de/theworkshops/fees/
-  text: CRCL will be hosting a workshop on human-robot interaction (HRI) as part of this year’s Design Modeling Symposium in Kassel, Germany. The workshop will introduce participants to a novel workflow that enables more dynamic and reconfigurable fabrication processes with HRI. It will include interactive discussions and tutorials aiming to develop technical skills, methods of experimentation, and new creative possibilities! <a href="https://design-modelling-symposium.de/theworkshops/fees/" target="_blank"><mark class="highlight-yellow">Registration is now open online</mark></a>.
-  emoji: 🧑 🤝 🤖 
+  text: CRCL will be hosting a workshop on human-robot interaction (HRI) as part of this year's Design Modeling Symposium in Kassel, Germany. The workshop will introduce participants to a novel workflow that enables more dynamic and reconfigurable fabrication processes with HRI. It will include interactive discussions and tutorials aiming to develop technical skills, methods of experimentation, and new creative possibilities! <a href="https://design-modelling-symposium.de/theworkshops/fees/" target="_blank"><mark class="highlight-yellow">Registration is now open online</mark></a>.
+  emoji: 🧑 🤝 🤖
 
 - date: 07/16/24
-  img: img/crcl-news-edvardphddefense.jpg
+  img: img/news/crcl_news_edvardphddefense.jpg
   alt: Edvard presenting his research
   link: http://formfindinglab.princeton.edu
   text: Congratulations to Edvard P. G. Bruun for passing his doctoral examination and being officially awarded the title of PhD! Edvard was co-advised by Prof. Adriaenssens at the <a href="http://formfindinglab.princeton.edu" target="_blank"><mark class="highlight-yellow">Princeton Forming Finding Lab</mark></a> and Prof Parascho at CRCL.
   emoji: "&#x1F389; &#x1F393; &#x1F389;"
 
 - date: 07/11/24
-  img: img/crcl-news-alberto-digital-woodcraft.jpg
+  img: img/news/crcl_news_alberto-digital-woodcraft.jpg
   alt: Alberto cutting wood and Eleni operating a robot
-  link: 
-  text: Today marks the completion of Alberto Johnsson’s master's thesis, Digital Woodcraft, conducted with Eleni Skevaki and Stefana Parascho. Congrats to Alberto for an amazing year of work in human craft, robotic precision and material properties for a new woodworking experience!
+  link:
+  text: Today marks the completion of Alberto Johnsson's master's thesis, Digital Woodcraft, conducted with Eleni Skevaki and Stefana Parascho. Congrats to Alberto for an amazing year of work in human craft, robotic precision and material properties for a new woodworking experience!
   emoji: "&#x1F9BE; &#x1F477; &#x1FAB5;"
 
 - date: 05/31/24
-  img: img/crcl-news-maxence-new-frontiers-award.jpg
+  img: img/news/crcl_news_maxence-new-frontiers-award.jpg
   alt: Maxence presenting his paper at RobArch 2024
-  link: 
-  text: Congratulations to Maxence Grangeot for winning the New Frontiers Runner-up award at <a href="https://robarch2024.org/" target="_blank"><mark class="highlight-yellow">Rob|Arch 2024</mark></a>! His paper, <a href="https://infoscience.epfl.ch/entities/publication/f6a19ef7-29ce-462e-a69d-2ada3c29b11b" target="_blank"><mark class="highlight-yellow">“Rising from the rubble - Leveraging existing construction tools for upcycling concrete waste into slender walls”</mark></a> was co-authored with Qianqing Wang (EESD), Katrin Beyer (EESD), Corentin Fivet (SXL) and Stefana Parascho (CRCL).
+  link:
+  text: Congratulations to Maxence Grangeot for winning the New Frontiers Runner-up award at <a href="https://robarch2024.org/" target="_blank"><mark class="highlight-yellow">Rob|Arch 2024</mark></a>! His paper, <a href="https://infoscience.epfl.ch/entities/publication/f6a19ef7-29ce-462e-a69d-2ada3c29b11b" target="_blank"><mark class="highlight-yellow">"Rising from the rubble - Leveraging existing construction tools for upcycling concrete waste into slender walls"</mark></a> was co-authored with Qianqing Wang (EESD), Katrin Beyer (EESD), Corentin Fivet (SXL) and Stefana Parascho (CRCL).
   emoji: "&#x1FAA8; &#x1F3C6; &#x1FAA8;"
 
 - date: 05/20/24
-  img: img/crcl-news-robarch2024.jpg
+  img: img/news/crcl_news_robarch2024.jpg
   alt: RobArch promotional header image
   link: https://robarch2024.org/schedule
-  text: Isla Xi Han and Maxence will be presenting their papers at the upcoming <a href="https://robarch2024.org/schedule" target="_blank"><mark class="highlight-yellow">Rob|Arch 2024</mark></a>! Keep an eye on Paper Session 1 for Isla's presentation of “Spontaneous Tensegrity&#58; Exploring Improvisational Design and Robotic Fabrication in Tensegrity Structures” and Paper Session 2 for Maxence's presentation of “Rising from Rubble&#58; Leveraging Existing Construction Tools for Upcycling Concrete Waste into Slender Walls”!
+  text: Isla Xi Han and Maxence will be presenting their papers at the upcoming <a href="https://robarch2024.org/schedule" target="_blank"><mark class="highlight-yellow">Rob|Arch 2024</mark></a>! Keep an eye on Paper Session 1 for Isla's presentation of "Spontaneous Tensegrity&#58; Exploring Improvisational Design and Robotic Fabrication in Tensegrity Structures" and Paper Session 2 for Maxence's presentation of "Rising from Rubble&#58; Leveraging Existing Construction Tools for Upcycling Concrete Waste into Slender Walls"!
   emoji: "&#x1f9be; &#x1f3a4; &#x1f9be;"
 
 - date: 10/13/23
-  img: img/crcl-news-uoftseminar.jpeg
+  img: img/news/crcl_news_uoftseminar.jpeg
   alt: Prof. Parascho lecture event at University of Toronto
   link: https://robotics.utoronto.ca/seminar-series/
   text: Prof. Parascho was invited to give a lecture on multi-agent robotic processes at the University of Toronto Robotics Institute.
   emoji: "&#x1f3a4; &#x1F469;&#x200D;&#x1F4BB; &#x1f4ac;"
 
 - date: 10/06/23
-  img: img/crcl-news-aagchair.png
+  img: img/news/crcl_news_aagchair.png
   alt: Scientific Chair of AAG 2023
   link: https://www.degruyter.com/document/doi/10.1515/9783111162683/html
   text: Stefana Parascho is a Scientific Chair at AAG 2023, a multi-disciplinary conference connecting architects, engineers, and computer scientists in academia and industry. <a href="https://www.degruyter.com/document/doi/10.1515/9783111162683/html" target="_blank"><mark class="highlight-yellow">Find the conference proceedings online</mark></a>!
   emoji: "&#x1FA91; &#x1F469; &#x1FA91;"
 
 - date: 10/06/23
-  img: img/crcl-news-aag2023.jpg
+  img: img/news/crcl_news_aag2023.jpg
   alt: Homepage for AAG 2023
   link: https://www.aag2023.com/#
   text: Congratulations to CRCL PhD Candidate Jingwen Wang, who will be presenting her paper on multi-robotic assembly during <a href="https://www.aag2023.com/#" target="_blank"><mark class="highlight-yellow">AAG 2023</mark></a>!
   emoji: "&#x1F9BE; &#x1F41A; &#x1F9BE;"
 
 - date: 10/06/23
-  img: img/crcl-news-acmscf2023.png
+  img: img/news/crcl_news_acmscf2023.png
   alt: Homepage for ACM SCF 2023
   link: https://scf.acm.org/2023/index.html
   text: Congratulations to incoming CRCL PhD Candidate Gabriel Vallat, who will be presenting a paper at the <a href="https://scf.acm.org/2023/index.html" target="_blank"><mark class="highlight-yellow">2023 ACM Symposium on Computational Fabrication</mark></a>!
   emoji: "&#x1F916; &#x1F9E0; &#x1F916;"
 
 - date: 9/13/23
-  img: img/crcl-news-grangeotcisbat.jpg
+  img: img/news/crcl_news_grangeotcisbat.jpg
   alt: Maxence receiving Best Paper award
   link: https://cisbat.epfl.ch/
   text: Congratulations to PhD Candidate Maxence Grangeot, who won the Best Poster Award at CISBAT for his work on structures from reclaimed concrete!
   emoji: "&#x1F3C6; &#x1F3C6; &#x1F3C6;"
 
 - date: 08/26/23
-  img: img/crcl-news-futureofconstruction.png
+  img: img/news/crcl_news_futureofconstruction.png
   alt: Web page of the Future of Construction symposium
   link: https://futureofconstruction.net
   text: The Future of Construction Symposium 2023 will take place from September 13 to 15 and will feature keynotes, poster sessions, and workshops revolving around human-machine collaborations in design and construction. <a href="https://futureofconstruction.net" target="_blank"><mark class="highlight-yellow">Find out more</mark></a> and <a href="https://www.events.tum.de/frontend/index.php?sub=172" target="_blank"><mark class="highlight-yellow">register for full access</mark></a> to on-site events!
   emoji: "&#x1F52E; &#x1F6A7; &#x1F52E;"
 
 - date: 06/09/23
-  img: img/crcl-news-postdoc-position.png
+  img: img/news/crcl_news_postdoc-position.png
   alt: Banner for postdoc opening
   link: https://recruiting.epfl.ch/Vacancies/2915/Description/2
   text: CRCL is searching for a postdoctoral researcher for a 2 year project focusing on reconfiguration of timber structures! <a href="https://recruiting.epfl.ch/Vacancies/2915/Description/2" target="_blank"><mark class="highlight-yellow">Learn more about the position opening</mark></a>.
   emoji: "&#x1fab5; &#x267B; &#x1fab5;"
 
 - date: 05/30/23
-  img: img/crcl-news-positions-2023.jpg
+  img: img/news/crcl_news_positions-2023.jpg
   alt: Banner for exhibition opening
   link: https://memento.epfl.ch/event/opening-end-of-year-show-positions-epfl-architectu/
   text: CRCL is presenting two projects with the opening of POSITIONS tonight at 18:00. Learn more at <a href="https://memento.epfl.ch/event/opening-end-of-year-show-positions-epfl-architectu/" target="_blank"><mark class="highlight-yellow">the event page</mark></a>.
   emoji: "&#x1f30d; &#x1f3eb; &#x1f30d;"
 
 - date: 05/05/23
-  img: img/crcl-news-inaugural-lecture.jpg
+  img: img/news/crcl_news_inaugural-lecture.jpg
   alt: Informational banner for the inaugural lecture
   link: https://memento.epfl.ch/event/lecon-inaugurale-prof-stefana-parascho/
   text: Stefana will be giving her inaugural lecture about design and construction robotics on May 10, from 17:30 to 18:45.
   emoji: "⚠️ ⚠️ ⚠️"
 
 - date: 03/23/23
-  img: img/crcl-news-construction-robotics.png
+  img: img/news/crcl_news_construction-robotics.png
   alt: Photo of the paper access page
   link: https://www.annualreviews.org/doi/abs/10.1146/annurev-control-080122-090049
   text: Construction Robotics&#58; From Automation to Collaboration by Prof. Dr. Stefana Parascho is available for <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-control-080122-090049" target="_blank"><mark class="highlight-yellow">download online</mark></a>.
   emoji: "&#x1F6DC; &#x1f4dd; &#x1F6DC;"
 
 - date: 01/11/23
-  img: img/crcl-news-2023-01jan-11-acadia-ian-besler.jpeg
+  img: img/news/crcl_news_acadia-ian-besler.jpeg
   alt: Cover of the 2021 ACADIA Publication
   link: https://2021.acadia.org/publication/
   text: The proceedings from ACADIA 2021 &#39;Realignments&#58; Toward Critical Computation&#39; have been published and are available for <a href="https://2021.acadia.org/publication/ACADIA_2021_Proceedings_LowRes.pdf" target="_blank"><mark class="highlight-yellow">free download</mark></a> or <a href="https://www.amazon.com/ACADIA-2021-Realignments-Computation-Architecture/dp/B0BJT2V3TD/ref=sr_1_1?crid=1EO7SUMOPZCDM&keywords=acadia+2021+realignments&qid=1667434720&qu=eyJxc2MiOiIwLjg1IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&s=books&sprefix=2021+acadi%2Cstripbooks%2C75&sr=1-1" target="_blank"><mark class="highlight-yellow">purchase in print</mark></a>.
   emoji: "&#x1f4da; &#x1f4e5; &#x1f4da;"
 
 - date: 01/11/23
-  img: img/crcl-news-2023-01jan-11-zerowaste-edvard-bruun.jpg
+  img: img/news/crcl_news_zerowaste-edvard-bruun.jpg
   alt: Edvard Bruun presenting ZeroWaste at ACADIA
   link: https://2022.acadia.org
   text: Congratulations to CRCL external advisee Edvard Bruun, who presented research on robotic dis- and reassembly of timber structures at <a href="https://2022.acadia.org" target="_blank"><mark class="highlight-yellow">ACADIA 2022</mark></a>.
   emoji: "&#x1f9be; &#x1f3a4; &#x1f3e0;"
 
 - date: 09/26/22
-  img: img/crcl-news-2022-09sep-26-bamx-epfl.jpeg
+  img: img/news/crcl_news_bamx-epfl.jpeg
   alt: Photo of the lightweight bamboo structure BamX
   link: https://bamx.epfl.ch/
   text: In collaboration with GCM, ITKE and an independent artist, the CRCL unveils a lightweight bamboo structure, <a href="https://bamx.epfl.ch/" target="_blank"><mark class="highlight-yellow">BamX</mark></a>, at the heart of the Architecture faculty building.
   emoji: "&#x1f578; &#x1f38d; &#x1f578;"
 
 - date: 03/23/23
-  img: img/crcl-news-cis-seminar.png
+  img: img/news/crcl_news_cis-seminar.png
   alt: Stefana Parascho presenting at CIS
   link: https://www.epfl.ch/research/domains/cis/center-for-intelligent-systems-cis/events/gtkyn/prof-stefana-parascho/
   text: Stefana was invited to give a lecture on multi-agent robotic processes at CIS. The recording is now available to <a href="https://www.youtube.com/watch?v=TDZfLca98gY" target="_blank"><mark class="highlight-yellow">watch online</mark></a>.
   emoji: "&#x1f3a4; &#x1F469;&#x200D;&#x1F4BB; &#x1f4ac;"
 
 - date: 26/09/22
-  img: img/crcl-news-2022-09sep-26-enac-maxence-grangeot.jpg
+  img: img/news/crcl_news_enac-maxence-grangeot.jpg
   alt: Robotic assembly prototype
   link: https://www.epfl.ch/schools/enac/about/events/20-years-enac/
   text: CRCL presented a robotic assembly prototype of reused concrete for the <a href="https://www.epfl.ch/schools/enac/about/events/20-years-enac/" target="_blank"><mark class="highlight-yellow">ENAC 20 years anniversary exhibition</mark></a>.
   emoji: "&#x2728; &#x1f388; &#x1f389;"
 
 - date: 06/09/22
-  img: img/crcl-news-2022-09sep-06-smart-living-lab.jpg
+  img: img/news/crcl_news_smart-living-lab.jpg
   alt: Robotic assembly prototype
   link: https://www.youtube.com/watch?v=aVBkiVCDc94
   text: Stefana Parascho was invited to give a lecture at <a href="https://www.youtube.com/watch?v=aVBkiVCDc94" target="_blank"><mark class="highlight-yellow">the Smart Living Lab</mark></a>.
   emoji: "&#x1f3e1; &#x1F469;&#x200D;&#x1F4BB; &#x1f4ac;"
 
 - date: 08/10/21
-  img: img/crcl-news-architect-magazine.jpg
+  img: img/news/crcl_news_architect-magazine.jpg
   alt: Screenshot of Architect Magazine R+D Award website announcement
   link: https://www.architectmagazine.com/awards/r-d-awards/award-robotic-constructionthe-glass-vault_o
   text: Congrats to Isla Han, Edvard Bruun and Stefana Parascho for making this unique collaborative project happen.
   emoji: "&#x1f3c6; &#x1f48e; &#x1f3c6;"
 
 - date: 08/07/21
-  img: img/crcl-news-acadia-workshop.jpg
+  img: img/news/crcl_news_acadia-workshop.jpg
   alt: Screenshot of ACADIA Workshops website
   link: http://2021.acadia.org/workshops/#remote-robotic-assemblies
-  text: We are teaching a workshop at this year’s ACADIA conference together with Gramazio Kohler Research, ETH Zurich - Controlling robots remotely through COMPAS FAB. <a href="http://2021.acadia.org/workshops/#remote-robotic-assemblies" target="_blank"><mark class="highlight-yellow">Join us by registering here!!</mark></a>
+  text: We are teaching a workshop at this year's ACADIA conference together with Gramazio Kohler Research, ETH Zurich - Controlling robots remotely through COMPAS FAB. <a href="http://2021.acadia.org/workshops/#remote-robotic-assemblies" target="_blank"><mark class="highlight-yellow">Join us by registering here!!</mark></a>
   emoji: "&#x1f916; &#x1f469; &#x200d;&#x1f4BB;"
 
 
 - date: 08/06/21
-  img: img/crcl-news-structural-awards-shortlist.jpg
+  img: img/news/crcl_news_structural-awards-shortlist.jpg
   alt: Screenshot of the Structural Awards website
   link: https://www.istructe.org/structuralawards/the-shortlist/structural-artistry-(non-buildings)/robotic-construction-the-glass-vault
   text: <a href="https://www.istructe.org/structuralawards/the-shortlist/structural-artistry-(non-buildings)/robotic-construction-the-glass-vault"><mark class="highlight-yellow">LightVault shortlisted for the Structural Awards 2021</mark></a> - The Institution of Structural Engineers (IStructE)
   emoji: "&#x1f91e; &#x1f929; &#x1f91e;"
 
 - date: 07/14/21
-  img: img/crcl-news-construction-robotics-paper.jpg
+  img: img/news/crcl_news_construction-robotics-paper.jpg
   alt: Screenshot of Construction Robotics journal article website
   link: https://link.springer.com/article/10.1007/s41693-021-00062-z
-  text: Our paper <a href="https://link.springer.com/article/10.1007/s41693-021-00062-z"><mark class="highlight-yellow">“Robotic additive construction of bar structures&#58; unified sequence and motion planning”</mark></a> in collaboration with the Digital Structures Group MIT is published in Construction Robotics! Led by Yijiang Huang (MIT)
+  text: Our paper <a href="https://link.springer.com/article/10.1007/s41693-021-00062-z"><mark class="highlight-yellow">"Robotic additive construction of bar structures&#58; unified sequence and motion planning"</mark></a> in collaboration with the Digital Structures Group MIT is published in Construction Robotics! Led by Yijiang Huang (MIT)
   emoji: "&#x1f44f; &#x1f44f; &#x1f44f;"
 
 - date: 07/05/21
-  img: img/crcl-news-wia-berlin.jpg
+  img: img/news/crcl_news_wia-berlin.jpg
   alt: Screenshot of the Women in Architecture Festival Berlin website
   link: https://www.youtube.com/watch?v=3FSXSJjBLWQ
   text: Stefana Parascho speaking at the Women in Architecture Festival Berlin, hosted by the CyPhyLab TU Berlin. <a href="https://www.youtube.com/watch?v=3FSXSJjBLWQ"><mark class="highlight-yellow">Watch the recording here.</mark></a>
   emoji: "&#x1f3f0; &#x1f469; &#x1f3f0;"
 
 - date: 06/25/21
-  img: img/crcl-news-acadia-realignments.jpg
+  img: img/news/crcl_news_acadia-realignments.jpg
   alt: Screenshot of the ACADIA 2021 conference website
   link: http://2021.acadia.org/about/
-  text: Stefana Parascho is Co-Chairing this year’s ACADIA Conference&#58; <a href="http://2021.acadia.org/about/"><mark class="highlight-yellow">“Realignments&#58; toward critical computation”</mark></a> Nov 3<sup>rd</sup> - 6<sup>th</sup>. Save the dates!!
+  text: Stefana Parascho is Co-Chairing this year's ACADIA Conference&#58; <a href="http://2021.acadia.org/about/"><mark class="highlight-yellow">"Realignments&#58; toward critical computation"</mark></a> Nov 3<sup>rd</sup> - 6<sup>th</sup>. Save the dates!!
   emoji: "&#x1f483; &#x1f483; &#x1f483;"
 
 - date: 06/23/21
-  img: img/crcl-news-automation-in-construction-journal.jpg
+  img: img/news/crcl_news_automation-in-construction-journal.jpg
   alt: Screenshot of Automation in Construction journal article website
   link: https://www.sciencedirect.com/science/article/abs/pii/S0926580521002545
-  text: Our paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S0926580521002545"><mark class="highlight-yellow">“Three cooperative robotic fabrication methods for the scaffold-free construction of a masonry arch”</mark></a> in collaboration with the Form Finding Lab is published in Automation in Construction Journal! Led by Edvard Bruun.
+  text: Our paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S0926580521002545"><mark class="highlight-yellow">"Three cooperative robotic fabrication methods for the scaffold-free construction of a masonry arch"</mark></a> in collaboration with the Form Finding Lab is published in Automation in Construction Journal! Led by Edvard Bruun.
   emoji: "&#x1f973; &#x1f9be; &#x1f973;"

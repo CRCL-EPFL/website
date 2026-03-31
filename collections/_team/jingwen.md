@@ -1,7 +1,7 @@
 ---
 name: Jingwen Wang
 position: Doctoral Assistant
-img: img/crcl-team-jingwen-wang.jpg
+img: img/team/crcl_team_jingwen-wang.jpg
 alt: Profile photo of Jingwen Wang
 credit: Eric Duong
 ---

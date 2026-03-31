@@ -1,61 +1,61 @@
 - title: Multi-agent Reinforcement Learning for Robotic Construction
-  img: img/crcl-research-multi-agent.jpg
+  img: img/research/crcl_research_multi-agent.jpg
   alt: Manuscript image
   link: https://gv.crclcrclcrcl.org
-  text: Research by Gabriel Vallat on training robots to build structures from specifications 
+  text: Research by Gabriel Vallat on training robots to build structures from specifications
   emoji: 🤖📝🏗️
 
 - title: Interacting with Construction Robots
-  img: img/crcl-research-interacting-construction.jpg
+  img: img/research/crcl_research_interacting-construction.jpg
   alt: Manuscript image
   link: https://iwcr.crclcrclcrcl.org
   text: A collection of collaborative robotics projects developed by Eleni Skevaki
   emoji: 🤖📱🤖
 
 - title: Rubble Walls
-  img: img/crcl-research-rubble-walls.jpg
+  img: img/research/crcl_research_rubble-walls.jpg
   alt: Manuscript image
   link: https://rw.crclcrclcrcl.org
   text: Research by Maxence Grangeot on upcycling large irregular concrete rubble pieces from demolition sites into walls
   emoji: 🪨🏗️🪨
 
 - title: Re:Config
-  img: img/crcl-research-reconfig.jpeg
+  img: img/research/crcl_research_reconfig.jpeg
   alt: Manuscript image
   link: https://reconfig.crclcrclcrcl.org
   text: Human-robot adaptive workflows for disassembly, repair, and construction
   emoji: 🏫🤖🏠
 
 - title: Touching the Material
-  img: img/crcl-research-mariepierresite.JPG
+  img: img/research/crcl_research_mariepierresite.JPG
   alt: Coming soon!
   link: https://stereotomy.crclcrclcrcl.org
   text: Research by Marie-Pierre on the relationship between the human hand and tools for making, both new and old
   emoji: 🪨⚒️🪨
 
 - title: Digital Woodcraft
-  img: img/crcl-research-digital-woodcraft.jpg
+  img: img/research/crcl_research_digital-woodcraft.jpg
   alt: Manuscript image
   link: https://dwc.crclcrclcrcl.org
   text: Human-robot fabrication workflow for the use of curved wood in construction by Alberto Johnsson
   emoji: 🪵💻🪵
 
 - title: RIOT:CRCL
-  img: img/crcl-crcl+riot.png
+  img: img/research/crcl_research_riot.png
   alt: Manuscript image
-  link: 
+  link:
   text: An upcoming manuscript on the unrealized dream of construction automation
   emoji: "&#x1F310; &#x1F4D6; &#x1F310;"
 
 - title: Motion Pictures
-  img: img/crcl-research-motion-pictures.png
+  img: img/research/crcl_research_motion-pictures.png
   alt: Web page of the Future of Construction symposium
   link: https://mp.crclcrclcrcl.org
   text: An interactive installation that brings together building occupancy analysis methods, trajectory prediction, and digital media to understand and mediate shared spaces
   emoji: "&#x1F52E; &#x1F6A7; &#x1F52E;"
 
 - title: L.E.A.R.N.
-  img: img/crcl-research-learn.png
+  img: img/research/crcl_research_learn.png
   alt: Web page of the Future of Construction symposium
   link: https://le-ar-n.org
   text: A platform dedicated to beginner-friendly creative coding tutorials and exercises for building architecture with robots
