@@ -1,6 +1,6 @@
 ---
 section: Papers
-new: true
+new: false
 ---
 Skevaki, Eleni, Eric Duong, Hong-Bin Yang, and Stefana Parascho. 2025. “Truss from Trash: A Human–Robot Framework for Adaptive Timber Assembly on the Construction Floor.” Construction Robotics 10 (1): 2. <a href="https://doi.org/10.1007/s41693-025-00175-9" target="_blank"><mark class="highlight-yellow">https://doi.org/10.1007/s41693-025-00175-9.</mark></a>
 

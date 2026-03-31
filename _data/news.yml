@@ -1,3 +1,17 @@
+- date: 31/03/26
+  img: img/crcl_news_cap-uncertainty.jpeg
+  alt: Poster for Capitalizing on Uncertainty summer school
+  link: https://cap-uncertainty.epfl.ch/
+  text: |
+    <p>This September, we are co-organizing a summer school with colleagues from EPFL and ETH. The program is intended for PhD students interested in exploring how uncertainty can become a productive resource through a real-world construction robotics challenge. </p>
+    <p>The week will combine lectures across design, materials, robotics, and work psychology with a full-scale (1:1) timber build using irregular timber stock and an ABB industrial robot in a human–robot fabrication workflow. </p>
+    <p>No previous robotics experience is required — only curiosity, openness, and your own perspective on how uncertainty shapes analysis, decision-making, and action in research and practice. </p>
+    <p>International Students are also welcome to apply. </p>
+    <p>More details on the program, dates, and registration are available on <a href="https://cap-uncertainty.epfl.ch/" target="_blank"><mark class="highlight-yellow">on the course website</mark></a></p>
+    <p>For questions: <a href="mailto:cap-uncertainty@epfl.ch" target="_blank"><mark class="highlight-yellow">cap-uncertainty@epfl.ch</mark></a></p>
+  emoji: 🏗️🎓🤖
+  new: true
+
 - date: 09/03/26
   img: img/crcl-news-construction-robotics-tft.jpg
   alt: Graphic for PhD position openings
@@ -7,7 +21,7 @@
     <p>The work explores how design can evolve alongside robotic fabrication, enabling real-time negotiation between design intent and material availability through situated, projection-based interaction.</p>
     <p>📄 Co-authored by Eleni Skevaki, Eric Duong, Hong-Bin Yang & Stefana Parascho</p>
   emoji: 🪵🤖📽️
-  new: true
+  new: false
 
 - date: 02/03/26
   img: img/crcl_engineering-industry-day26.jpg
