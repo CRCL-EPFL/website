@@ -1,3 +1,11 @@
+- date: 27/05/26
+  img: img/crcl-news-icra-2026.jpg
+  alt: Banner for Engineering Industry Day EPFL 2026
+  link: https://2026.ieee-icra.org/event/panel-2-advancing-sustainability-in-robotics-from-green-design-to-real-world-impact/
+  text: Join us June 2 at <a href="https://2026.ieee-icra.org/event/panel-2-advancing-sustainability-in-robotics-from-green-design-to-real-world-impact/" target="_blank"><mark class="highlight-yellow">IEEE ICRA 2026</mark></a> in Vienna, where Stefana Parascho will be on the panel for session 2 of Advancing Sustainability in Robotics&#58; From Green Design to Real-World Impact
+  emoji: ♻️🦾♻️
+  new: true
+
 - date: 31/03/26
   img: img/crcl_news_cap-uncertainty.jpeg
   alt: Poster for Capitalizing on Uncertainty summer school
@@ -10,7 +18,7 @@
     <p>More details on the program, dates, and registration are available on <a href="https://cap-uncertainty.epfl.ch/" target="_blank"><mark class="highlight-yellow">on the course website</mark></a></p>
     <p>For questions: <a href="mailto:cap-uncertainty@epfl.ch" target="_blank"><mark class="highlight-yellow">cap-uncertainty@epfl.ch</mark></a></p>
   emoji: 🏗️🎓🤖
-  new: true
+  new: false
 
 - date: 09/03/26
   img: img/crcl-news-construction-robotics-tft.jpg

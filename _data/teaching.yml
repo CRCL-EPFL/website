@@ -9,7 +9,7 @@
   img: "img/crcl-pdm-alberto.jpg"
   emoji: 🏫🤖🏫
   type: project
-  new: true
+  new: false
   credit: Alberto Johnsson
 
 - title: "Master's Project - Microengineering"
