@@ -1,3 +1,15 @@
+- date: 01/06/26
+  img: img/crcl_news_jingwen_icra_2026.jpeg
+  alt: Poster for Capitalizing on Uncertainty summer school
+  link: https://uncertainty-in-robotics.github.io
+  text: |
+    <p>Jingwen will be presenting our work at the ICRA 2026 <a href="https://uncertainty-in-robotics.github.io" target="_blank"><mark class="highlight-yellow">Uncertainty in Open-World Robotics Workshop!</mark></a></p>
+    <p>How can a robot build dry-stacked structures over long assembly horizons, when small placement deviations accumulate and reshape its future construction decisions?</p>
+    <p>Our work explores uncertainty-aware, blueprint-free robotic assembly, combining reinforcement learning with closed-loop visual feedback to help robots adapt as the built structure evolves.</p>
+    <p>See you at <a href="https://2026.ieee-icra.org/workshops-and-tutorials/" target="_blank"><mark class="highlight-yellow">ICRA 2026!</mark></a></p>
+  emoji: 🧱🤖🧱
+  new: true
+
 - date: 27/05/26
   img: img/crcl-news-icra-2026.jpg
   alt: Banner for Engineering Industry Day EPFL 2026
