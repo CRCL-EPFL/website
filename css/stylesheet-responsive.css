@@ -46,21 +46,44 @@ ____________________________________________________
 
 	header .header-icon {
 		width: 20%;
-		padding: 0.75em 0.5em;
+		/* Match the header-titles' 1.5em top padding so the logo's surrounding
+		   margin is consistent; the wider side padding also opens up the gap
+		   between the logo and the title block. */
+		padding: 1.5em;
 	}
 
 	header .header-titles {
 		width: auto;
 		flex: 1 1 auto;
 		padding: 1.5em 0;
+		/* Left-justify the title block against the logo instead of centering
+		   it in the space the hidden right triangle used to occupy. */
+		text-align: left;
 	}
 
 	h1 {
 		font-size: 5em;
+		/* Undo the desktop line-height:0.2 collapse so the h1 box reflects the
+		   real glyph height; otherwise the CRCL text overflows its own box and
+		   sits high relative to the logo. ~0.75 ≈ cap height: the box hugs the
+		   glyphs (so it centers) without the box reading taller than the text. */
+		line-height: 0.75;
 	}
 
 	h1 span.headline-font-size-small {
-		font-size: 0.28em;
+		font-size: 0.34em;
+		/* Stay inline so the black background keeps wrapping the text. The base
+		   rule nudges this DOWN by 0.5em, widening the gap under CRCL; pull it
+		   back up instead. (Relative offset only — doesn't change the box.) */
+		top: -0.4em;
+	}
+
+	/* Social links move to their own row under the name: frees the width the
+	   name+icons were overflowing (LinkedIn was clipping off-screen) and lets
+	   the name text be larger. Inline on desktop, block here. */
+	.header-social {
+		display: block;
+		margin-top: 0.4em;
 	}
 
 	h3 {
@@ -72,10 +95,18 @@ ____________________________________________________
 		flex-direction: column;
 		margin: 2% 0 0 2%;
 		width: 94%;
+		/* Drop the desktop gap; when stacked, space the two tiles apart with
+		   the same margin sections use between each other (see #gallery below). */
+		gap: 0;
 	}
 
 	#video,#gallery {
 		width: 100%;
+	}
+
+	/* Space between the video and photo tiles == the gap between sections. */
+	#gallery {
+		margin-top: 2%;
 	}
 
 	section {
@@ -142,11 +173,12 @@ ____________________________________________________
 		}
 
 		h2 {
-			font-size: 1em;
+			/* Larger now that the icons no longer share this row. */
+			font-size: 1.25em;
 		}
 
 		header img.header-icons {
-			width: 20px;
+			width: 24px;
 		}
 
 	section {
@@ -157,6 +189,11 @@ ____________________________________________________
 	#top-gallery-row {
 		margin: 5% 0 0 5%;
 		width: 90%;
+	}
+
+	/* Keep the tile gap in step with the wider section spacing at this size. */
+	#gallery {
+		margin-top: 5%;
 	}
 
 		h3 {
@@ -172,7 +209,9 @@ ____________________________________________________
 		}
 
 		h2 {
-			padding-top: 0.5em;
+			/* Tighten the gap under the subtitle so the title lines sit closer
+			   together than the logo-to-text gap. */
+			padding-top: 0.25em;
 		}
 
 	section#about article.about-grid {
@@ -415,9 +454,13 @@ ____________________________________________________
 	}
 
 
-	#video-container {
-		min-height: 50vw; 
-		height: auto;
+	/* Match the photo frame's fixed 60vw so the two top tiles are the same
+	   height (as they are on desktop). The video is cropped to fill via
+	   object-fit: cover. `div#video-container` is needed to out-specify the
+	   base `div#video-container { height: 26.2vw }` rule. */
+	  div#video-container {
+		height: 60vw;
+		max-height: 60vw;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -425,16 +468,20 @@ ____________________________________________________
 	  }
 	  #video-container video {
 		width: 100%;
-		height: auto;
-		min-height: 40vw; 
-		max-height: 60vw; 
+		height: 100%;
 		object-fit: cover;
 	  }
 
 	  /* Photo + cats galleries become one-slide-at-a-time carousels: each slide
 	     fills the frame, the scroller snaps per image, and the left/right
-	     .gallery-nav buttons step through them. */
-	  #gallery-frame,
+	     .gallery-nav buttons step through them.
+	     NB: the qualified `div#gallery-frame` selector is required — the base
+	     rule is `div#gallery-frame { overflow-x: scroll }` (specificity 1,0,1),
+	     so a bare `#gallery-frame` (1,0,0) here loses and the frame keeps its
+	     desktop scrollbar, reserving a 30px transparent strip at the bottom
+	     that shows the page hatching through. Matching the specificity lets
+	     `overflow: hidden` (and `height: 60vw` over the stray `60vh`) win. */
+	  div#gallery-frame,
 	  #cats-gallery-frame {
 		height: 60vw;
 		max-height: 60vw;
@@ -472,6 +519,22 @@ ____________________________________________________
 		margin: 0;
 		box-sizing: border-box;
 		scroll-snap-align: center;
+	  }
+
+	  /* Slides are shown one at a time via the .gallery-nav arrows, so the
+	     inter-slide separator isn't needed. Dropping it lets each image fill
+	     the frame edge-to-edge instead of leaving a black strip on the right
+	     (the separator butting up against the frame's own right border). */
+	  #gallery figure {
+		border-right: none;
+	  }
+
+	  /* Let the caption span the frame and hug its content like the video
+	     caption, instead of a tall 50%-wide box that rides up under the left
+	     arrow. (#gallery figcaption out-specifies the generic mobile
+	     figcaption rule, so it needs its own override here.) */
+	  #gallery figcaption {
+		width: auto;
 	  }
 
 	  .cat-image-inner {
