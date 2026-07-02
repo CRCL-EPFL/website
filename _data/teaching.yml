@@ -6,7 +6,7 @@
     <p>Alberto Johnsson: <a href="https://livingarchives.epfl.ch/projects/?author=5974&project=6690" target="_blank"><mark class="highlight-yellow">Digital Woodcraft : A Wood-Making Village in the Jorat</mark></a></p>
     <p>Johan Link: <a href="https://livingarchives.epfl.ch/projects/?author=12253&project=8156" target="_blank"><mark class="highlight-yellow">A chapel in Rüeggisberg</mark></a></p>
   semester: "Spring 2026"
-  img: "img/crcl-pdm-alberto.jpg"
+  img: "img/teaching/crcl_teaching_pdm-alberto.jpg"
   emoji: 🏫🤖🏫
   type: project
   new: false
@@ -19,7 +19,7 @@
     <p>Contact: <a href="mailto:jingwen.wang@epfl.ch" target="_blank"><mark class="highlight-yellow">Jingwen Wang</mark></a></p>
   semester: "Spring 2026, beginning early February"
   pdf: "file/crcl_s26_dual-arm-adaptation.pdf" 
-  img: "img/crcl_dual-arm_project.jpg"
+  img: "img/teaching/crcl_teaching_dual-arm-project.jpg"
   emoji: 🦾🪨🦾
   type: project
   credit: Jingwen Wang
@@ -30,7 +30,7 @@
     <p>Capitalizing on Uncertainty — Structures, Processes, Mindsets is a 6-day summer school for EPFL & ETHZ PhD and Master students, exploring how uncertainty can be engaged as a productive resource in design and fabrication.</p>
     <p>More details on the program, dates, and registration are available on <a href="https://cap-uncertainty.epfl.ch/" target="_blank"><mark class="highlight-yellow">on the course website</mark></a></p>
   semester: "31 August – 5th of September 2026"
-  img: "img/crcl_teaching_cap-uncertainty.jpeg"
+  img: "img/teaching/crcl_teaching_cap-uncertainty.jpeg"
   emoji: 🪵🎓🦾
   type: course
   new: true

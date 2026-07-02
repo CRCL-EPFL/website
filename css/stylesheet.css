@@ -148,6 +148,10 @@ a:link {
 
 html {
 	scroll-behavior: smooth;
+	/* Stop iOS/Android from auto-inflating text, which made headings and body
+	   copy balloon to inconsistent sizes on mobile. */
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 
 body,main {
@@ -157,7 +161,7 @@ body,main {
 body {
 	background-color: var(--hotpink);
 	font-family: "Roboto";
-	/* background-image: url("../img/diagonal_lines_5_10px.png"); */
+	/* background-image: url("../img/site/crcl_site_diagonal-lines-5-10px.png"); */
 	background-image: repeating-linear-gradient(
 		-45deg,
 		transparent,
@@ -809,7 +813,7 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news, butt
 	background-attachment: fixed;
 	/*background-color: #ff69b4;*/
 	/*background-blend-mode: multiply;*/
-	/* background-image: url("../img/diagonal_lines_5_10px-pink.svg"); */
+	/* background-image: url("../img/site/crcl_site_diagonal-lines-5-10px-pink.svg"); */
 	/* background-size: 100px; */
 	background-color: var(--hotpink);
 	background-image: repeating-linear-gradient(
@@ -828,7 +832,7 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news, butt
 
 button#more-news:hover,button#download-full-cv:hover, button#show-bio:hover, button#less-news:hover, button#more-research:hover, button#less-research:hover {
 	background-attachment: fixed;
-	/* background-image: url("../img/diagonal_lines_5_10px-pink-inverted.svg"); */
+	/* background-image: url("../img/site/crcl_site_diagonal-lines-5-10px-pink-inverted.svg"); */
 	/* background-size: 100px; */
 	background-color: var(--hotpink-dark);
 	background-image: repeating-linear-gradient(
@@ -1254,9 +1258,38 @@ _-_-_-_-_-_- COLOR CLASSES -_-_-_-_-_-_
 	background-color: magenta;
 }
 
+#cats-gallery-frame {
+	width: 100%;
+	height: 26.2vw;
+	scroll-behavior: smooth;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	border: var(--border-width-major) solid #000;
+}
+
+	#cats-gallery-frame::-webkit-scrollbar {
+		height: 30px;
+	}
+
+	#cats-gallery-frame::-webkit-scrollbar-track {
+		background: transparent;
+		border-top: var(--border-width-minor) solid #000;
+	}
+
+	#cats-gallery-frame::-webkit-scrollbar-thumb {
+		background: #000;
+		border-top: var(--border-width-minor) solid #000;
+	}
+
+	#cats-gallery-frame::-webkit-scrollbar-thumb:hover {
+		background: #fff;
+		border-top: var(--border-width-minor) solid #000;
+	}
+
 #cats-container {
     position: relative;
     height: calc(100% - 30px - var(--border-width-minor));
+    display: flex;
     background: #000;
 }
 

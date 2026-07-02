@@ -1,7 +1,7 @@
 ---
 name: Gabriel Vallat
 position: Doctoral Assistant
-img: img/crcl-team-gabriel-vallat.jpg
+img: img/team/crcl_team_gabriel-vallat.jpg
 alt: Profile photo of Gabriel Vallat
 credit: Alex Pittiglio
 ---

@@ -1,7 +1,7 @@
 ---
 name: Eric Duong
 position: Scientific Assistant
-img: img/crcl-team-eric-duong.jpg
+img: img/team/crcl_team_eric-duong.jpg
 alt: Profile photo of Eric Duong
 credit: Ian Ting
 ---

@@ -1,7 +1,7 @@
 ---
 name: Stefana Parascho
 position: Laboratory Director
-img: img/crcl-team-stefana.jpg
+img: img/team/crcl_team_stefana.jpg
 alt: Profile photo of Prof. Dr. Stefana Parascho
 credit: Mathias Bernhard
 more: Publications
