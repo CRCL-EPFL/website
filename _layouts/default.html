@@ -184,7 +184,7 @@ __________________
 	
 	<!-- Mobile Nav -->
 	<div id="mobile-menu-wrapper">
-		<button id="mobile-menu-button" aria-label="Open menu">?</button>
+		<button id="mobile-menu-button" aria-label="Open menu"></button>
 		<nav class="hotpink">
 	<ul>
 		<li><a href="#about">About</a></li>
@@ -251,15 +251,19 @@ __________________
 <!-- PHOTO GALLERY -->
 		<section id="gallery">
 			<h3 class="off-screen">Photo Gallery</h3>
-			<div id="gallery-frame">
-				<div id="gallery-container">
-					{% for photo in site.data.gallery %}
-						<figure class="photo-gallery">
-							<img src="{{photo.path}}" alt="{{photo.caption}}" loading="lazy" decoding="async">
-							<figcaption><strong>{{photo.title}}</strong> &mdash; {{photo.caption}}</figcaption>
-						</figure>
-					{% endfor %}
+			<div class="gallery-carousel">
+				<div id="gallery-frame">
+					<div id="gallery-container">
+						{% for photo in site.data.gallery %}
+							<figure class="photo-gallery">
+								<img src="{{photo.path}}" alt="{{photo.caption}}" loading="lazy" decoding="async">
+								<figcaption><strong>{{photo.title}}</strong> &mdash; {{photo.caption}}</figcaption>
+							</figure>
+						{% endfor %}
+					</div>
 				</div>
+				<button type="button" class="gallery-nav gallery-prev" data-target="#gallery-container" aria-label="Previous image">&#x2039;</button>
+				<button type="button" class="gallery-nav gallery-next" data-target="#gallery-container" aria-label="Next image">&#x203a;</button>
 			</div>
 		</section>
 		</div>
@@ -532,19 +536,23 @@ __________________
 						<details open>
 							<summary><h4><strong>Cats!</strong></h4></summary>
 
-							<div id="gallery-frame">
-								<div id="cats-container" style="height: 100%; display: flex;">
-									{% assign cat_photos = site.static_files | reverse %}
-									{% for photo in cat_photos %}
-										{% if photo.path contains 'img/team/cats' %}
-											<div class="cat-image-wrapper">
-												<div class="cat-image-inner">
-													<img src="{{ site.baseurl }}{{ photo.path }}" alt="Photo of a cat" loading="lazy" decoding="async">
+							<div class="gallery-carousel">
+								<div id="cats-gallery-frame">
+									<div id="cats-container">
+										{% assign cat_photos = site.static_files | reverse %}
+										{% for photo in cat_photos %}
+											{% if photo.path contains 'img/team/cats' %}
+												<div class="cat-image-wrapper">
+													<div class="cat-image-inner">
+														<img src="{{ site.baseurl }}{{ photo.path }}" alt="Photo of a cat" loading="lazy" decoding="async">
+													</div>
 												</div>
-											</div>
-										{% endif %}
-									{% endfor %}
+											{% endif %}
+										{% endfor %}
+									</div>
 								</div>
+								<button type="button" class="gallery-nav gallery-prev" data-target="#cats-container" aria-label="Previous cat photo">&#x2039;</button>
+								<button type="button" class="gallery-nav gallery-next" data-target="#cats-container" aria-label="Next cat photo">&#x203a;</button>
 							</div>
 
 							{{ site.collaborators[0].content }}
@@ -578,7 +586,19 @@ __________________
 		</section>
 
 	</main>
-	
+
+	<a id="jump-prev" href="#about" aria-label="Jump to previous section">
+		<span class="jump-arrow">&#x2191;</span>
+		<span id="jump-prev-label">About</span>
+		<span class="jump-arrow">&#x2191;</span>
+	</a>
+
+	<a id="jump-next" href="#about" aria-label="Jump to next section">
+		<span class="jump-arrow">&#x2193;</span>
+		<span id="jump-next-label">About</span>
+		<span class="jump-arrow">&#x2193;</span>
+	</a>
+
 <!-- FOOTER -->
 	<footer class="hotpink">
 		<h6 class="text-align-center">All work &#xa9;2019 - 2025 Lab for Creative Computation (CRCL) and Prof. Dr. Stefana Parascho (except where otherwise noted). All rights reserved.</h6>
@@ -655,6 +675,9 @@ __________________
 	// Function to calculate and set cat gallery width
 	function setGalleryWidth() {
 		const container = document.getElementById('gallery-container');
+		// On mobile the gallery is a one-slide-at-a-time carousel sized by CSS;
+		// don't stretch the container to the summed natural image widths.
+		if (window.innerWidth <= 800) { container.style.width = ''; return; }
 		const images = container.getElementsByTagName('img');
 		const galleryHeight = document.getElementById('gallery-frame').clientHeight;
 
@@ -679,6 +702,7 @@ __________________
 
 	function setCatGalleryWidth() {
 		const container = document.getElementById('cats-container');
+		if (window.innerWidth <= 800) { container.style.width = ''; return; }
 		const images = container.getElementsByTagName('img');
 
 		Promise.all(Array.from(images).map(img => {
@@ -701,6 +725,16 @@ __________________
 	document.addEventListener('DOMContentLoaded', setCatGalleryWidth);
 	// Also on window resize to handle viewport changes
 	window.addEventListener('resize', setCatGalleryWidth);
+
+	// Step the photo / cats carousels one slide at a time (mobile buttons)
+	document.querySelectorAll('.gallery-nav').forEach(function(btn) {
+		btn.addEventListener('click', function() {
+			var scroller = document.querySelector(btn.getAttribute('data-target'));
+			if (!scroller) return;
+			var dir = btn.classList.contains('gallery-prev') ? -1 : 1;
+			scroller.scrollBy({ left: dir * scroller.clientWidth, behavior: 'smooth' });
+		});
+	});
 
 	document.addEventListener('DOMContentLoaded', function() {
 		var menuButton = document.getElementById('mobile-menu-button');
@@ -740,6 +774,58 @@ __________________
 			}
 		});
 	});
+
+	// Section jump buttons (previous at top, next at bottom)
+	(function() {
+		var sections = ['about', 'news', 'publications', 'research', 'teaching', 'team'];
+		var labels = ['About', 'News', 'Publications', 'Research', 'Teaching', 'Team'];
+		var nextBtn = document.getElementById('jump-next');
+		var nextLabel = document.getElementById('jump-next-label');
+		var prevBtn = document.getElementById('jump-prev');
+		var prevLabel = document.getElementById('jump-prev-label');
+
+		function updateJumpButtons() {
+			if (window.innerWidth > 800) {
+				nextBtn.style.display = 'none';
+				prevBtn.style.display = 'none';
+				return;
+			}
+
+			var scrollY = window.scrollY + window.innerHeight * 0.6;
+			var currentIdx = -1;
+			for (var i = sections.length - 1; i >= 0; i--) {
+				var el = document.getElementById(sections[i]);
+				if (el && el.offsetTop <= scrollY) {
+					currentIdx = i;
+					break;
+				}
+			}
+
+			// Next section (down)
+			var nextIdx = currentIdx + 1;
+			if (nextIdx >= sections.length) {
+				nextBtn.style.display = 'none';
+			} else {
+				nextBtn.style.display = '';
+				nextBtn.href = '#' + sections[nextIdx];
+				nextLabel.textContent = labels[nextIdx];
+			}
+
+			// Previous section (up)
+			var prevIdx = currentIdx - 1;
+			if (prevIdx < 0) {
+				prevBtn.style.display = 'none';
+			} else {
+				prevBtn.style.display = '';
+				prevBtn.href = '#' + sections[prevIdx];
+				prevLabel.textContent = labels[prevIdx];
+			}
+		}
+
+		window.addEventListener('scroll', updateJumpButtons);
+		window.addEventListener('resize', updateJumpButtons);
+		document.addEventListener('DOMContentLoaded', updateJumpButtons);
+	})();
 </script>
 </body>
 </html>
