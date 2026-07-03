@@ -1,3 +1,12 @@
+- date: 02/07/26
+  img: img/news/crcl-news-davos26.jpeg
+  alt: Poster for Capitalizing on Uncertainty summer school
+  link: https://uncertainty-in-robotics.github.io
+  text: |
+    <p>Find us at the Davos Tech Summit 2026, where we'll be presenting our lab and work as part of the <a href="https://davostechsummit.com/robot-city" target="_blank"><mark class="highlight-yellow">Robot City!</mark></a></p>
+  emoji: 🏙️🤖🏙️
+  new: true
+
 - date: 01/06/26
   img: img/crcl_news_jingwen_icra_2026.jpeg
   alt: Poster for Capitalizing on Uncertainty summer school
@@ -16,7 +25,7 @@
   link: https://2026.ieee-icra.org/event/panel-2-advancing-sustainability-in-robotics-from-green-design-to-real-world-impact/
   text: Join us June 2 at <a href="https://2026.ieee-icra.org/event/panel-2-advancing-sustainability-in-robotics-from-green-design-to-real-world-impact/" target="_blank"><mark class="highlight-yellow">IEEE ICRA 2026</mark></a> in Vienna, where Stefana Parascho will be on the panel for session 2 of Advancing Sustainability in Robotics&#58; From Green Design to Real-World Impact
   emoji: ♻️🦾♻️
-  new: true
+  new: false
 
 - date: 31/03/26
   img: img/news/crcl_news_cap-uncertainty.jpeg
