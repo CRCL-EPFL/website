@@ -76,6 +76,7 @@ h2,h3,h4,h5,h6 {
 	--border-width-minor: 4px;
 	--hotpink: #ff7ad2;
 	--hotpink-dark: #e06aba;
+	--exhibition-blue: rgb(0, 73, 249);
 	--bg-line-spacing: 32px;
 	--text-on-dark: #fff;
 	--tag-padding: 0.25em 0.5em;
@@ -103,6 +104,7 @@ details > summary::-webkit-details-marker {
 	background-color: var(--hotpink);
 	/*background-color: #ff69b4;*/
 	border: var(--border-width-major) solid #000;
+	transition: background-color 0.35s ease;
 }
 
 	mark {
@@ -170,6 +172,18 @@ body {
 		#000 calc(var(--bg-line-spacing) + var(--border-width-major))
 	);
 	background-attachment: fixed;
+	transition: background-color 0.35s ease;
+}
+
+/* Exhibition ("Archizoom") theme: while that section is in view, every pink
+   surface (page background, header, nav, sections, footer) plus the smaller
+   pink accents tween to the exhibition's blue. Done by re-pointing the pink
+   variables at the blues so coverage is complete; the tween comes from the
+   transitions on `body` and `.hotpink`. Toggled by the IntersectionObserver
+   in the layout. */
+body.theme-exhibition {
+	--hotpink: var(--exhibition-blue);
+	--hotpink-dark: rgb(0, 55, 190);
 }
 
 /*
@@ -597,6 +611,7 @@ h3 {
 		height: 1em;
 		position: relative;
 		margin: 0 .5em;
+		flex-shrink: 0; /* keep the caution glyphs full-size; let a long title wrap instead */
 	}
 
 	.h3-svg {
@@ -1338,3 +1353,58 @@ _-_-_-_-_-_- COLOR CLASSES -_-_-_-_-_-_
 #mobile-menu-wrapper {
 	display: none;
 }
+
+/*
+_______________________
+___ ARCHIZOOM ___
+_______________________
+*/
+.archizoom-construction {
+	position: relative;
+	width: 100%;
+	min-height: 60vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+	.under-construction-banner {
+		--banner-angle: -20deg; /* steepened on narrow screens so it doesn't get clipped */
+		transform: rotate(var(--banner-angle));
+		font-family: "Roboto Mono";
+		font-weight: bold;
+		letter-spacing: 0.1em;
+		text-align: center;
+		white-space: nowrap;
+		font-size: clamp(1.5rem, 6vw, 4.5rem);
+		padding: 0.4em 1.2em;
+		color: #000;
+		background-color: #ff0;
+		border: var(--border-width-major) solid #000;
+		/* Subtle "breathing" pulse. The rotate is baked into every keyframe
+		   so it stays diagonal while only the scale changes. The 2.0s period
+		   matches the flashing cadence of the NEW / SOON nav badges. */
+		animation: under-construction-pulse 2.0s ease-in-out infinite;
+	}
+
+	@keyframes under-construction-pulse {
+		/* Peak at the cycle boundary (0%/100%) so the banner is largest at the
+		   same instant the NEW / SOON badges blink, keeping them in phase. */
+		0%, 100% { transform: rotate(var(--banner-angle)) scale(1.08); }
+		50%      { transform: rotate(var(--banner-angle)) scale(1); }
+	}
+
+	/* Portrait / narrow screens: a shallow diagonal runs off the sides, so
+	   stand the banner up steeper to fit the taller-than-wide viewport. */
+	@media (max-width: 800px) {
+		.under-construction-banner {
+			--banner-angle: -60deg;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.under-construction-banner {
+			animation: none;
+		}
+	}
