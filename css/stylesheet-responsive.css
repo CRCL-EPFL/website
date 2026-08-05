@@ -240,6 +240,8 @@ ____________________________________________________
 		#news figcaption,
 		#team figcaption,
 		#research figcaption,
+		.archizoom-figure figcaption,
+		.archizoom-poster figcaption,
 		.teaching-image figcaption {
 			width: auto;
 			margin: 0;

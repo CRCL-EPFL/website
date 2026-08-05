@@ -4,5 +4,6 @@ collections:
   - collaborators
   - advisees
   - publications
+  - archizoom
 
 collections_dir: collections

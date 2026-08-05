@@ -76,6 +76,7 @@ h2,h3,h4,h5,h6 {
 	--border-width-minor: 4px;
 	--hotpink: #ff7ad2;
 	--hotpink-dark: #e06aba;
+	--hotpink-fixed: #ff7ad2; /* literal hot pink — unlike --hotpink, never re-pointed to blue by the exhibition theme */
 	--exhibition-blue: rgb(0, 73, 249);
 	--bg-line-spacing: 32px;
 	--text-on-dark: #fff;
@@ -115,6 +116,12 @@ details > summary::-webkit-details-marker {
 		mark.highlight-yellow {
 			padding: 0.05em 0.2em;
 			background-color: #ff0;
+			color: #000;
+		}
+
+		mark.highlight-pink {
+			padding: 0.05em 0.2em;
+			background-color: var(--hotpink-fixed);
 			color: #000;
 		}
 
@@ -1359,52 +1366,274 @@ _______________________
 ___ ARCHIZOOM ___
 _______________________
 */
-.archizoom-construction {
-	position: relative;
-	width: 100%;
-	min-height: 60vh;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+/* Asymmetric 1/3 - 2/3 grid, built on three equal tracks so the wide column
+   can swap sides between rows: row 1 is poster (1) + text (2), row 2 is
+   text (2) + text (1), row 3 spans the full width for credits. */
+.archizoom-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5em 2em;
+	align-items: start;
 }
 
-	.under-construction-banner {
-		--banner-angle: -20deg; /* steepened on narrow screens so it doesn't get clipped */
-		transform: rotate(var(--banner-angle));
-		font-family: "Roboto Mono";
-		font-weight: bold;
-		letter-spacing: 0.1em;
+	.archizoom-grid .archizoom-span-2 {
+		grid-column: span 2;
+	}
+
+	.archizoom-grid .archizoom-span-full {
+		grid-column: 1 / -1;
+	}
+
+	/* Full-span intro banner: the exhibition's high-level info, center-set
+	   in the same voice as the About lead (h5 + yellow highlight) but
+	   scaled up to carry the top of the section — the expressive slot the
+	   UNDER CONSTRUCTION banner used to fill. */
+	.archizoom-intro {
 		text-align: center;
-		white-space: nowrap;
-		font-size: clamp(1.5rem, 6vw, 4.5rem);
-		padding: 0.4em 1.2em;
-		color: #000;
-		background-color: #ff0;
-		border: var(--border-width-major) solid #000;
-		/* Subtle "breathing" pulse. The rotate is baked into every keyframe
-		   so it stays diagonal while only the scale changes. The 2.0s period
-		   matches the flashing cadence of the NEW / SOON nav badges. */
-		animation: under-construction-pulse 2.0s ease-in-out infinite;
+		padding: 0.75em 0;
 	}
 
-	@keyframes under-construction-pulse {
-		/* Peak at the cycle boundary (0%/100%) so the banner is largest at the
-		   same instant the NEW / SOON badges blink, keeping them in phase. */
-		0%, 100% { transform: rotate(var(--banner-angle)) scale(1.08); }
-		50%      { transform: rotate(var(--banner-angle)) scale(1); }
-	}
-
-	/* Portrait / narrow screens: a shallow diagonal runs off the sides, so
-	   stand the banner up steeper to fit the taller-than-wide viewport. */
-	@media (max-width: 800px) {
-		.under-construction-banner {
-			--banner-angle: -60deg;
+		.archizoom-intro h5 {
+			font-size: clamp(1.4em, 3vw, 2em);
+			line-height: 1.7;
+			max-width: 28em;
+			margin: 0 auto;
 		}
+
+		/* The link row under the banner: yellow highlight tags with ASCII
+		   arrows, one step smaller than the pink lines above. */
+		.archizoom-intro p {
+			margin-top: 1em;
+			font-size: 1.15em;
+			line-height: 2;
+		}
+
+		.archizoom-intro p a {
+			margin: 0 0.5em;
+		}
+
+	/* A second header further down a cell (e.g. Planning Your Visit under
+	   Program) gets clear separation from the content above it… */
+	.archizoom-grid h4 {
+		margin-top: 2em;
+	}
+
+	/* …while cells that open with a header align their tops with the poster. */
+	.archizoom-grid h4:first-child {
+		margin-top: 0;
+	}
+
+	/* Body text rhythm: the global reset zeroes <p> margins, so restore
+	   the space between markdownified paragraphs. */
+	.archizoom-cell p {
+		margin-top: 1em;
+		line-height: 1.5;
+	}
+
+	/* Links get the yellow highlight treatment automatically, so plain
+	   markdown [text](url) matches the news-style highlighted links —
+	   no <mark class="highlight-yellow"> needed in the content files. */
+	.archizoom-cell a:link,
+	.archizoom-cell a:visited {
+		background-color: #ff0;
+		color: #000;
+		padding: 0.05em 0.2em;
+	}
+
+	/* Program sub-headers (##### in the markdown): one step down from the
+	   h4 header tags — plain text sitting on its own dashed rule. */
+	.archizoom-cell h5 {
+		display: block;
+		width: fit-content;
+		margin-top: 1.5em;
+		font-size: 1.1em;
+		font-weight: 500;
+		border-bottom: 0.15em dashed #000;
+		padding-bottom: 0.2em;
+	}
+
+	/* Schedule lists: no bullets (the reset already strips the indent);
+	   the black <strong> tags carry the times and dates. */
+	.archizoom-cell ul {
+		list-style: none;
+		margin-top: 0.75em;
+	}
+
+	.archizoom-cell ul li {
+		line-height: 1.6;
+	}
+
+	.archizoom-cell ul li + li {
+		margin-top: 0.6em;
+	}
+
+	/* Striped stand-in boxes (same idiom as the About image placeholder)
+	   until the poster and exhibition images arrive. */
+	.archizoom-placeholder {
+		background-attachment: fixed;
+		background-color: var(--hotpink);
+		background-image: repeating-linear-gradient(
+			-45deg,
+			transparent,
+			transparent var(--bg-line-spacing),
+			var(--hotpink-dark) var(--bg-line-spacing),
+			var(--hotpink-dark) calc(var(--bg-line-spacing) + var(--border-width-major))
+		);
+		border: var(--border-width-minor) solid #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+		.archizoom-placeholder span {
+			font-family: "Roboto Mono";
+			font-weight: bold;
+			letter-spacing: 0.1em;
+			font-size: 0.8em;
+		}
+
+	.archizoom-poster-ratio {
+		aspect-ratio: 707 / 1000; /* A-series portrait poster */
+	}
+
+	.archizoom-poster img {
+		width: 100%;
+		display: block;
+		border: var(--border-width-minor) solid #000;
+	}
+
+	.archizoom-wide-ratio {
+		aspect-ratio: 3 / 2;
+	}
+
+	/* Image embeds inside the wide columns. Credits sit as a small yellow
+	   tag in the image corner — same scheme as the photo credits elsewhere
+	   on the site (yellow to hold its own against the exhibition blue). */
+	.archizoom-figure {
+		width: 100%;
+		margin-top: 1em;
+	}
+
+		.archizoom-figure img {
+			width: 100%;
+			display: block;
+			border: var(--border-width-minor) solid #000;
+		}
+
+		.archizoom-figure figcaption,
+		.archizoom-poster figcaption {
+			float: right;
+			position: relative;
+			top: -3em;
+			font-size: 0.6em;
+			background-color: #ff0;
+			color: #000;
+			padding: 0.2em;
+		}
+
+	/* The exhibition cell's embed narrows and centers so the text hits
+	   below fit without pushing the cell taller than the poster. Tune the
+	   width to trade image size against cell height. */
+	.archizoom-figure-compact {
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* The exhibition cell stretches to the poster's row height, and the
+	   auto margin above the text hits absorbs the slack — so the hits sit
+	   at the bottom of the row however long the content runs. */
+	.archizoom-cell-stretch {
+		align-self: stretch;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Text hits: the three critical questions, side by side on gentle
+	   opposing diagonals — the expressive register of the old UNDER
+	   CONSTRUCTION banner, turned down to a murmur. */
+	.archizoom-text-hits {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 1em 6em;
+		margin-top: auto;
+		padding: 2em 0.5em 1em; /* minimum breathing room when there's no slack */
+	}
+
+		.text-hit {
+			--hit-angle: -5deg;
+			transform: rotate(var(--hit-angle));
+			font-family: "Roboto Mono";
+			font-weight: bold;
+			white-space: nowrap;
+			font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+			padding: 0.3em 0.8em;
+			color: #000;
+			background-color: var(--hotpink-fixed);
+			border: var(--border-width-minor) solid #000;
+			/* Same breathing pulse as the old banner: rotation baked into
+			   every keyframe so only the scale changes, 2.0s to stay in
+			   phase with the flashing NEW badges. */
+			animation: text-hit-pulse 2.0s ease-in-out infinite;
+		}
+
+		.text-hit:nth-child(2) {
+			--hit-angle: 5deg;
+		}
+
+	@keyframes text-hit-pulse {
+		/* Peak at the cycle boundary so the hits are largest at the same
+		   instant the NEW badges blink. */
+		0%, 100% { transform: rotate(var(--hit-angle)) scale(1.08); }
+		50%      { transform: rotate(var(--hit-angle)) scale(1); }
 	}
 
 	@media (prefers-reduced-motion: reduce) {
-		.under-construction-banner {
+		.text-hit {
 			animation: none;
 		}
+	}
+
+	/* Credits in two compact columns; break-inside keeps each name + role
+	   paragraph whole so the split always lands between people. */
+	.archizoom-credits-columns {
+		columns: 2;
+		column-gap: 2em;
+	}
+
+		.archizoom-credits-columns p {
+			break-inside: avoid;
+			margin: 0 0 1em; /* bottom margins, so both column tops align */
+		}
+
+	/* Portrait / narrow screens: stack everything in one column. */
+	@media (max-width: 800px) {
+		.archizoom-grid {
+			grid-template-columns: 1fr;
+			gap: 2em; /* a touch more air between the stacked cells */
+		}
+
+		.archizoom-grid .archizoom-span-2,
+		.archizoom-grid .archizoom-span-full {
+			grid-column: auto;
+		}
+
+		.archizoom-credits-columns {
+			columns: 1;
+		}
+
+		/* Stacked layout no longer competes with the poster for height,
+		   so the compact embed can breathe again. */
+		.archizoom-figure-compact {
+			width: 100%;
+		}
+
+		/* Tighten the wide desktop spread so two hits can share a row
+		   before wrapping. */
+		.archizoom-text-hits {
+			gap: 1em 2em;
+		}
+
 	}
