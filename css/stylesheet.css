@@ -1637,3 +1637,83 @@ _______________________
 		}
 
 	}
+
+/*
+_______________________
+___ EXHIBITION POPUP ___
+_______________________
+*/
+#exhibition-popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100; /* above the section-jump pills (99) */
+	max-width: 22em;
+	background-color: #ff0;
+	color: #000;
+	border: var(--border-width-major) solid #000;
+	/* Top padding clears the corner close button. */
+	padding: 2.4em 1.5em 1.5em 1.5em;
+	text-align: center;
+}
+
+	#exhibition-popup[hidden] {
+		display: none;
+	}
+
+	#exhibition-popup-close {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #000;
+		color: var(--text-on-dark);
+		border: none;
+		font-size: 1em;
+		line-height: 1;
+		padding: 0.4em 0.55em;
+		cursor: pointer;
+	}
+
+	#exhibition-popup-close:hover {
+		background-color: var(--hotpink);
+		color: #000;
+	}
+
+	.exhibition-popup-header {
+		font-weight: bold;
+		font-size: 1.4em;
+		line-height: 1.3;
+	}
+
+	.exhibition-popup-body {
+		margin-top: 0.6em;
+		font-size: 1.1em;
+		line-height: 1.4;
+	}
+
+	#exhibition-popup-link {
+		display: inline-block;
+		margin-top: 1.2em;
+		padding: 0.3em 0.9em;
+		font-size: 1.1em;
+		text-decoration: none;
+		background-color: #000;
+		color: var(--text-on-dark);
+	}
+
+	#exhibition-popup-link:hover {
+		background-color: var(--hotpink);
+		color: #000;
+		text-decoration: underline wavy #000;
+	}
+
+	/* Phones: keep it centered, edge to edge with a small margin. */
+	@media (max-width: 800px) {
+		#exhibition-popup {
+			left: 1em;
+			right: 1em;
+			transform: translateY(-50%);
+			max-width: none;
+		}
+	}

@@ -676,6 +676,14 @@ __________________
 		<span class="jump-arrow">&#x2193;</span>
 	</a>
 
+<!-- EXHIBITION POPUP -->
+	<aside id="exhibition-popup" hidden>
+		<button id="exhibition-popup-close" aria-label="Close">&#x2715;</button>
+		<p class="exhibition-popup-header">Do Robots Dream of Construction Sites?</p>
+		<p class="exhibition-popup-body">Learn more about our upcoming exhibition at Archizoom</p>
+		<a href="#archizoom" id="exhibition-popup-link">&#x2193; To the exhibition &#x2193;</a>
+	</aside>
+
 <!-- FOOTER -->
 	<footer class="hotpink">
 		<h6 class="text-align-center">All work &#xa9;2019 - 2026 Lab for Creative Computation (CRCL) and Prof. Dr. Stefana Parascho (except where otherwise noted). All rights reserved.</h6>
@@ -958,6 +966,28 @@ __________________
 
 		// Safety net: settling should be quick — release control after a moment.
 		setTimeout(stop, 3000);
+	})();
+
+	// Exhibition popup: nudge visitors landing on the base site toward the
+	// Archizoom section. Skipped when they're already headed there, and
+	// shown at most once per browser session.
+	(function() {
+		var popup = document.getElementById('exhibition-popup');
+		if (!popup) return;
+		if (location.hash === '#archizoom') return;
+		try {
+			if (sessionStorage.getItem('exhibition-popup-dismissed')) return;
+		} catch (e) {}
+
+		popup.hidden = false;
+
+		function dismiss() {
+			popup.hidden = true;
+			try { sessionStorage.setItem('exhibition-popup-dismissed', '1'); } catch (e) {}
+		}
+
+		document.getElementById('exhibition-popup-close').addEventListener('click', dismiss);
+		document.getElementById('exhibition-popup-link').addEventListener('click', dismiss);
 	})();
 </script>
 </body>
