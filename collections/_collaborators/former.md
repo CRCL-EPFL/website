@@ -9,7 +9,8 @@
 
 <details class="role-section" open>
 <summary><span class="role-header">PhDs</span></summary>
-<p>Isla Xi Han – PhD student → <a href="https://archdesign.utk.edu/directory/isla-han/" target="_blank"><mark class="highlight-yellow">Lecturer at University of Tennessee Knoxville</mark></a></p>
+<p>Maxence Grangeot – PhD student → <a href="https://www.jointmaster.ch/en/people/maxence-grangeot/" target="_blank"><mark class="highlight-yellow">Assistant Professor at JMA-Fribourg</mark></a></p>
+<p>Isla Xi Han – PhD student → <a href="https://i-school.hku.hk/people/han-isla/" target="_blank"><mark class="highlight-yellow">Assistant Professor at the School of Innovation, University of Hong Kong</mark></a></p>
 <p>Edvard Bruun – PhD student → <a href="https://www.bar-lab.org" target="_blank"><mark class="highlight-yellow">Asst. Professor at Georgia Tech College of Engineering</mark></a></p>
 <p>Ian Ting – PhD candidate → <a href="https://arch.rice.edu/people/faculty/ian-ting" target="_blank"><mark class="highlight-yellow">Lecturer at Rice University School of Architecture</mark></a></p>
 <p>Rafael Pastrana – PhD student</p>
