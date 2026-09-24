@@ -16,4 +16,6 @@
 
 <a href="https://www.epfl.ch/schools/enac/gis/" target="_blank"><mark class="highlight-yellow">GIS EPFL</mark></a>
 
+<a href="https://www.epfl.ch/campus/art-culture/museum-exhibitions/archizoom/" target="_blank"><mark class="highlight-yellow">Archizoom</mark></a>
+
 <a href="http://spolialab.com" target="_blank"><mark class="highlight-yellow">SPOLIA</mark></a>
