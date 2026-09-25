@@ -1,5 +1,5 @@
 ---
-name: Patricio Miguel Casanova Villanueva
+name: Patricio Casanova
 position: Joint PhD Candidate
 img:
 alt: Profile photo of Patricio
