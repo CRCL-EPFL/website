@@ -1,3 +1,51 @@
+- date: 08/09/26
+  img: img/news/crcl-news-dms26-banner.png
+  alt: Design Modelling Symposium 2026 banner, EPFL Lausanne and Fribourg, September 10-12
+  link: https://design-modelling-symposium.de
+  text: In just a few days, the 2026 edition of the <a href="https://design-modelling-symposium.de" target="_blank"><mark class="highlight-yellow">Design Modelling Symposium</mark></a> will kick off in Lausanne! CRCL will host the first part of the event, with speakers, a hackathon, and lab + exhibition tours!
+  emoji: 🎤💻🦾
+  new: true
+
+- date: 07/09/26
+  img: img/news/crcl-news-cap-uncertainty-group.jpg
+  alt: Group photo of the Capitalizing on Uncertainty summer school participants between two industrial robots in the lab
+  link: https://cap-uncertainty.epfl.ch/
+  text: Our week of experimentation, discussion, and fabrication around the topic of uncertainty is now done! Thanks to all of the students and lecturers who were a part of <a href="https://cap-uncertainty.epfl.ch/" target="_blank"><mark class="highlight-yellow">Capitalizing on Uncertainty</mark></a>, and look forward to a publication to come!
+  emoji: 💡🧠💡
+  new: true
+
+- date: 04/09/26
+  img: img/news/crcl-news-dms26-keynotes.jpg
+  alt: Keynote lecture graphic for Kirstin Hagelskjaer Petersen and Anne Katrin Burghartz at the Design Modelling Symposium 2026
+  link: https://design-modelling-symposium.de/conference/speakers/
+  text: |
+    <p>We're excited to welcome two keynote speakers in Lausanne as part of the <a href="https://design-modelling-symposium.de/conference/speakers/" target="_blank"><mark class="highlight-yellow">Design Modelling Symposium 2026</mark></a> on Sept 10: <a href="https://cei.ece.cornell.edu/" target="_blank"><mark class="highlight-yellow">Kirstin Hagelskjaer Petersen</mark></a> and Anne Katrin Burghartz.</p>
+    <p>Join the public lectures to learn more about swarm robotics and engineering building-scale art pieces!</p>
+  emoji: 🐝🤖🎨
+  new: true
+
+- date: 01/09/26
+  img: img/news/crcl-news-archizoom-exhibit.jpg
+  alt: Robot arm on a plinth in the exhibition at Archizoom, with a film projected on the wall behind
+  link: https://www.epfl.ch/campus/art-culture/museum-exhibitions/archizoom/fr/aude-billard-x-stefana-parascho-2/
+  text: |
+    <p>Next week our exhibition will open! <a href="https://www.epfl.ch/campus/art-culture/museum-exhibitions/archizoom/fr/aude-billard-x-stefana-parascho-2/" target="_blank"><mark class="highlight-yellow">Do Robots Dream of Construction Sites?</mark></a> takes over Archizoom at EPFL with live robot demos, prototypes, films, and research from the lab, all asking what roles robots should play in construction.</p>
+    <p>Join us for the vernissage on Tuesday, 8 September at 18:15, with a discussion between Stefana Parascho and Aude Billard, moderated by Pier Vittorio Aureli, followed by welcome drinks.</p>
+    <p>Can't make the opening? The exhibition runs from 9 September to 5 December 2026.</p>
+  emoji: 🤖💭🏗️
+  new: true
+
+- date: 24/08/26
+  img: img/news/crcl-news-robarch26-tft.jpg
+  alt: Person arranging timber offcuts on a floor projection of a truss design, beneath a robot arm
+  link: https://link.springer.com/article/10.1007/s41693-026-00201-4
+  text: |
+    <p>Eleni Skevaki will present our latest work, "Crafting structural timber trusses from irregular offcuts via human–robot interaction", at ROB|ARCH 2026 in Aarhus! Catch the talk on Thursday, 27 August in Paper Session 1 (09:30–10:45).</p>
+    <p>Building on our Truss from Trash framework, the work adds real-time structural feedback and on-demand form-finding to the projection-based interface, so the design can adapt to the timber offcuts available at each stage of assembly.</p>
+    <p>📄 Co-authored by Eleni Skevaki, Eric Duong, Hong-Bin Yang & Stefana Parascho. <a href="https://link.springer.com/article/10.1007/s41693-026-00201-4" target="_blank"><mark class="highlight-yellow">Read the paper here!</mark></a></p>
+  emoji: 🪵📐🤖
+  new: true
+
 - date: 02/07/26
   img: img/news/crcl-news-davos26.jpeg
   alt: Poster for Capitalizing on Uncertainty summer school
