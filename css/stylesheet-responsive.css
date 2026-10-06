@@ -613,3 +613,15 @@ ____________________________________________________
 		display: block;
 	  }
 }
+/* Publications: on narrow screens the number and year share one line and
+   the citation drops underneath. */
+@media screen and (max-width: 768px) {
+	section#publications li.pub-item {
+		grid-template-columns: 2.5em 1fr;
+	}
+
+		section#publications .pub-body {
+			grid-column: 1 / -1;
+			margin-top: 0.5em;
+		}
+}
