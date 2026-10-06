@@ -831,7 +831,7 @@ button#less-research {
 	display: none;
 }
 
-button#more-news,button#download-full-cv,button#show-bio, button#less-news, button#more-research, button#less-research {
+button#more-news,button#download-full-cv,button#show-bio, button#less-news, button#more-research, button#less-research, button.more-pubs, button.less-pubs {
 	background-attachment: fixed;
 	/*background-color: #ff69b4;*/
 	/*background-blend-mode: multiply;*/
@@ -852,7 +852,7 @@ button#more-news,button#download-full-cv,button#show-bio, button#less-news, butt
 	width: 97%;
 }
 
-button#more-news:hover,button#download-full-cv:hover, button#show-bio:hover, button#less-news:hover, button#more-research:hover, button#less-research:hover {
+button#more-news:hover,button#download-full-cv:hover, button#show-bio:hover, button#less-news:hover, button#more-research:hover, button#less-research:hover, button.more-pubs:hover, button.less-pubs:hover {
 	background-attachment: fixed;
 	/* background-image: url("../img/site/crcl_site_diagonal-lines-5-10px-pink-inverted.svg"); */
 	/* background-size: 100px; */
@@ -878,20 +878,133 @@ section#publications ol {
 	list-style-type: none;
 }
 
-	section#publications li {
-		margin: 0 1.5% 0 1.5%;
-		vertical-align: top;
+	/* One <details> per category (Papers, Books, …), reusing the pink pill
+	   accordion header from the Team section. */
+	section#publications details.pub-section {
+		margin: 0 1.5% 1em 1.5%;
 	}
 
-		section#publications li p {
-			margin: 1em;
+		section#publications details.pub-section summary {
+			list-style: none;
+			cursor: pointer;
 		}
 
-section#publications article ol li {
-	display: inline-block;
-}
+		section#publications details.pub-section summary::-webkit-details-marker {
+			display: none;
+		}
 
-	section#publications article ol li.start-hidden {
+		section#publications .pub-count {
+			font-family: "Roboto Mono";
+			font-size: 0.8em;
+			margin-left: 0.5em;
+		}
+
+	/* Each entry is a row: reversed reference number | year tag | citation.
+	   The counter starts at the section total (set inline on the <ol>) and
+	   counts down, so the newest paper carries the highest number. */
+	section#publications ol.pub-list {
+		margin: 1em 0 0 0;
+		padding: 0;
+	}
+
+		section#publications li.pub-item {
+			display: grid;
+			grid-template-columns: 3em 5em 1fr;
+			column-gap: 0.75em;
+			align-items: start;
+			border-top: 0.15em dashed #000;
+			padding: 0.75em 0;
+			margin: 0;
+			counter-increment: pub -1;
+		}
+
+		section#publications li.pub-item.start-hidden {
+			display: none;
+		}
+
+		section#publications li.pub-item:hover {
+			background-color: #000;
+			color: var(--text-on-dark);
+		}
+
+			section#publications li.pub-item::before {
+				content: counter(pub);
+				font-family: "Roboto Mono";
+				font-size: 0.9em;
+				padding-top: 0.1em;
+				text-align: right;
+			}
+
+			section#publications .pub-year time {
+				background-color: #000;
+				color: var(--text-on-dark);
+				padding: var(--tag-padding);
+				font-weight: 500;
+				display: inline-block;
+				line-height: normal;
+				white-space: nowrap;
+			}
+
+			section#publications li.pub-item:hover .pub-year time {
+				background-color: var(--text-on-dark);
+				color: #000;
+			}
+
+			section#publications .pub-body > * {
+				display: block;
+			}
+
+			section#publications .pub-title {
+				font-weight: 500;
+				font-size: 1.05em;
+				margin-bottom: 0.25em;
+			}
+
+			section#publications .pub-authors {
+				margin-bottom: 0.15em;
+			}
+
+			section#publications .pub-member {
+				font-weight: 700;
+				border-bottom: 0.15em dashed #000;
+			}
+
+			section#publications li.pub-item:hover .pub-member {
+				border-bottom-color: var(--text-on-dark);
+			}
+
+			section#publications .pub-venue {
+				font-style: italic;
+				font-size: 0.9em;
+			}
+
+			section#publications .pub-note {
+				font-style: normal;
+			}
+
+			section#publications .pub-link {
+				display: inline-block;
+				margin-top: 0.4em;
+				font-family: "Roboto Mono";
+				font-size: 0.8em;
+			}
+
+			section#publications .pub-body .new-badge {
+				background-color: #ff0;
+				color: #000;
+				padding: var(--tag-padding);
+				font-weight: bold;
+				box-shadow: inset 0 0 0 0.15em #000;
+				white-space: nowrap;
+				display: inline-block;
+				vertical-align: top;
+				line-height: normal;
+				animation-name: flashing;
+				animation-duration: 2.0s;
+				animation-iteration-count: infinite;
+			}
+
+	section#publications button.less-pubs {
 		display: none;
 	}
 
