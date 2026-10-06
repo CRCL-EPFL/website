@@ -10,14 +10,60 @@
 #   link     - optional URL; labelled "DOI" if it points at doi.org, else "Link"
 #   note     - optional short remark shown after the venue (e.g. "Editors")
 #   new      - optional; true shows the NEW badge and lights the nav badge
+#
+# Source of record: assets/parascho.bib (DOIs cross-checked against Crossref).
 
 - section: Papers
   items:
+    - year: 2026
+      authors: [Eleni Skevaki, Eric Duong, Hong-Bin Yang, Stefana Parascho]
+      title: Crafting Structural Timber Trusses from Irregular Offcuts via Human–Robot Interaction
+      venue: Construction Robotics
+      link: https://doi.org/10.1007/s41693-026-00201-4
+
+    - year: 2026
+      authors: [Qianqing Wang, Jingwen Wang, Ran Xu, Danhui Dan, Stefana Parascho, Katrin Beyer]
+      title: Computational Design for Lunar Infrastructure Built with Unprocessed Stones
+      venue: "npj Space Exploration 2 (1): 8"
+      link: https://doi.org/10.1038/s44453-025-00022-9
+
+    - year: 2026
+      authors: [Jingwen Wang, Johannes Kirschner, Paul Rolland, Luis Salamanca, Stefana Parascho]
+      title: "Learning to Build: Autonomous Robotic Assembly of Stable Structures Without Predefined Plans"
+      venue: "arXiv preprint 2602.23934"
+      note: preprint
+      link: https://arxiv.org/abs/2602.23934
+
+    - year: 2026
+      authors: [Qianqing Wang, Jingwen Wang, Bryan German Pantoja Rosero, Stefana Parascho, Katrin Beyer]
+      title: "Intelligent Stone Masonry Robot for Sustainable Construction: Opportunities and Challenges"
+      venue: Proceedings of the 43rd International Symposium on Automation and Robotics in Construction (ISARC 2026)
+      link: https://doi.org/10.22260/isarc2026/0072
+
+    - year: 2026
+      authors: [Isla Xi Han, Stefana Parascho]
+      title: "Spontaneous Tensegrity: Exploring Improvisational Design and Robotic Fabrication in Tensegrity Structures"
+      venue: Robotic Fabrication in Architecture, Art and Design 2024 (ROB|ARCH 2024), pp. 47–61, Springer, Cham
+      link: https://doi.org/10.1007/978-3-032-22607-5_4
+
+    - year: 2026
+      authors: [Maxence Grangeot, Qianqing Wang, Katrin Beyer, Corentin Fivet, Stefana Parascho]
+      title: "Rising from Rubble: Leveraging Existing Construction Tools for Upcycling Concrete Waste into Slender Walls"
+      venue: Robotic Fabrication in Architecture, Art and Design 2024 (ROB|ARCH 2024), pp. 253–265, Springer, Cham
+      note: New Frontiers Runner-Up Award, ROB|ARCH 2024
+      link: https://doi.org/10.1007/978-3-032-22607-5_16
+
     - year: 2025
       authors: [Eleni Skevaki, Eric Duong, Hong-Bin Yang, Stefana Parascho]
       title: "Truss from Trash: A Human–Robot Framework for Adaptive Timber Assembly on the Construction Floor"
       venue: "Construction Robotics 10 (1): 2"
       link: https://doi.org/10.1007/s41693-025-00175-9
+
+    - year: 2025
+      authors: [Eleni Skevaki, Marirena Kladeftira, Ziqi Wang, Sihui Wu, Gudela Grote, Stefana Parascho]
+      title: "TimberProxy: A Tangible Human–Robot Interface for Incremental Design and Fabrication of Timber Structures"
+      venue: "ACADIA 2025: Computing for Resilience, Proceedings of the Annual Conference of the Association for Computer Aided Design in Architecture, pp. 786–795"
+      link: https://doi.org/10.52842/conf.acadia.2025.2.786
 
     - year: 2025
       authors: [Qianqing Wang, Jingwen Wang, Bryan German Pantoja Rosero, Katrin Beyer, Stefana Parascho]
@@ -26,22 +72,52 @@
       link: https://doi.org/10.1109/IROS60139.2025.11246708
 
     - year: 2025
+      authors: [Alberto Johnsson Alvarez, Eleni Skevaki, Marirena Kladeftira, Stefana Parascho]
+      title: "Crafted by Hand and Machine: Human–Robot Fabrication Workflow for the Use of Curved Wood in Construction"
+      venue: "eCAADe 2025: Confluence, Proceedings of the 43rd Conference on Education and Research in Computer Aided Architectural Design in Europe, pp. 745–754"
+      link: https://doi.org/10.52842/conf.ecaade.2025.1.745
+
+    - year: 2025
       authors: [Ziqi Wang, Wenjun Liu, Jingwen Wang, Gabriel Vallat, Fan Shi, Stefana Parascho, Maryam Kamgarpour]
       title: Learning to Assemble with Alternative Plans
       venue: "ACM Transactions on Graphics 44 (4): 1–16"
       link: https://doi.org/10.1145/3730824
 
     - year: 2025
-      authors: [Andrea Settimi, Damien Gilliard, Eleni Skevaki, et al.]
+      authors: [Qianqing Wang, Jingwen Wang, Stefana Parascho, Katrin Beyer]
+      title: Microscale Digital Twinning of Rubble Stone Masonry Walls Using Robotic Assembly
+      venue: Proceedings of the 42nd International Symposium on Automation and Robotics in Construction (ISARC 2025), pp. 1408–1413
+      link: https://doi.org/10.22260/ISARC2025/0182
+
+    - year: 2025
+      authors: [Andrea Settimi, Damien Gilliard, Eleni Skevaki, Marirena Kladeftira, Julien Gamerro, Stefana Parascho, Yves Weinand]
       title: "DiffCheck: A Scan-CAD Evaluation Tool for Digital Manufacturing and Assembly Processes in Timber Construction"
-      venue: "Structures and Architecture: REstructure REmaterialize REthink REuse, edited by Mario Rinke and Marie Frier Hvejsel, CRC Press"
+      venue: "Structures and Architecture: REstructure REmaterialize REthink REuse, edited by Mario Rinke and Marie Frier Hvejsel, pp. 687–695, CRC Press"
       link: https://doi.org/10.1201/9781003658641-83
 
     - year: 2025
       authors: [Maxence Grangeot, Tanguy Auffret-Postel, Stefana Parascho, Corentin Fivet]
       title: New Tectonics of Concrete through Rubble Reuse
-      venue: "Structures and Architecture, 1st ed., by Mario Rinke and Marie Frier Hvejsel, CRC Press"
+      venue: "Structures and Architecture: REstructure REmaterialize REthink REuse, edited by Mario Rinke and Marie Frier Hvejsel, pp. 1185–1192, CRC Press"
       link: https://doi.org/10.1201/9781003658641-141
+
+    - year: 2025
+      authors: [Marirena Kladeftira, Corentin Fivet, Stefana Parascho]
+      title: "Re:Config: A Human–Robot Collaborative Process for the Reuse and Reconfiguration of Existing Timber Structures in the European Building Stock"
+      venue: "Structures and Architecture: REstructure REmaterialize REthink REuse, edited by Mario Rinke and Marie Frier Hvejsel, CRC Press"
+
+    - year: 2025
+      authors: [Isla Xi Han, Stefana Parascho]
+      title: "From Words to Actions: A Large Language Model (LLM) Approach for Human–Robot Interaction in Design-Fabrication Settings"
+      venue: "CAADRIA 2025: Architectural Informatics, Proceedings of the 30th International Conference of the Association for Computer-Aided Architectural Design Research in Asia, vol. 2, pp. 325–334"
+      note: Young CAADRIA Award 2025
+      link: https://doi.org/10.52842/conf.caadria.2025.2.325
+
+    - year: 2025
+      authors: [Alexandra Pittiglio, Xiliu Yang, Marirena Kladeftira, Felix Amtsberg, Achim Menges, Stefana Parascho]
+      title: "Augmented Human–Robot Collaborative Bending: Human–Robot Collaboration for Biogenic Material Bending-Active Assemblies"
+      venue: "CAADRIA 2025: Architectural Informatics, Proceedings of the 30th International Conference of the Association for Computer-Aided Architectural Design Research in Asia, vol. 2, pp. 315–324"
+      link: https://doi.org/10.52842/conf.caadria.2025.2.315
 
     - year: 2025
       authors: [Maxence Grangeot, Malena Bastien-Masse, Corentin Fivet, Stefana Parascho]
@@ -56,22 +132,52 @@
       link: https://doi.org/10.1002/ad.3101
 
     - year: 2024
-      authors: [Maxence Grangeot, Maléna Bastien Masse, Stefana Parascho, Corentin Fivet]
-      title: "Concrete Rubble as a New Structural Construction Material: Opportunities of Digital Processes with Existing Tools"
-      venue: "Buildings, Building Materials, and Repair & Renovation, Advances in Concrete Technology for Sustainable Architecture"
-      link: https://doi.org/10.3390/buildings15091437
+      authors: [Maxence Grangeot, Qianqing Wang, Katrin Beyer, Corentin Fivet, Stefana Parascho]
+      title: "Structural Concrete Rubble Arrangements: A Framework for Upcycling Demolition Waste into Slender Masonry Walls for Buildings"
+      venue: "Scalable Disruptors: Proceedings of the Design Modelling Symposium Kassel 2024, pp. 15–27, Springer, Cham"
+      link: https://doi.org/10.1007/978-3-031-68275-9_2
+
+    - year: 2024
+      authors: [Maxence Grangeot, Malena Bastien-Masse, Stefana Parascho, Corentin Fivet]
+      title: "Upcycling Concrete Rubble into Masonry Walls: Design and Assessment of Two Prototypes Built with Digitally Augmented Tools"
+      venue: Proceedings of the 4th fib International Conference on Concrete Sustainability (ICCS 2024), pp. 324–331, Springer, Cham
+      link: https://doi.org/10.1007/978-3-031-80724-4_40
+
+    - year: 2024
+      authors: [Maxence Grangeot, Stefana Parascho, Corentin Fivet]
+      title: "Concrete Rubble as a New Construction Material: Panorama of Applications to Known Structural Typologies"
+      venue: "Proceedings of the IASS 2024 Symposium: Redefining the Art of Structural Design, Zürich"
+      link: https://infoscience.epfl.ch/entities/publication/12d5e82c-550b-47a4-a45d-acc7da1810a6
+
+    - year: 2024
+      authors: [Edvard Bruun, Erin Besler, Sigrid Adriaenssens, Stefana Parascho]
+      title: Scaffold-Free Cooperative Robotic Disassembly and Reuse of a Timber Structure in the ZeroWaste Project
+      venue: "Construction Robotics 8 (2): 20"
+      link: https://doi.org/10.1007/s41693-024-00137-7
 
     - year: 2024
       authors: [Eleni Skevaki, Marirena Kladeftira, Ziqi Wang, Stefana Parascho]
-      title: Human-Robot Interaction – Workshop at Design Modeling Symposium 2024
-      venue: Design Modeling Symposium 2024, September 2024
+      title: Human-Robot Interaction – Workshop at Design Modelling Symposium 2024
+      venue: Design Modelling Symposium 2024 Kassel, September 2024
       link: https://infoscience.epfl.ch/handle/20.500.14299/253264
 
     - year: 2024
       authors: [Eleni Skevaki, Marirena Kladeftira, Alexandra Pittiglio, Stefana Parascho]
       title: "Assembly of Spaceframes in Hybrid Teams: Adaptive Digital Fabrication Workflows for Human-Robot Collaboration"
-      venue: CAADRIA 2024, June 2024
+      venue: "CAADRIA 2024: Accelerated Design, Proceedings of the 29th International Conference of the Association for Computer-Aided Architectural Design Research in Asia, vol. 3, pp. 291–300"
       link: https://doi.org/10.52842/conf.caadria.2024.3.291
+
+    - year: 2023
+      authors: [Stefana Parascho]
+      title: "Construction Robotics: From Automation to Collaboration"
+      venue: "Annual Review of Control, Robotics, and Autonomous Systems 6 (1): 183–204"
+      link: https://doi.org/10.1146/annurev-control-080122-090049
+
+    - year: 2023
+      authors: [Rafael Pastrana, Patrick Ole Ohlbrock, Thomas Oberbichler, Pierluigi D’Acunto, Stefana Parascho]
+      title: Constrained Form-Finding of Tension-Compression Structures using Automatic Differentiation
+      venue: "Computer-Aided Design 155: 103435"
+      link: https://doi.org/10.1016/j.cad.2022.103435
 
     - year: 2023
       authors: [Maxence Grangeot, Corentin Fivet, Stefana Parascho]
@@ -88,8 +194,14 @@
     - year: 2023
       authors: [Jingwen Wang, Wenjun Liu, Gene Ting-Chun Kao, Ioanna Mitropoulou, Francesco Ranaudo, Philippe Block, Benjamin Dillenburger]
       title: Multi-Robotic Assembly of Discrete Shell Structures
-      venue: De Gruyter, pp. 261–74
+      venue: "Advances in Architectural Geometry 2023, edited by Kathrin Dörfler, Jan Knippers, Achim Menges, Stefana Parascho, Helmut Pottmann, and Thomas Wortmann, pp. 261–274, De Gruyter, Berlin/Boston"
       link: https://doi.org/10.1515/9783111162683-020
+
+    - year: 2023
+      authors: [Seiichi Suzuki, Alison Grace Martin, Yingying Ren, Tzu-Ying Chen, Stefana Parascho, Mark Pauly]
+      title: "BamX: Rethinking Deployability in Architecture through Weaving"
+      venue: "Advances in Architectural Geometry 2023, edited by Kathrin Dörfler, Jan Knippers, Achim Menges, Stefana Parascho, Helmut Pottmann, and Thomas Wortmann, pp. 207–220, De Gruyter, Berlin/Boston"
+      link: https://doi.org/10.1515/9783111162683-016
 
     - year: 2023
       authors: [Eric Duong, Stefana Parascho]
@@ -98,85 +210,91 @@
       link: https://doi.org/10.1007/978-3-031-37189-9_36
 
     - year: 2023
+      authors: [Edvard Bruun, Sigrid Adriaenssens, Erin Besler, Stefana Parascho]
+      title: "ZeroWaste: Towards Computing Cooperative Robotic Sequences for the Disassembly and Reuse of Timber Frame Structures"
+      venue: "ACADIA 2022: Hybrids & Haecceities, Proceedings of the 42nd Annual Conference of the Association for Computer Aided Design in Architecture, pp. 586–597"
+      link: http://arks.princeton.edu/ark:/88435/pr1wp9t657
+
+    - year: 2022
       authors: [Isla Xi Han, Stefana Parascho]
       title: "Improv-Structure: Exploring Improvisation in Collective Human-Robot Construction"
-      venue: "Trends on Construction in the Digital Era, edited by António Gomes Correia, Miguel Azenha, Paulo J. S. Cruz, Paulo Novais, and Paulo Pereira, pp. 233–43, Springer International Publishing, Cham"
+      venue: "Trends on Construction in the Digital Era, edited by António Gomes Correia, Miguel Azenha, Paulo J. S. Cruz, Paulo Novais, and Paulo Pereira, pp. 233–43, Lecture Notes in Civil Engineering, Springer International Publishing, Cham"
+      link: https://doi.org/10.1007/978-3-031-20241-4_16
 
     - year: 2022
-      authors: [Edvard Bruun, Erin Besler, Sigrid Adriaenssens, Stefana Parascho]
-      title: Towards Computing Cooperative Robotic Sequences for the Disassembly and Reuse of Timber Frame Structures
-      venue: "ACADIA 2022 Hybrids and Haecceities: Proceedings of the 41st Annual Conference of the Association for Computer Aided Design in Architecture"
-
-    - year: 2022
-      authors: [Stefana Parascho]
-      title: "From Automation to Collaboration: A Review of Construction Robotics"
-      venue: Annual Review of Control, Robotics and Autonomous Systems
-
-    - year: 2022
-      authors: [Rafael Pastrana, Patrick Ole Ohlbrock, Thomas Oberbichler, Pierluigi D’Acunto, Stefana Parascho]
-      title: Constrained Form-Finding of Tension-Compression Structures using Automatic Differentiation
-      venue: Computer-Aided Design
+      authors: [Edvard Bruun, Sigrid Adriaenssens, Stefana Parascho]
+      title: Structural Rigidity Theory Applied to the Scaffold-Free (Dis)Assembly of Space Frames Using Cooperative Robotics
+      venue: "Automation in Construction 141: 104405"
+      link: https://doi.org/10.1016/j.autcon.2022.104405
 
     - year: 2021
       authors: [Isla Xi Han, Forrest Meggers, Stefana Parascho]
       title: "Bridging the Collectives: A Review of Collective Human-Robot Construction"
-      venue: International Journal of Architectural Computing
+      venue: "International Journal of Architectural Computing 19 (4): 512–531"
+      link: https://doi.org/10.1177/14780771211025153
 
     - year: 2021
       authors: [Yijiang Huang, Caelan R. Garrett, Ian Ting, Stefana Parascho, Caitlin T. Mueller]
       title: "Robotic Additive Construction of Bar Structures: Unified Sequence and Motion Planning"
-      venue: Construction Robotics, Springer
+      venue: "Construction Robotics 5 (2): 115–130"
       link: https://doi.org/10.1007/s41693-021-00062-z
 
     - year: 2021
       authors: [Edvard Bruun, Rafael Pastrana, Vittorio Paris, Alessandro Beghini, Attilio Pizzigoni, Stefana Parascho, Sigrid Adriaenssens]
       title: Three cooperative robotic fabrication methods for the scaffold-free construction of a masonry arch
-      venue: Automation in Construction 129 (6), Elsevier
+      venue: "Automation in Construction 129: 103803"
       link: https://doi.org/10.1016/j.autcon.2021.103803
 
     - year: 2021
+      authors: [Tian Yu, Lauren Dreier, Francesco Marmo, Stefano Gabriele, Stefana Parascho, Sigrid Adriaenssens]
+      title: Numerical Modeling of Static Equilibria and Bifurcations in Bigons and Bigon Rings
+      venue: "Journal of the Mechanics and Physics of Solids 152: 104459"
+      link: https://doi.org/10.1016/j.jmps.2021.104459
+
+    - year: 2021
       authors: [Stefana Parascho, Isla Xi Han, Alessandro Beghini, Masaaki Miki, Samantha Walker, Edvard Bruun, Sigrid Adriaenssens]
-      title: LightVault
-      venue: "AAG 2020: Advances in Architectural Geometry"
+      title: "LightVault: A Design and Robotic Fabrication Method for Complex Masonry Structures"
+      venue: "AAG 2020: Advances in Architectural Geometry, pp. 350–375, Presses des Ponts, Paris"
+
+    - year: 2021
+      authors: [Vittorio Paris, Nicola Lepore, Edvard Bruun, Giuseppe Ruscica, Mario Daniele Piccioni, Alessandro Beghini, Stefana Parascho, Sigrid Adriaenssens]
+      title: "Robotic Construction of a Self-Balancing Glass Masonry Vault: DEM Study of Stability During Construction Stages"
+      venue: "Proceedings of the IASS Annual Symposium 2020/21: Inspiring the Next Generation, pp. 314–325"
+      link: http://arks.princeton.edu/ark:/88435/pr12n4zh86
 
     - year: 2021
       authors: [Alessandro Beghini, Samantha Walker, Masaaki Miki, Isla Xi Han, Sigrid Adriaenssens, Stefana Parascho]
-      title: "Robotic construction of a self-balancing glass masonry vault: Design and Tessellation"
-      venue: IASS Annual Symposium and Spatial Structures Conference 2020/21
-      note: accepted
+      title: "Robotic Construction of a Self-Balancing Glass Masonry Vault: Design and Tessellation"
+      venue: "Proceedings of the IASS Annual Symposium 2020/21: Inspiring the Next Generation"
 
     - year: 2020
       authors: [Stefana Parascho, Isla Xi Han, Samantha Walker, Alessandro Beghini, Edvard Bruun, Sigrid Adriaenssens]
-      title: A Cooperative Robotic Assembly Method for Compression-Only Vault Construction
-      venue: Construction Robotics 4, pp. 117–126, Springer
+      title: "Robotic Vault: A Cooperative Robotic Assembly Method for Brick Vault Construction"
+      venue: "Construction Robotics 4 (3–4): 117–126"
       link: https://doi.org/10.1007/s41693-020-00041-w
 
     - year: 2020
-      authors: [Edvard P. G. Bruun, Ian Ting, Sigrid Adriaenssens, Stefana Parascho]
+      authors: [Edvard Bruun, Ian Ting, Sigrid Adriaenssens, Stefana Parascho]
       title: "Human–Robot Collaboration: A Fabrication Framework for the Sequential Design and Construction of Unplanned Spatial Structures"
       venue: "Digital Creativity 31 (4): 320–36"
       link: https://doi.org/10.1080/14626268.2020.1845214
 
     - year: 2020
-      authors: [Isla Xi Han, Edvard Bruun, Alessandro Beghini, Samantha Walker, Sigrid Adriaenssens, Stefana Parascho]
+      authors: [Isla Xi Han, Edvard Bruun, Stuart Marsh, Matteo Tavano, Sigrid Adriaenssens, Stefana Parascho]
       title: "From Concept to Construction: A Transferable Design and Robotic Fabrication Method for a Building-Scale Vault"
-      venue: "ACADIA 2020: Distributed Proximities, Proceedings of the 40th Annual Conference of the Association for Computer Aided Design in Architecture"
+      venue: "ACADIA 2020: Distributed Proximities, Proceedings of the 40th Annual Conference of the Association for Computer Aided Design in Architecture, pp. 614–623"
+      link: https://doi.org/10.52842/conf.acadia.2020.1.614
 
-    - year: 2020
-      authors: [Vittorio Paris, M. Lepora, Alessandro Beghini, Stefana Parascho, Sigrid Adriaenssens]
-      title: "Robotic construction of a self-balancing glass masonry vault: DEM study of the stability during the construction stages"
-      venue: IASS Annual Symposium and Spatial Structures Conference 2020/21
-
-    - year: 2019
+    - year: 2018
       authors: [Augusto Gandia, Stefana Parascho, Romana Rust, Gonzalo Casas, Fabio Gramazio, Matthias Kohler]
       title: Towards Automatic Path Planning for Robotically Assembled Spatial Structures
-      venue: "ROBARCH – Robotic Fabrication in Architecture, Art and Design, edited by Jan Willmann, Philippe Block, Marco Hutter, Kendra Byrne, and Tim Schork, Springer, Cham"
+      venue: "Robotic Fabrication in Architecture, Art and Design 2018 (ROB|ARCH 2018), edited by Jan Willmann, Philippe Block, Marco Hutter, Kendra Byrne, and Tim Schork, pp. 59–73, Springer, Cham"
       link: https://doi.org/10.1007/978-3-319-92294-2_5
 
-    - year: 2019
+    - year: 2018
       authors: [Luka Piškorec, David Jenny, Stefana Parascho, Hannes Mayer, Fabio Gramazio, Matthias Kohler]
       title: The Brick Labyrinth
-      venue: "ROBARCH – Robotic Fabrication in Architecture, Art and Design, edited by Jan Willmann, Philippe Block, Marco Hutter, Kendra Byrne, and Tim Schork, Springer, Cham"
+      venue: "Robotic Fabrication in Architecture, Art and Design 2018 (ROB|ARCH 2018), edited by Jan Willmann, Philippe Block, Marco Hutter, Kendra Byrne, and Tim Schork, pp. 489–500, Springer, Cham"
       link: https://doi.org/10.1007/978-3-319-92294-2_37
 
     - year: 2018
@@ -188,8 +306,14 @@
     - year: 2017
       authors: [Stefana Parascho, Augusto Gandia, Ammar Mirjan, Fabio Gramazio, Matthias Kohler]
       title: Cooperative Fabrication of Spatial Metal Structures
-      venue: "Fabricate 2017, pp. 24–29, edited by Achim Menges, Bob Sheil, Ruairi Glynn and Marilena Skavara, UCL Press, London. ISBN 978-1-78735-001-4"
-      link: https://www.jstor.org/stable/j.ctt1n7qkg7.7
+      venue: "Fabricate 2017: Rethinking Design and Construction, pp. 24–29, edited by Achim Menges, Bob Sheil, Ruairi Glynn and Marilena Skavara, UCL Press, London. ISBN 978-1-78735-001-4"
+      link: https://doi.org/10.2307/j.ctt1n7qkg7.7
+
+    - year: 2015
+      authors: [Moritz Dörstelmann, Jan Knippers, Achim Menges, Stefana Parascho, Marshall Prado, Tobias Schwinn]
+      title: "ICD/ITKE Research Pavilion 2013-14: Modular Coreless Filament Winding Based on Beetle Elytra"
+      venue: "Architectural Design 85 (5): 54–59"
+      link: https://doi.org/10.1002/ad.1954
 
     - year: 2014
       authors: [Stefana Parascho, Jan Knippers, Moritz Dörstelmann, Marshall Prado, Achim Menges]
@@ -200,8 +324,20 @@
     - year: 2014
       authors: [Moritz Dörstelmann, Stefana Parascho, Marshall Prado, Jan Knippers, Achim Menges]
       title: Integrative Computational Design Methodologies for Modular Architectural Fiber Composite Morphologies
-      venue: "ACADIA 2014 Design Agency: Proceedings of the 34th Annual Conference of the Association for Computer Aided Design in Architecture, pp. 219–228, edited by David Gerber, Alvin Huang and Jose Sanchez, ACADIA and Riverside Architectural Press. ISBN 978-1-926724-49-2"
+      venue: "ACADIA 2014: Design Agency, Proceedings of the 34th Annual Conference of the Association for Computer Aided Design in Architecture, pp. 219–228, edited by David Gerber, Alvin Huang and Jose Sanchez, ACADIA and Riverside Architectural Press. ISBN 978-1-926724-49-2"
       link: https://doi.org/10.13140/2.1.5186.0485
+
+    - year: 2013
+      authors: [Stefana Parascho, Marco Baur, Ehsan Baharlou, Jan Knippers, Achim Menges]
+      title: Agent-Based Model for the Development of Integrative Design Tools
+      venue: "ACADIA 2013: Adaptive Architecture, Proceedings of the 33rd Annual Conference of the Association for Computer Aided Design in Architecture, pp. 429–430"
+      link: https://doi.org/10.52842/conf.acadia.2013.429
+
+    - year: 2013
+      authors: [Stefana Parascho, Marco Baur, Jan Knippers, Achim Menges]
+      title: Design Tools for Integrative Planning
+      venue: "eCAADe 2013: Computation and Performance, Proceedings of the 31st eCAADe Conference, vol. 2, pp. 237–246"
+      link: https://doi.org/10.52842/conf.ecaade.2013.2.237
 
 - section: Books
   items:
@@ -220,33 +356,48 @@
       title: Motion Pictures
       venue: In Transcalar Prospects in Climate Crisis
 
+    - year: 2024
+      authors: [Edvard Bruun, Stefana Parascho, Sigrid Adriaenssens]
+      title: Cooperative Robotic Fabrication for a Circular Economy
+      venue: Book chapter in A Circular Built Environment in the Digital Age, edited by Catherine De Wolf, Sultan Çetin, and Nancy Bocken, pp. 129–149, Springer, Cham
+      link: https://doi.org/10.1007/978-3-031-39675-5_8
+
     - year: 2023
       authors: [Stefana Parascho]
       title: "Beyond Optimization: Interaction as a Means to Resituate Digital Fabrication"
       venue: Book chapter in Homing the Machine
 
     - year: 2023
-      authors: [Edvard Bruun, Stefana Parascho, Sigrid Adriaenssens]
-      title: Cooperative Robotic Fabrication for a Circular Economy
-      venue: Book chapter in Circular Built Environment in the Digital Age, edited by Catherine De Wolf, Sultan Çetin, and Nancy Bocken
+      authors: [Kathrin Dörfler, Jan Knippers, Achim Menges, Stefana Parascho, Helmut Pottmann, Thomas Wortmann]
+      title: Advances in Architectural Geometry 2023
+      venue: De Gruyter, Berlin/Boston
+      note: Editors
+      link: https://doi.org/10.1515/9783111162683
 
     - year: 2022
       authors: [Kathrin Dörfler, Stefana Parascho, Jane Scott]
-      title: Toward Critical Computation – Proceedings of ACADIA 2021
+      title: "Realignments: Toward Critical Computation – Proceedings of ACADIA 2021"
       venue: Book
       note: Editors
+      link: https://doi.org/10.52842/conf.acadia.2021.001
 
     - year: 2021
       authors: [Stefana Parascho]
       title: Home Position
       venue: "Book chapter in Design Studio Vol. 2: Intelligent Control 2021: Disruptive Technologies, edited by Rob Hyde and Filippos Filippidis, RIBA Publishing"
 
+    - year: 2021
+      authors: [Edvard Bruun, Stefana Parascho, Sigrid Adriaenssens]
+      title: Generative Design
+      venue: "Encyclopedia of Artificial Intelligence: The Past, Present, and Future of AI, edited by Philip L. Frana and Michael J. Klein, ABC-CLIO, Santa Barbara"
+      link: https://www.abc-clio.com/product/A5303C/
+
 - section: Dissertations
   items:
     - year: 2019
       authors: [Stefana Parascho]
-      title: Cooperative Robotic Assembly. Computational Design and Robotic Fabrication of Spatial Metal Structures
-      venue: ETH Zurich
+      title: "Cooperative Robotic Assembly: Computational Design and Robotic Fabrication of Spatial Metal Structures"
+      venue: Doctoral thesis, ETH Zurich
       link: https://doi.org/10.3929/ethz-b-000364322
 
 - section: Articles
@@ -254,7 +405,7 @@
     - year: 2023
       authors: [Stefana Parascho]
       title: Invisible Motions
-      venue: Drawing Codes – Experimental Protocols of Architectural Representation, Applied Research + Design
+      venue: "Drawing Codes: Experimental Protocols of Architectural Representation, Applied Research + Design"
 
     - year: 2019
       authors: [Stefana Parascho]
@@ -264,9 +415,9 @@
     - year: 2018
       authors: [Stefana Parascho]
       title: Integrative Architekturmodelle
-      venue: Kunst + Architektur 2018.4, Gesellschaft für Schweizerische Kunstgeschichte, Berne. ISBN 978-3-03797-345-5
+      venue: Kunst + Architektur in der Schweiz 2018.4, Gesellschaft für Schweizerische Kunstgeschichte, Berne. ISBN 978-3-03797-345-5
 
     - year: 2017
       authors: [Stefana Parascho]
-      title: Un labirint de caramida
-      venue: igloo habitat & architectura 179, Aug–Sep 2017, pp. 138–141, Igloo Media, Bucharest
+      title: Un labirint de cărămidă
+      venue: igloo habitat & arhitectură 179, Aug–Sep 2017, pp. 138–141, Igloo Media, Bucharest
