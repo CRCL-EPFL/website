@@ -417,17 +417,21 @@ __________________
 			{% assign pub_counter_start = pub_total | plus: 1 %}
 			<details class="role-section pub-section"{% if forloop.first %} open{% endif %}>
 				<summary><span class="role-header">{{ group.section }} <span class="pub-count">{{ pub_total }}</span></span></summary>
+				<div class="pub-head" aria-hidden="true"><span>#</span><span>Year</span><span>Title</span><span>Authors</span><span>Venue</span><span></span></div>
 				<ol class="pub-list" style="counter-reset: pub {{ pub_counter_start }};">
 					{% assign prev_year = "" %}
 					{% for pub in group.items %}
+					{% comment %} Plain-text citation for the copy button. {% endcomment %}
+					{% capture pub_cite %}{{ pub.authors | join: ", " }}. {{ pub.year }}. “{{ pub.title }}.” {{ pub.venue }}.{% if pub.link %} {{ pub.link }}{% endif %}{% endcapture %}
 					<li class="pub-item{% if forloop.index > pub_visible_limit %} start-hidden{% endif %}">
 						<span class="pub-year">{% if pub.year != prev_year %}<time>{{ pub.year }}</time>{% endif %}</span>
-						<div class="pub-body">
-							<span class="pub-title">{{ pub.title }}</span>{% if pub.new %} <span class="new-badge">NEW</span>{% endif %}
-							<span class="pub-authors">{% for author in pub.authors %}{% if forloop.first %}{% elsif author == "et al." %} {% elsif forloop.last and forloop.length > 2 %}, and {% elsif forloop.last %} and {% else %}, {% endif %}{% assign needle = "|" | append: author | append: "|" %}{% if team_names contains needle %}<span class="pub-member">{{ author }}</span>{% else %}{{ author }}{% endif %}{% endfor %}</span>
-							<span class="pub-venue">{{ pub.venue }}{% if pub.note %} <span class="pub-note">({{ pub.note }})</span>{% endif %}</span>
+						<span class="pub-title">{{ pub.title }}{% if pub.new %} <span class="new-badge">NEW</span>{% endif %}</span>
+						<span class="pub-authors">{% for author in pub.authors %}{% if forloop.first %}{% elsif author == "et al." %} {% elsif forloop.last and forloop.length > 2 %}, and {% elsif forloop.last %} and {% else %}, {% endif %}{% assign needle = "|" | append: author | append: "|" %}{% if team_names contains needle %}<span class="pub-member">{{ author }}</span>{% else %}{{ author }}{% endif %}{% endfor %}</span>
+						<span class="pub-venue">{{ pub.venue }}{% if pub.note %} <span class="pub-note">({{ pub.note }})</span>{% endif %}</span>
+						<span class="pub-actions">
 							{% if pub.link %}<a class="pub-link" href="{{ pub.link }}" target="_blank"><mark class="highlight-yellow">{% if pub.link contains "doi.org" %}DOI{% else %}Link{% endif %} ↗</mark></a>{% endif %}
-						</div>
+							<button class="pub-cite" type="button" title="Copy citation to clipboard" data-cite="{{ pub_cite | strip | escape }}">Cite</button>
+						</span>
 					</li>
 					{% assign prev_year = pub.year %}
 					{% endfor %}
@@ -755,6 +759,15 @@ __________________
 		section.find(".start-hidden").hide(500);
 		section.find("button.more-pubs").show(500).css("display", "inline-block");
 		$(this).hide();
+	});
+	$("button.pub-cite").click(function(){
+		var button = $(this);
+		var citation = button.attr("data-cite");
+		if (!navigator.clipboard) { window.prompt("Copy citation:", citation); return; }
+		navigator.clipboard.writeText(citation).then(function(){
+			button.text("Copied!");
+			setTimeout(function(){ button.text("Cite"); }, 1500);
+		});
 	});
 	// Starting popup
 	$("button#more").click(function(){

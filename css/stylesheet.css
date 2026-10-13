@@ -899,19 +899,41 @@ section#publications ol {
 			margin-left: 0.5em;
 		}
 
-	/* Each entry is a row: reversed reference number | year tag | citation.
-	   The counter starts at the section total (set inline on the <ol>) and
-	   counts down, so the newest paper carries the highest number. */
+	/* Pseudo table: every entry is a grid row sharing one column template
+	   with the header row — reversed reference number | year tag | title |
+	   authors | venue | links. The counter starts at the section total (set
+	   inline on the <ol>) and counts down, so the newest paper carries the
+	   highest number. */
+	section#publications .pub-head,
+	section#publications li.pub-item {
+		display: grid;
+		grid-template-columns: 3em 5em 5fr 3fr 4fr 4.5em;
+		column-gap: 1.25em;
+		align-items: start;
+	}
+
+	section#publications .pub-head {
+		margin-top: 1em;
+		padding-bottom: 0.4em;
+		font-family: "Roboto Mono";
+		font-size: 0.75em;
+		text-transform: uppercase;
+		/* Columns are sized in the row's em, so scale them back up to line
+		   up with the larger text of the rows below. */
+		grid-template-columns: 4em 6.667em 5fr 3fr 4fr 6em;
+		column-gap: 1.667em;
+	}
+
+		section#publications .pub-head span:first-child {
+			text-align: right;
+		}
+
 	section#publications ol.pub-list {
-		margin: 1em 0 0 0;
+		margin: 0;
 		padding: 0;
 	}
 
 		section#publications li.pub-item {
-			display: grid;
-			grid-template-columns: 3em 5em 1fr;
-			column-gap: 0.75em;
-			align-items: start;
 			border-top: 0.15em dashed #000;
 			padding: 0.75em 0;
 			margin: 0;
@@ -950,18 +972,9 @@ section#publications ol {
 				color: #000;
 			}
 
-			section#publications .pub-body > * {
-				display: block;
-			}
-
 			section#publications .pub-title {
 				font-weight: 500;
 				font-size: 1.05em;
-				margin-bottom: 0.25em;
-			}
-
-			section#publications .pub-authors {
-				margin-bottom: 0.15em;
 			}
 
 			section#publications .pub-member {
@@ -982,22 +995,39 @@ section#publications ol {
 				font-style: normal;
 			}
 
-			section#publications .pub-link {
-				display: inline-block;
-				margin-top: 0.4em;
+			/* Last column: link pill and copy-citation button, stacked. */
+			section#publications .pub-actions {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.4em;
 				font-family: "Roboto Mono";
 				font-size: 0.8em;
 			}
 
-			section#publications .pub-body .new-badge {
+			section#publications button.pub-cite {
+				font: inherit;
+				color: #000;
+				background-color: var(--hotpink-fixed);
+				border: none;
+				box-shadow: inset 0 0 0 0.15em #000;
+				padding: 0.05em 0.4em;
+				cursor: pointer;
+			}
+
+			section#publications button.pub-cite:hover {
+				background-color: #ff0;
+			}
+
+			section#publications .pub-title .new-badge {
 				background-color: #ff0;
 				color: #000;
 				padding: var(--tag-padding);
 				font-weight: bold;
+				font-size: 0.8em;
 				box-shadow: inset 0 0 0 0.15em #000;
 				white-space: nowrap;
 				display: inline-block;
-				vertical-align: top;
 				line-height: normal;
 				animation-name: flashing;
 				animation-duration: 2.0s;
@@ -1323,9 +1353,6 @@ _-_-_-_-_-_- POPUP _-_-_-_-_-_-_
 	section#publications h2{
 		font-size: 1em;
 		padding-bottom: 1em;
-	}
-	section#publications article{
-		display: none;
 	}
 
 

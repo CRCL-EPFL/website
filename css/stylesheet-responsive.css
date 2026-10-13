@@ -613,15 +613,30 @@ ____________________________________________________
 		display: block;
 	  }
 }
-/* Publications: on narrow screens the number and year share one line and
-   the citation drops underneath. */
-@media screen and (max-width: 768px) {
-	section#publications li.pub-item {
-		grid-template-columns: 2.5em 1fr;
+/* Publications: below this width the pseudo table stacks — number and year
+   share one line, then title, authors, venue and links run full width. */
+@media screen and (max-width: 1000px) {
+	section#publications .pub-head {
+		display: none;
 	}
 
-		section#publications .pub-body {
+	section#publications ol.pub-list {
+		margin-top: 1em;
+	}
+
+	section#publications li.pub-item {
+		grid-template-columns: 2.5em 1fr;
+		row-gap: 0.35em;
+	}
+
+		section#publications .pub-title,
+		section#publications .pub-authors,
+		section#publications .pub-venue,
+		section#publications .pub-actions {
 			grid-column: 1 / -1;
-			margin-top: 0.5em;
+		}
+
+		section#publications .pub-actions {
+			flex-direction: row;
 		}
 }
